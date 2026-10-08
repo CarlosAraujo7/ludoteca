@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Cartas — Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --roxo:  #5e17a8;
+      --creme: #f3e8ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+      background: #ede7f6;
+      color: #222;
+    }
+
+    /* ── PAINEL ── */
+    #painel {
+      background: white;
+      border-bottom: 3px solid var(--roxo);
+      padding: 10px 20px 12px;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 3px 14px rgba(94,23,168,0.12);
+    }
+
+    /* topo: logo + título + badge de status */
+    .painel-topo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .painel-topo h1 {
+      font-size: 1.05em;
+      color: var(--roxo);
+      font-weight: 800;
+      flex: 1;
+      letter-spacing: 0.2px;
+    }
+
+    #status-cartas {
+      font-size: 11px;
+      font-weight: 700;
+      color: #2e7d32;
+      background: #e8f5e9;
+      border: 1.5px solid #a5d6a7;
+      padding: 3px 12px;
+      border-radius: 20px;
+      display: none;
+      white-space: nowrap;
+    }
+
+    /* corpo: xml (esquerda) + ações (direita) */
+    .painel-corpo {
+      display: flex;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    /* ── Área XML ── */
+    .area-xml { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+
+    .area-xml > label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--roxo);
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+
+    #xml-input {
+      flex: 1;
+      min-height: 80px;
+      max-height: 110px;
+      padding: 8px 11px;
+      border: 2px solid #d8b4fe;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 10.5px;
+      line-height: 1.5;
+      resize: vertical;
+      background: #faf5ff;
+      transition: border-color 0.2s;
+    }
+    #xml-input:focus { outline: none; border-color: var(--roxo); background: white; }
+
+    /* linha importar + dica */
+    .xml-foot {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dica-xml {
+      font-size: 9.5px;
+      color: #999;
+      line-height: 1.45;
+      flex: 1;
+    }
+    .dica-xml code {
+      background: #f0f0f0;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 9px;
+    }
+
+    /* ── Painel de ações ── */
+    .painel-acoes {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 162px;
+      flex-shrink: 0;
+    }
+
+    .painel-acoes > label {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: var(--roxo);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 6px 9px;
+      border: 2px solid #d8b4fe;
+      border-radius: 8px;
+      font-size: 12.5px;
+      background: #faf5ff;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      transition: all 0.15s;
+      font-family: 'Poppins', sans-serif;
+    }
+    button:hover  { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.18); }
+    button:active { transform: translateY(0); }
+
+    /* botões primários — largura total */
+    .btn-gerar, .btn-pdf, .btn-importar {
+      width: 100%;
+    }
+
+    .btn-gerar    { background: var(--roxo); color: white; font-size: 12.5px; }
+    .btn-pdf      { background: #c62828;     color: white; }
+    .btn-importar { background: #e8f5e9; color: #2e7d32; border: 1.5px solid #81c784; }
+
+    /* trio de ícones — grid 3 colunas */
+    .btn-trio {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+    .btn-trio button {
+      font-size: 16px;
+      padding: 7px 4px;
+      text-align: center;
+    }
+    .btn-exemplo { background: #eceff1; color: #455a64; border: 1.5px solid #b0bec5; }
+    .btn-prompt  { background: var(--creme); color: var(--roxo); border: 1.5px solid #c084fc; }
+    .btn-cats    { background: #fce4ec; color: #880e4f; border: 1.5px solid #f48fb1; }
+
+    /* ── MODAIS ── */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.ativo { display: flex; }
+
+    .modal-box {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      max-width: 660px;
+      width: 93%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.28);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-box h2  { color: var(--roxo); margin-bottom: 10px; font-size: 1.1em; font-weight: 800; }
+    .modal-box p   { font-size: 12.5px; color: #555; margin-bottom: 10px; line-height: 1.65; }
+    .modal-box code { background: #f3e8ff; padding: 1px 5px; border-radius: 3px; font-size: 11px; color: var(--roxo); }
+
+    .modal-acoes { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; flex-wrap: wrap; }
+    .modal-acoes button { width: auto; padding: 9px 20px; }
+
+    .btn-copiar  { background: var(--roxo); color: white; }
+    .btn-fechar  { background: #e9ecef; color: #333; }
+    .btn-salvar  { background: #2e7d32; color: white; }
+    .btn-resetar { background: #fff3e0; color: #e65100; border: 1px solid #ffb74d; }
+
+    #modal-prompt pre {
+      background: #faf5ff;
+      border: 1.5px solid #d8b4fe;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 10.5px;
+      font-family: 'Courier New', monospace;
+      line-height: 1.65;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 340px;
+      overflow-y: auto;
+    }
+
+    /* Categorias */
+    .cats-grid { display: flex; flex-direction: column; gap: 9px; margin: 12px 0; }
+
+    .cat-edit-row { display: flex; align-items: center; gap: 10px; }
+
+    .cat-edit-row input[type="color"] {
+      width: 36px; height: 36px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 2px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .cat-edit-row input[type="text"] {
+      flex: 1;
+      padding: 7px 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    .cat-edit-row input[type="text"]:focus { outline: none; border-color: var(--roxo); }
+
+    .cat-amostra {
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    /* ── PREVIEW AREA ── */
+    #preview-area {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .estado-vazio {
+      background: white;
+      border-radius: 12px;
+      padding: 60px 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      width: 210mm;
+    }
+
+    .estado-vazio span { font-size: 36px; display: block; margin-bottom: 10px; }
+
+    .label-pagina { font-size: 11px; color: #888; text-align: center; margin-bottom: -10px; }
+
+    /* ── PÁGINA A4 ── */
+    .pagina-a4 {
+      background: white;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 8mm;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+      display: grid;
+      gap: 5mm;
+    }
+
+    /* 4 cartas: 2 colunas × 2 linhas */
+    .pagina-a4.grid-4 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-content: stretch;
+    }
+
+    /* 2 cartas: 1 coluna × 2 linhas */
+    .pagina-a4.grid-2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-content: stretch;
+    }
+
+    /* ── CARTA MASTER ── */
+    .carta-master {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      break-inside: avoid;
+    }
+
+    /* Cabeçalho da carta */
+    .carta-topo {
+      background: var(--roxo);
+      padding: 5px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .carta-titulo-master {
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Bloco de cada categoria */
+    .cat-bloco {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #e8e8e8;
+      flex: 1;
+    }
+
+    .cat-bloco:first-of-type { border-top: none; }
+
+    .cat-cabecalho {
+      padding: 3px 9px;
+      font-size: 7.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: white;
+    }
+
+    .cat-corpo {
+      padding: 4px 9px 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .cat-pergunta {
+      font-size: 10px;
+      font-weight: 500;
+      color: #111;
+      line-height: 1.35;
+    }
+
+    .cat-opcoes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 10px;
+    }
+
+    .opcao {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 8.5px;
+      color: #333;
+      line-height: 1.3;
+      font-weight: 300;
+    }
+
+    /* Letra neutra cinza — igual para todas */
+    .opcao-letra {
+      font-weight: 600;
+      font-size: 7.5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: #bdbdbd;
+      color: white;
+    }
+
+    .opcao-texto { flex: 1; font-weight: 300; }
+
+    /* Alternativa correta: texto todo em azul */
+    .opcao.correta .opcao-letra { background: #1565c0; }
+    .opcao.correta .opcao-texto { color: #1565c0; font-weight: 600; }
+
+    /* ── Ajustes grid-4 (4 por página — padrão) ── */
+    .pagina-a4.grid-4 .cat-cabecalho { font-size: 7px;  padding: 3px 8px; letter-spacing: 0.9px; }
+    .pagina-a4.grid-4 .cat-corpo     { padding: 3px 7px 4px; gap: 3px; }
+    .pagina-a4.grid-4 .cat-pergunta  { font-size: 9px; }
+    .pagina-a4.grid-4 .cat-opcoes    { gap: 2px 6px; }
+    .pagina-a4.grid-4 .opcao         { font-size: 8px; }
+    .pagina-a4.grid-4 .opcao-letra   { width: 13px; height: 13px; font-size: 7.5px; }
+    .pagina-a4.grid-4 .carta-titulo-master { font-size: 11px; letter-spacing: 2px; }
+    .pagina-a4.grid-4 .carta-topo          { padding: 4px 10px; }
+
+    /* ── Ajustes grid-2 (2 por página — maior) ── */
+    .pagina-a4.grid-2 .cat-cabecalho { font-size: 9px;  padding: 4px 12px; letter-spacing: 1.3px; }
+    .pagina-a4.grid-2 .cat-corpo     { padding: 5px 12px 7px; gap: 5px; }
+    .pagina-a4.grid-2 .cat-pergunta  { font-size: 11px; }
+    .pagina-a4.grid-2 .cat-opcoes    { gap: 3px 14px; }
+    .pagina-a4.grid-2 .opcao         { font-size: 10px; }
+    .pagina-a4.grid-2 .opcao-letra   { width: 17px; height: 17px; font-size: 9.5px; }
+    .pagina-a4.grid-2 .carta-titulo-master { font-size: 16px; letter-spacing: 4px; }
+
+    .carta-vazia {
+      border: 1.5px dashed #ddd;
+      border-radius: 8px;
+      background: transparent;
+      min-height: 100px;
+    }
+
+    /* ── IMPRESSÃO ── */
+    @media print {
+      /* Preserva todas as cores e fundos coloridos */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      #painel, .modal-overlay, .label-pagina { display: none !important; }
+
+      body { background: white; }
+
+      #preview-area { padding: 0; gap: 0; align-items: flex-start; }
+
+      .estado-vazio { display: none; }
+
+      .pagina-a4 {
+        width: 210mm;
+        height: 297mm;
+        min-height: unset;
+        padding: 8mm;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .pagina-a4:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+    }
+
+    @page { size: A4; margin: 0; }
+  </style>
+</head>
+<body>
+
+<!-- ── PAINEL ── -->
+<div id="painel">
+  <div class="painel-topo">
+    <h1>🎲 Gerador de Cartas — Master</h1>
+    <div id="status-cartas"></div>
+  </div>
+  <div class="painel-corpo">
+
+    <!-- Área XML -->
+    <div class="area-xml">
+      <label>XML das cartas</label>
+      <textarea id="xml-input" placeholder="Cole o XML aqui ou use o botão Importar XML abaixo...
+
+Formato: &lt;q cat=&quot;Artes&quot; correta=&quot;b&quot; a=&quot;...&quot; b=&quot;...&quot; c=&quot;...&quot; d=&quot;...&quot;&gt;Pergunta?&lt;/q&gt;"></textarea>
+      <div class="xml-foot">
+        <button class="btn-importar" onclick="document.getElementById('xml-file-input').click()">📂 Importar XML</button>
+        <div class="dica-xml"><code>&lt;q cat="Categoria" correta="b" a="..." b="..." c="..." d="..."&gt;</code> — 6 perguntas por carta</div>
+      </div>
+      <input type="file" id="xml-file-input" accept=".xml" style="display:none" onchange="importarXML(event)">
+    </div>
+
+    <!-- Ações -->
+    <div class="painel-acoes">
+      <label>Cartas por página</label>
+      <select id="qtd-por-pagina">
+        <option value="4" selected>4 por página (2×2)</option>
+        <option value="2">2 por página</option>
+      </select>
+      <button class="btn-gerar" onclick="gerarCartas()">▶ Gerar Preview</button>
+      <button class="btn-pdf"   onclick="imprimirPDF()">🖨️ Salvar PDF</button>
+      <div class="btn-trio">
+        <button class="btn-exemplo" onclick="carregarExemplo()" title="Carregar exemplo">📄</button>
+        <button class="btn-prompt"  onclick="abrirModalPrompt()" title="Prompt para IA">🤖</button>
+        <button class="btn-cats"    onclick="abrirModalCats()" title="Configurar categorias">⚙️</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── MODAL: PROMPT IA ── -->
+<div id="modal-prompt" class="modal-overlay" onclick="fecharModalClick(event,'modal-prompt')">
+  <div class="modal-box">
+    <h2>🤖 Prompt para gerar cartas com IA</h2>
+    <p>Substitua <strong>[QTD]</strong> e <strong>[TEMA]</strong>. As categorias refletem a configuração atual.</p>
+    <pre id="texto-prompt"></pre>
+    <div class="modal-acoes">
+      <button class="btn-copiar" onclick="copiarPrompt()">📋 Copiar Prompt</button>
+      <button class="btn-fechar" onclick="fecharModal('modal-prompt')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL: CATEGORIAS ── -->
+<div id="modal-cats" class="modal-overlay" onclick="fecharModalClick(event,'modal-cats')">
+  <div class="modal-box">
+    <h2>⚙️ Configurar Categorias</h2>
+    <p>Edite o nome e a cor de cada categoria. O atributo <code>cat=""</code> no XML deve usar exatamente esses nomes.</p>
+    <div class="cats-grid" id="cats-grid"></div>
+    <div class="modal-acoes">
+      <button class="btn-resetar" onclick="resetarCats()">↺ Restaurar padrão</button>
+      <button class="btn-salvar"  onclick="salvarCats()">✓ Salvar</button>
+      <button class="btn-fechar"  onclick="fecharModal('modal-cats')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PREVIEW ── -->
+<div id="preview-area">
+  <div class="estado-vazio">
+    <span>🎲</span>
+    Cole o XML e clique em <strong>Gerar Preview</strong>
+  </div>
+</div>
+
+<script>
+  // ── CATEGORIAS ─────────────────────────────────────────────────────────────
+
+  const CATS_PADRAO = [
+    { nome: 'Artes',          cor: '#f9a825' },
+    { nome: 'Geografia',      cor: '#388e3c' },
+    { nome: 'Esportes',       cor: '#d32f2f' },
+    { nome: 'Entretenimento', cor: '#c2185b' },
+    { nome: 'História',       cor: '#6a1b9a' },
+    { nome: 'Ciências',       cor: '#0277bd' },
+  ];
+
+  let categorias = JSON.parse(JSON.stringify(CATS_PADRAO));
+
+  function infoDaCategoria(nomeAttr) {
+    const lower = nomeAttr.toLowerCase().trim();
+    return categorias.find(c => c.nome.toLowerCase() === lower)
+        || { nome: nomeAttr, cor: '#757575' };
+  }
+
+  // ── GERAR PREVIEW ──────────────────────────────────────────────────────────
+
+  function gerarCartas() {
+    const xml = document.getElementById('xml-input').value.trim();
+    if (!xml) { alert('Cole o XML das cartas primeiro!'); return; }
+
+    let doc;
+    try {
+      const parser = new DOMParser();
+      doc = parser.parseFromString(xml, 'text/xml');
+      if (doc.querySelector('parsererror')) throw new Error(doc.querySelector('parsererror').textContent);
+    } catch (e) {
+      alert('XML inválido!\n\n' + e.message);
+      return;
+    }
+
+    const cartas = Array.from(doc.querySelectorAll('carta'));
+    if (!cartas.length) { alert('Nenhuma <carta> encontrada no XML.'); return; }
+
+    const qtd = parseInt(document.getElementById('qtd-por-pagina').value);
+    const totalPags = Math.ceil(cartas.length / qtd);
+
+    const statusEl = document.getElementById('status-cartas');
+    statusEl.style.display = 'inline-block';
+    statusEl.textContent = `✅ ${cartas.length} carta${cartas.length !== 1 ? 's' : ''} · ${totalPags} pág.`;
+
+    const area = document.getElementById('preview-area');
+    area.innerHTML = '';
+
+    for (let i = 0; i < cartas.length; i += qtd) {
+      const lote = cartas.slice(i, i + qtd);
+      const numPag = Math.floor(i / qtd) + 1;
+
+      const label = document.createElement('div');
+      label.className = 'label-pagina';
+      label.textContent = `Página ${numPag} de ${totalPags}`;
+      area.appendChild(label);
+
+      const pagina = document.createElement('div');
+      pagina.className = `pagina-a4 grid-${qtd}`;
+
+      lote.forEach(c => pagina.appendChild(criarCarta(c)));
+
+      // Slot vazio na última página se necessário
+      if (qtd === 2 && lote.length === 1) {
+        const vazia = document.createElement('div');
+        vazia.className = 'carta-vazia';
+        pagina.appendChild(vazia);
+      }
+
+      area.appendChild(pagina);
+    }
+  }
+
+  function criarCarta(el) {
+    const perguntas = Array.from(el.querySelectorAll('q'));
+
+    const div = document.createElement('div');
+    div.className = 'carta-master';
+
+    // ── Cabeçalho "NOVO MASTER"
+    div.innerHTML = `
+      <div class="carta-topo">
+        <span class="carta-titulo-master">Master</span>
+      </div>
+    `;
+
+    // ── Blocos de categoria
+    perguntas.forEach(q => {
+      const catAttr = q.getAttribute('cat') || '';
+      const correta = (q.getAttribute('correta') || '').toLowerCase();
+      const opcoes  = { a: q.getAttribute('a') || '', b: q.getAttribute('b') || '',
+                        c: q.getAttribute('c') || '', d: q.getAttribute('d') || '' };
+      const cat = infoDaCategoria(catAttr);
+
+      const bloco = document.createElement('div');
+      bloco.className = 'cat-bloco';
+
+      // Header colorido
+      const header = document.createElement('div');
+      header.className = 'cat-cabecalho';
+      header.style.background = cat.cor;
+      header.textContent = cat.nome;
+
+      // Corpo: pergunta + opções
+      const corpo = document.createElement('div');
+      corpo.className = 'cat-corpo';
+
+      const pergunta = document.createElement('div');
+      pergunta.className = 'cat-pergunta';
+      pergunta.textContent = q.textContent.trim();
+
+      const opcoesDiv = document.createElement('div');
+      opcoesDiv.className = 'cat-opcoes';
+
+      ['a', 'b', 'c', 'd'].forEach(letra => {
+        const isCorreta = letra === correta;
+        const opcaoEl = document.createElement('div');
+        opcaoEl.className = `opcao${isCorreta ? ' correta' : ''}`;
+
+        const letraEl = document.createElement('span');
+        letraEl.className = 'opcao-letra';
+        letraEl.textContent = letra;
+
+        const textoEl = document.createElement('span');
+        textoEl.className = 'opcao-texto';
+        textoEl.textContent = opcoes[letra];
+
+        opcaoEl.appendChild(letraEl);
+        opcaoEl.appendChild(textoEl);
+        opcoesDiv.appendChild(opcaoEl);
+      });
+
+      corpo.appendChild(pergunta);
+      corpo.appendChild(opcoesDiv);
+
+      bloco.appendChild(header);
+      bloco.appendChild(corpo);
+      div.appendChild(bloco);
+    });
+
+    return div;
+  }
+
+  // ── EXEMPLO ────────────────────────────────────────────────────────────────
+
+  function carregarExemplo() {
+    document.getElementById('xml-input').value = `<cartas>
+  <carta>
+    <q cat="Artes" correta="c" a="Rembrandt" b="Rafael" c="Michelangelo" d="Caravaggio">Quem pintou o teto da Capela Sistina?</q>
+    <q cat="Geografia" correta="a" a="Brasília" b="São Paulo" c="Rio de Janeiro" d="Belo Horizonte">Qual é a capital federal do Brasil?</q>
+    <q cat="Esportes" correta="b" a="Maradona" b="Pelé" c="Zico" d="Ronaldo">Quem foi o maior artilheiro da história do Santos FC?</q>
+    <q cat="Entretenimento" correta="d" a="Titanic" b="Avatar" c="O Rei Leão" d="Star Wars">Qual saga apresenta Darth Vader e Luke Skywalker?</q>
+    <q cat="História" correta="a" a="Pedro Álvares Cabral" b="Vasco da Gama" c="Cristóvão Colombo" d="Fernão de Magalhães">Quem chegou ao Brasil em 1500?</q>
+    <q cat="Ciências" correta="c" a="Marte" b="Vênus" c="Plutão" d="Saturno">Qual é o planeta anão mais famoso do sistema solar?</q>
+  </carta>
+  <carta>
+    <q cat="Artes" correta="b" a="Picasso" b="Leonardo da Vinci" c="Monet" d="Dalí">Quem pintou a Mona Lisa?</q>
+    <q cat="Geografia" correta="d" a="Congo" b="Mississippi" c="Amazonas" d="Nilo">Qual é o rio mais longo do mundo?</q>
+    <q cat="Esportes" correta="a" a="Fórmula 1" b="MotoGP" c="Nascar" d="Rally">Qual é a categoria máxima do automobilismo mundial?</q>
+    <q cat="Entretenimento" correta="c" a="Elvis" b="Prince" c="Michael Jackson" d="David Bowie">Quem ficou conhecido como o Rei do Pop?</q>
+    <q cat="História" correta="b" a="1776" b="1822" c="1889" d="1815">Em que ano o Brasil se tornou independente?</q>
+    <q cat="Ciências" correta="a" a="DNA" b="RNA" c="ATP" d="Proteína">Qual molécula carrega a informação genética dos seres vivos?</q>
+  </carta>
+  <carta>
+    <q cat="Artes" correta="d" a="Ulysses" b="Hamlet" c="Fausto" d="Dom Quixote">Qual obra de Cervantes conta a história de um cavaleiro imaginário?</q>
+    <q cat="Geografia" correta="b" a="Taiga" b="Amazônia" c="Sibéria" d="Congo">Qual é a maior floresta tropical do planeta?</q>
+    <q cat="Esportes" correta="c" a="Roland Garros" b="US Open" c="Wimbledon" d="Australian Open">Qual é o torneio de tênis mais antigo do mundo?</q>
+    <q cat="Entretenimento" correta="a" a="James Cameron" b="Steven Spielberg" c="Christopher Nolan" d="George Lucas">Quem dirigiu o filme Titanic em 1997?</q>
+    <q cat="História" correta="d" a="1939" b="1941" c="1943" d="1945">Em que ano terminou a Segunda Guerra Mundial?</q>
+    <q cat="Ciências" correta="b" a="Nitrogênio" b="Oxigênio" c="Hidrogênio" d="Carbono">Qual elemento os humanos precisam inalar para sobreviver?</q>
+  </carta>
+  <carta>
+    <q cat="Artes" correta="a" a="Machado de Assis" b="José de Alencar" c="Graciliano Ramos" d="Lima Barreto">Quem escreveu Dom Casmurro?</q>
+    <q cat="Geografia" correta="c" a="China" b="Índia" c="Japão" d="Coreia do Sul">Qual país tem Tóquio como capital?</q>
+    <q cat="Esportes" correta="b" a="Grêmio" b="Santos" c="Flamengo" d="Corinthians">Em qual clube Pelé jogou a maior parte da carreira?</q>
+    <q cat="Entretenimento" correta="d" a="Metallica" b="Led Zeppelin" c="Queen" d="Beatles">Qual banda era formada por John Lennon e Paul McCartney?</q>
+    <q cat="História" correta="a" a="Napoleão Bonaparte" b="Luís XVI" c="Guilherme I" d="Bismarck">Qual imperador francês foi exilado na ilha de Santa Helena?</q>
+    <q cat="Ciências" correta="c" a="Plutônio" b="Urânio" c="Polônio" d="Rádio">Qual elemento foi descoberto por Marie Curie e recebeu o nome de seu país natal?</q>
+  </carta>
+</cartas>`;
+    gerarCartas();
+  }
+
+  // ── MODAL: CATEGORIAS ──────────────────────────────────────────────────────
+
+  function abrirModalCats() {
+    const grid = document.getElementById('cats-grid');
+    grid.innerHTML = '';
+
+    categorias.forEach((cat, i) => {
+      const row = document.createElement('div');
+      row.className = 'cat-edit-row';
+      row.innerHTML = `
+        <input type="color" id="cat-cor-${i}" value="${cat.cor}" oninput="atualizarAmostra(${i})">
+        <input type="text"  id="cat-nome-${i}" value="${cat.nome}" placeholder="Nome da categoria">
+        <div class="cat-amostra" id="cat-amostra-${i}"
+             style="background:${cat.cor};color:white">
+          ${cat.nome}
+        </div>
+      `;
+      grid.appendChild(row);
+    });
+
+    document.getElementById('modal-cats').classList.add('ativo');
+  }
+
+  function atualizarAmostra(i) {
+    const cor  = document.getElementById(`cat-cor-${i}`).value;
+    const nome = document.getElementById(`cat-nome-${i}`).value;
+    const el   = document.getElementById(`cat-amostra-${i}`);
+    el.style.background = cor;
+    el.textContent      = nome || `Categoria ${i+1}`;
+  }
+
+  function salvarCats() {
+    categorias = categorias.map((_, i) => ({
+      nome: (document.getElementById(`cat-nome-${i}`).value || `Categoria ${i+1}`).trim(),
+      cor:   document.getElementById(`cat-cor-${i}`).value,
+    }));
+    fecharModal('modal-cats');
+  }
+
+  function resetarCats() {
+    categorias = JSON.parse(JSON.stringify(CATS_PADRAO));
+    abrirModalCats();
+  }
+
+  // ── MODAL: PROMPT IA ───────────────────────────────────────────────────────
+
+  function abrirModalPrompt() {
+    const linhas = categorias.map(c =>
+      `    <q cat="${c.nome}" correta="X" a="Opção A" b="Opção B" c="Opção C" d="Opção D">Pergunta?</q>`
+    ).join('\n');
+
+    const nomesCats = categorias.map(c => `"${c.nome}"`).join(', ');
+
+    document.getElementById('texto-prompt').textContent =
+`Gere [QTD] cartas para o jogo Master sobre o tema: [TEMA].
+
+Cada carta tem ${categorias.length} perguntas, uma por categoria, cada uma com 4 alternativas (a, b, c, d). Use apenas fatos verídicos.
+
+REGRAS OBRIGATÓRIAS:
+1. Pergunta: máximo 15 palavras, termina com "?", sempre começa com palavra interrogativa (Quem, Qual, Quando, Onde, Como, Em que ano, De que país, Qual é o nome, etc.)
+2. Nunca comece a pergunta com um verbo — use sempre uma palavra interrogativa para dar fluidez
+3. Alternativas: máximo 5 palavras cada, diretas e objetivas
+4. Apenas uma alternativa correta por pergunta
+5. As incorretas devem ser plausíveis, não obviamente erradas
+6. Dificuldade moderada — nem óbvio demais, nem obscuro demais
+7. Varie a posição da resposta correta (não coloque sempre na mesma letra)
+
+Categorias (use exatamente esses nomes no atributo cat=""):
+${nomesCats}
+
+Formato obrigatório (retorne SOMENTE o XML, sem comentários ou explicações):
+
+<cartas>
+  <carta>
+${linhas}
+  </carta>
+</cartas>`;
+
+    document.getElementById('modal-prompt').classList.add('ativo');
+  }
+
+  function copiarPrompt() {
+    const texto = document.getElementById('texto-prompt').textContent;
+    navigator.clipboard.writeText(texto).then(() => {
+      const btn = document.querySelector('#modal-prompt .btn-copiar');
+      const orig = btn.textContent;
+      btn.textContent = '✅ Copiado!';
+      setTimeout(() => btn.textContent = orig, 2000);
+    });
+  }
+
+  // ── UTILS ──────────────────────────────────────────────────────────────────
+
+  function importarXML(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('xml-input').value = e.target.result;
+      gerarCartas();
+      event.target.value = ''; // permite reimportar o mesmo arquivo
+    };
+    reader.readAsText(file, 'UTF-8');
+  }
+
+  function imprimirPDF() {
+    document.fonts.ready.then(() => window.print());
+  }
+
+  function fecharModal(id)             { document.getElementById(id).classList.remove('ativo'); }
+  function fecharModalClick(e, id)     { if (e.target === document.getElementById(id)) fecharModal(id); }
+</script>
+<script src="../../assets/js/backbar.js"></script>
+</body>
+</html>

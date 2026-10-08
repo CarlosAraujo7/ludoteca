@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 100 CARTAS MASTER — conhecimentos gerais -->
+<cartas>
+
+  <carta><!-- 1 -->
+    <q cat="Artes" correta="c" a="Salvador Dalí" b="Joan Miró" c="Pablo Picasso" d="Francisco Goya">Quem pintou Guernica, retratando os horrores da Guerra Civil Espanhola?</q>
+    <q cat="Geografia" correta="b" a="Munique" b="Berlim" c="Frankfurt" d="Hamburgo">Qual é a capital da Alemanha?</q>
+    <q cat="Esportes" correta="a" a="Ronaldo" b="Rivaldo" c="Ronaldinho" d="Roberto Carlos">Quem foi artilheiro da Copa do Mundo de 2002?</q>
+    <q cat="Entretenimento" correta="d" a="Narcos" b="Ozark" c="Better Call Saul" d="Breaking Bad">Qual série mostra um professor de química que se torna traficante?</q>
+    <q cat="História" correta="b" a="Viena" b="Sarajevo" c="Berlim" d="Praga">Em que cidade foi assassinado o arquiduque Francisco Fernando em 1914?</q>
+    <q cat="Ciências" correta="c" a="Or" b="Go" c="Au" d="Ag">Qual é o símbolo químico do ouro?</q>
+  </carta>
+
+  <carta><!-- 2 -->
+    <q cat="Artes" correta="a" a="Tropicália" b="Bossa Nova" c="Axé Music" d="Baião">Qual movimento cultural brasileiro dos anos 1960 misturou rock com MPB?</q>
+    <q cat="Geografia" correta="b" a="Lago Superior" b="Lago Baikal" c="Lago Vitória" d="Lago Huron">Qual é o maior lago em volume de água doce do mundo?</q>
+    <q cat="Esportes" correta="c" a="Barcelona" b="Bayern München" c="Real Madrid" d="Liverpool">Qual clube europeu tem mais títulos da Liga dos Campeões?</q>
+    <q cat="Entretenimento" correta="a" a="A Lista de Schindler" b="O Pianista" c="A Vida é Bela" d="O Leitor">Qual filme de Spielberg conta o resgate de judeus por Oskar Schindler?</q>
+    <q cat="História" correta="d" a="Lei do Ventre Livre" b="Lei Eusébio de Queirós" c="Lei dos Sexagenários" d="Lei Áurea">Qual lei assinada pela Princesa Isabel aboliu a escravidão no Brasil?</q>
+    <q cat="Ciências" correta="b" a="Condensação" b="Evaporação" c="Solidificação" d="Fusão">Qual processo transforma a água do estado líquido para gasoso?</q>
+  </carta>
+
+  <carta><!-- 3 -->
+    <q cat="Artes" correta="c" a="Charlotte Brontë" b="Virginia Woolf" c="Jane Austen" d="Emily Brontë">Qual escritora criou Elizabeth Bennet em Orgulho e Preconceito?</q>
+    <q cat="Geografia" correta="b" a="Espanha" b="Itália" c="Grécia" d="Portugal">Qual país europeu tem formato semelhante a uma bota?</q>
+    <q cat="Esportes" correta="a" a="Usain Bolt" b="Asafa Powell" c="Carl Lewis" d="Yohan Blake">Qual atleta jamaicano detém os recordes mundiais dos 100m e 200m rasos?</q>
+    <q cat="Entretenimento" correta="d" a="Thor" b="Homem de Ferro" c="Hulk" d="Capitão América">Qual personagem da Marvel usa um escudo circular e representa os EUA?</q>
+    <q cat="História" correta="b" a="Maria I" b="Rainha Vitória" c="Elizabeth I" d="Ana I">Qual rainha britânica governou por 64 anos no século XIX?</q>
+    <q cat="Ciências" correta="c" a="Netuno" b="Júpiter" c="Saturno" d="Urano">Qual planeta tem os anéis mais visíveis do sistema solar?</q>
+  </carta>
+
+  <carta><!-- 4 -->
+    <q cat="Artes" correta="a" a="Oscar Niemeyer" b="Rino Levi" c="Paulo Mendes da Rocha" d="Affonso Reidy">Qual arquiteto brasileiro projetou o Congresso Nacional e o Palácio do Planalto?</q>
+    <q cat="Geografia" correta="c" a="Alagoas" b="Sergipe" c="Distrito Federal" d="Espírito Santo">Qual é a menor unidade federativa do Brasil em área?</q>
+    <q cat="Esportes" correta="b" a="Sarah Menezes" b="Rafaela Silva" c="Mayra Aguiar" d="Ketleyn Quadros">Qual judoca conquistou o primeiro ouro do Brasil nos Jogos do Rio 2016?</q>
+    <q cat="Entretenimento" correta="d" a="Cyndi Lauper" b="Whitney Houston" c="Mariah Carey" d="Madonna">Qual cantora ficou famosa por Material Girl e Like a Virgin nos anos 1980?</q>
+    <q cat="História" correta="a" a="João Sem-Terra" b="Ricardo Coração de Leão" c="Eduardo I" d="Henrique II">Qual rei inglês assinou a Magna Carta em 1215?</q>
+    <q cat="Ciências" correta="c" a="Rubi" b="Quartzo" c="Diamante" d="Esmeralda">Qual é o mineral mais duro encontrado na natureza?</q>
+  </carta>
+
+  <carta><!-- 5 -->
+    <q cat="Artes" correta="b" a="Puccini" b="Verdi" c="Rossini" d="Donizetti">Qual compositor italiano criou as óperas La Traviata e Rigoletto?</q>
+    <q cat="Geografia" correta="c" a="Messina" b="Bósforo" c="Gibraltar" d="Dardanelos">Qual estreito separa a Europa da África entre Espanha e Marrocos?</q>
+    <q cat="Esportes" correta="a" a="Golfe" b="Críquete" c="Baseball" d="Polo">Qual esporte usa os termos birdie, eagle e bogey?</q>
+    <q cat="Entretenimento" correta="d" a="Sean Connery" b="Pierce Brosnan" c="Timothy Dalton" d="Roger Moore">Qual ator britânico interpretou James Bond em mais filmes, totalizando sete?</q>
+    <q cat="História" correta="b" a="Espanha" b="Portugal" c="Holanda" d="França">Qual nação europeia colonizou o Brasil durante mais de 300 anos?</q>
+    <q cat="Ciências" correta="c" a="Fígado" b="Rim" c="Pâncreas" d="Baço">Qual órgão do corpo humano produz insulina?</q>
+  </carta>
+
+  <carta><!-- 6 -->
+    <q cat="Artes" correta="a" a="Tolstói" b="Dostoiévski" c="Turguêniev" d="Gorki">Quem escreveu Guerra e Paz?</q>
+    <q cat="Geografia" correta="d" a="Saara" b="Gobi" c="Ártico" d="Antártida">Qual é o maior deserto frio do mundo?</q>
+    <q cat="Esportes" correta="b" a="Nelson Piquet" b="Ayrton Senna" c="Rubens Barrichello" d="Felipe Massa">Qual piloto brasileiro é considerado o maior da história da Fórmula 1?</q>
+    <q cat="Entretenimento" correta="c" a="WALL-E" b="Up: Altas Aventuras" c="Ratatouille" d="Valente">Qual animação da Pixar conta a história de um rato que sonha ser chef de cozinha?</q>
+    <q cat="História" correta="a" a="Constantino" b="Nero" c="Calígula" d="Júlio César">Qual imperador romano tornou o cristianismo religião oficial do Império?</q>
+    <q cat="Ciências" correta="d" a="Fígado" b="Pulmão" c="Intestino" d="Pele">Qual é o maior órgão do corpo humano?</q>
+  </carta>
+
+  <carta><!-- 7 -->
+    <q cat="Artes" correta="b" a="Mestre Valentim" b="Aleijadinho" c="Victor Meirelles" d="José Maurício">Qual escultor barroco brasileiro é famoso pelos profetas em pedra-sabão em Congonhas?</q>
+    <q cat="Geografia" correta="a" a="Belo Horizonte" b="Ouro Preto" c="Juiz de Fora" d="Uberlândia">Qual é a capital do estado de Minas Gerais?</q>
+    <q cat="Esportes" correta="d" a="São Paulo" b="Santos" c="Palmeiras" d="Flamengo">Qual time carioca ganhou mais títulos do Campeonato Brasileiro?</q>
+    <q cat="Entretenimento" correta="c" a="Kevin Spacey" b="Denzel Washington" c="Tom Hanks" d="Morgan Freeman">Qual ator ganhou o Oscar por Philadelphia em 1994?</q>
+    <q cat="História" correta="a" a="Constantino" b="Teodósio" c="Diocleciano" d="Adriano">Qual imperador romano se converteu ao cristianismo após a Batalha de Ponte Mílvia?</q>
+    <q cat="Ciências" correta="d" a="Fibra" b="Proteína" c="Gordura" d="Carboidrato">Qual macronutriente é a principal fonte de energia rápida para o corpo?</q>
+  </carta>
+
+  <carta><!-- 8 -->
+    <q cat="Artes" correta="b" a="Mario Vargas Llosa" b="Gabriel García Márquez" c="Jorge Amado" d="Carlos Fuentes">Qual escritor colombiano criou o realismo mágico e ganhou o Nobel de Literatura?</q>
+    <q cat="Geografia" correta="a" a="Mandarim" b="Inglês" c="Espanhol" d="Hindi">Qual é o idioma com mais falantes nativos no mundo?</q>
+    <q cat="Esportes" correta="c" a="Brasil" b="Alemanha" c="EUA" d="Japão">Qual seleção ganhou mais títulos da Copa do Mundo feminina?</q>
+    <q cat="Entretenimento" correta="b" a="O Silmarillion" b="O Hobbit" c="Unfinished Tales" d="O Senhor dos Anéis">Qual livro de Tolkien conta a aventura de Bilbo Bolseiro antes de O Senhor dos Anéis?</q>
+    <q cat="História" correta="d" a="1500" b="1532" c="1548" d="1554">Em que ano os jesuítas fundaram a cidade de São Paulo?</q>
+    <q cat="Ciências" correta="c" a="23" b="44" c="46" d="48">Quantos cromossomos tem uma célula humana normal?</q>
+  </carta>
+
+  <carta><!-- 9 -->
+    <q cat="Artes" correta="b" a="Renoir" b="Degas" c="Monet" d="Manet">Qual pintor impressionista francês ficou famoso pelas pinturas de bailarinas?</q>
+    <q cat="Geografia" correta="a" a="Indonésia" b="Filipinas" c="Japão" d="Maldivas">Qual é o maior arquipélago do mundo em número de ilhas?</q>
+    <q cat="Esportes" correta="d" a="Alemanha" b="França" c="Itália" d="Espanha">Qual seleção europeia venceu as Eurocopas de 2008, 2012 e a Copa do Mundo de 2010?</q>
+    <q cat="Entretenimento" correta="c" a="O Hobbit" b="Harry Potter" c="O Senhor dos Anéis" d="As Crônicas de Nárnia">Qual trilogia de Peter Jackson adaptou a obra de Tolkien para o cinema?</q>
+    <q cat="História" correta="a" a="Mahatma Gandhi" b="Jawaharlal Nehru" c="Subhas Chandra Bose" d="Sardar Patel">Qual líder indiano pregou a resistência pacífica contra o colonialismo inglês?</q>
+    <q cat="Ciências" correta="b" a="Joule" b="Newton" c="Pascal" d="Watt">Qual é a unidade de medida da força no Sistema Internacional?</q>
+  </carta>
+
+  <carta><!-- 10 -->
+    <q cat="Artes" correta="b" a="João Gilberto" b="Tom Jobim" c="Stan Getz" d="Roberto Menescal">Qual compositor criou Garota de Ipanema em parceria com Vinicius de Moraes?</q>
+    <q cat="Geografia" correta="a" a="Amazonas" b="Mississippi" c="Paraná" d="Orinoco">Qual é o rio mais extenso das Américas?</q>
+    <q cat="Esportes" correta="d" a="Copa Sul-Americana" b="Copa do Brasil" c="Recopa Sudamericana" d="Copa Libertadores">Qual é o maior torneio de futebol de clubes da América do Sul?</q>
+    <q cat="Entretenimento" correta="c" a="Bellatrix Lestrange" b="Draco Malfoy" c="Voldemort" d="Lucius Malfoy">Qual é o nome do vilão principal da saga Harry Potter?</q>
+    <q cat="História" correta="b" a="1822" b="1889" c="1888" d="1891">Em que ano foi proclamada a República no Brasil?</q>
+    <q cat="Ciências" correta="d" a="Leucócito" b="Plaqueta" c="Linfócito" d="Hemácia">Qual célula sanguínea é responsável por transportar oxigênio pelo corpo?</q>
+  </carta>
+
+  <carta><!-- 11 -->
+    <q cat="Artes" correta="a" a="Clarice Lispector" b="Rachel de Queiroz" c="Lygia Fagundes Telles" d="Cora Coralina">Qual escritora brasileira criou A Hora da Estrela e A Paixão Segundo G.H.?</q>
+    <q cat="Geografia" correta="b" a="México" b="EUA" c="Peru" d="Argentina">Em qual país fica o Grand Canyon, famoso desfiladeiro esculpido pelo rio Colorado?</q>
+    <q cat="Esportes" correta="d" a="Botafogo" b="Fluminense" c="Vasco" d="Flamengo">Qual clube carioca venceu mais títulos do Campeonato Brasileiro?</q>
+    <q cat="Entretenimento" correta="b" a="David Bowie" b="Freddie Mercury" c="Robert Plant" d="Roger Daltrey">Qual cantor do Queen ficou famoso por sua voz excepcional e pelo show do Live Aid?</q>
+    <q cat="História" correta="c" a="Rio de Janeiro" b="Recife" c="Salvador" d="São Paulo">Qual foi a primeira capital do Brasil?</q>
+    <q cat="Ciências" correta="a" a="Gasoso" b="Líquido" c="Sólido" d="Plasma">Em qual estado físico as moléculas têm maior energia cinética?</q>
+  </carta>
+
+  <carta><!-- 12 -->
+    <q cat="Artes" correta="b" a="Impressionismo" b="Surrealismo" c="Cubismo" d="Expressionismo">Qual estilo artístico de Salvador Dalí mistura sonho com realidade?</q>
+    <q cat="Geografia" correta="a" a="Grande Barreira de Coral" b="Atol das Maldivas" c="Recife de Andros" d="Barreira de Belize">Qual é o nome do maior recife de coral do mundo, na Austrália?</q>
+    <q cat="Esportes" correta="d" a="Atenas 2004" b="Pequim 2008" c="Londres 2012" d="Rio 2016">Em qual Olimpíada o Brasil conquistou o primeiro ouro no futebol masculino?</q>
+    <q cat="Entretenimento" correta="c" a="Tom Cruise" b="Kevin Costner" c="Tom Hanks" d="Harrison Ford">Qual ator americano ficou famoso por Forrest Gump e Cast Away?</q>
+    <q cat="História" correta="d" a="Século XV" b="Século XVI" c="Século XVII" d="Século XVIII">Em qual século começou a Revolução Industrial na Inglaterra?</q>
+    <q cat="Ciências" correta="b" a="Lei da Inércia" b="Segunda Lei de Newton" c="Lei da Ação e Reação" d="Lei de Hooke">Qual lei relaciona força, massa e aceleração?</q>
+  </carta>
+
+  <carta><!-- 13 -->
+    <q cat="Artes" correta="c" a="Tosca" b="La Bohème" c="Madama Butterfly" d="Turandot">Qual ópera de Puccini conta a história de uma gueixa japonesa?</q>
+    <q cat="Geografia" correta="a" a="Urais" b="Cárpatos" c="Alpes" d="Cáucaso">Qual cadeia montanhosa separa geograficamente a Europa da Ásia?</q>
+    <q cat="Esportes" correta="a" a="EUA" b="União Soviética" c="Iugoslávia" d="Argentina">Qual seleção masculina ganhou mais títulos olímpicos no basquete?</q>
+    <q cat="Entretenimento" correta="d" a="Godzilla" b="Cloverfield" c="Mighty Joe" d="King Kong">Qual é o nome do gorila gigante que destruiu Nova York nos clássicos do cinema?</q>
+    <q cat="História" correta="c" a="Neville Chamberlain" b="Clement Attlee" c="Winston Churchill" d="Anthony Eden">Qual foi o primeiro-ministro britânico durante a maior parte da Segunda Guerra?</q>
+    <q cat="Ciências" correta="b" a="Saturno" b="Júpiter" c="Netuno" d="Urano">Qual planeta tem a Grande Mancha Vermelha, uma tempestade gigante?</q>
+  </carta>
+
+  <carta><!-- 14 -->
+    <q cat="Artes" correta="a" a="Les Misérables" b="Moulin Rouge" c="Miss Saigon" d="Chicago">Qual famoso musical é baseado no romance de Victor Hugo sobre Paris no século XIX?</q>
+    <q cat="Geografia" correta="c" a="Canal de Suez" b="Canal de Kiel" c="Canal do Panamá" d="Canal da Mancha">Qual canal artificial conecta o Oceano Atlântico ao Pacífico?</q>
+    <q cat="Esportes" correta="d" a="Indy 500" b="Gran Prix de Monaco" c="Daytona 500" d="24 Horas de Le Mans">Qual corrida de resistência ocorre anualmente em Le Mans, França?</q>
+    <q cat="Entretenimento" correta="c" a="Survivors" b="The Walking Dead" c="Lost" d="Manifest">Qual série mostra sobreviventes de um acidente de avião em uma ilha misteriosa?</q>
+    <q cat="História" correta="a" a="Alemanha" b="União Soviética" c="Itália" d="Hungria">Qual nação invadiu a Polônia em setembro de 1939, iniciando a Segunda Guerra?</q>
+    <q cat="Ciências" correta="d" a="Eletromagnetismo" b="Força Nuclear" c="Força Centrífuga" d="Gravidade">Qual força mantém os planetas em órbita ao redor do Sol?</q>
+  </carta>
+
+  <carta><!-- 15 -->
+    <q cat="Artes" correta="b" a="C.S. Lewis" b="J.R.R. Tolkien" c="George R.R. Martin" d="Terry Pratchett">Qual escritor inglês criou os personagens Bilbo Bolseiro e Frodo Bolseiro?</q>
+    <q cat="Geografia" correta="c" a="Cataratas do Niágara" b="Cataratas do Iguaçu" c="Salto Angel" d="Cataratas Victoria">Qual é a cascata mais alta do mundo, localizada na Venezuela?</q>
+    <q cat="Esportes" correta="a" a="Lionel Messi" b="Diego Maradona" c="Gabriel Batistuta" d="Sergio Agüero">Qual jogador argentino venceu oito Bolas de Ouro?</q>
+    <q cat="Entretenimento" correta="b" a="Dwight Schrute" b="Michael Scott" c="Jim Halpert" d="Andy Bernard">Qual é o nome do gerente regional na série cômica The Office (versão americana)?</q>
+    <q cat="História" correta="c" a="Execução de Luís XVI" b="Declaração dos Direitos do Homem" c="Queda da Bastilha" d="Fuga para Varennes">Qual evento de 1789 marcou simbolicamente o início da Revolução Francesa?</q>
+    <q cat="Ciências" correta="d" a="El Niño" b="La Niña" c="Inversão Térmica" d="Efeito Estufa">Qual é o nome do fenômeno que causa o aquecimento global por retenção de calor?</q>
+  </carta>
+
+  <carta><!-- 16 -->
+    <q cat="Artes" correta="b" a="Roy Lichtenstein" b="Andy Warhol" c="Jasper Johns" d="Robert Rauschenberg">Qual artista americano criou a série de latas de sopa Campbell's e é ícone da arte pop?</q>
+    <q cat="Geografia" correta="c" a="Sudão" b="Líbia" c="Argélia" d="República Democrática do Congo">Qual é o maior país da África em extensão territorial?</q>
+    <q cat="Esportes" correta="a" a="Paris" b="Londres" c="Nova York" d="Melbourne">Em que cidade é disputado o torneio de tênis Roland Garros?</q>
+    <q cat="Entretenimento" correta="d" a="Power Rangers" b="Voltron" c="G.I. Joe" d="Transformers">Qual série de filmes mostra robôs alienígenas que se disfarçam de veículos?</q>
+    <q cat="História" correta="c" a="1919" b="1939" c="1945" d="1948">Em que ano foi fundada a Organização das Nações Unidas (ONU)?</q>
+    <q cat="Ciências" correta="b" a="Fusão Nuclear" b="Fissão Nuclear" c="Reação em Cadeia" d="Decaimento Alfa">Qual processo libera energia ao dividir um núcleo atômico pesado?</q>
+  </carta>
+
+  <carta><!-- 17 -->
+    <q cat="Artes" correta="a" a="Henrik Ibsen" b="August Strindberg" c="Bertolt Brecht" d="Anton Tchékhov">Qual dramaturgo norueguês escreveu Casa de Bonecas e Hedda Gabler?</q>
+    <q cat="Geografia" correta="d" a="Santa Catarina" b="Mato Grosso do Sul" c="São Paulo" d="Paraná">Em qual estado brasileiro ficam as Cataratas do Iguaçu do lado brasileiro?</q>
+    <q cat="Esportes" correta="a" a="Muhammad Ali" b="Joe Frazier" c="George Foreman" d="Sugar Ray Leonard">Qual lutador de boxe ficou famoso pelo slogan "flutua como borboleta, pica como abelha"?</q>
+    <q cat="Entretenimento" correta="d" a="Eddie Murphy" b="Martin Lawrence" c="Chris Tucker" d="Will Smith">Qual ator ficou famoso na série O Príncipe de Bel-Air antes de estrelar grandes filmes?</q>
+    <q cat="História" correta="b" a="Romano" b="Mongol" c="Britânico" d="Persa">Qual foi o maior império em extensão territorial da história?</q>
+    <q cat="Ciências" correta="c" a="Melanina" b="Caroteno" c="Clorofila" d="Xantofila">Qual é o pigmento verde presente nas plantas que realiza a fotossíntese?</q>
+  </carta>
+
+  <carta><!-- 18 -->
+    <q cat="Artes" correta="d" a="Manuel Bandeira" b="João Cabral de Melo Neto" c="Vinícius de Moraes" d="Carlos Drummond de Andrade">Qual poeta modernista brasileiro escreveu No Meio do Caminho e Sentimento do Mundo?</q>
+    <q cat="Geografia" correta="b" a="Loire" b="Sena" c="Ródano" d="Marne">Qual é o principal rio que atravessa Paris?</q>
+    <q cat="Esportes" correta="c" a="Brasil" b="Alemanha" c="Inglaterra" d="Itália">Qual seleção venceu a Copa do Mundo de futebol de 1966 em casa?</q>
+    <q cat="Entretenimento" correta="a" a="Elvis Presley" b="Chuck Berry" c="Little Richard" d="Jerry Lee Lewis">Qual cantor americano ficou famoso por Jailhouse Rock e Hound Dog?</q>
+    <q cat="História" correta="b" a="1775" b="1776" c="1787" d="1783">Em que ano os EUA votaram sua Declaração de Independência?</q>
+    <q cat="Ciências" correta="c" a="Vento" b="Rotação da Terra" c="Gravidade Lunar" d="Pressão Atmosférica">Qual força causa as marés nos oceanos da Terra?</q>
+  </carta>
+
+  <carta><!-- 19 -->
+    <q cat="Artes" correta="a" a="José Saramago" b="Fernando Pessoa" c="Eça de Queiroz" d="Luís de Camões">Qual escritor português venceu o Nobel de Literatura em 1998?</q>
+    <q cat="Geografia" correta="d" a="Mar Mediterrâneo" b="Mar Negro" c="Mar Adriático" d="Mar Egeu">Qual mar fica entre a Grécia e a Turquia?</q>
+    <q cat="Esportes" correta="b" a="França" b="Grécia" c="EUA" d="Suécia">Em qual país foram realizados os primeiros Jogos Olímpicos modernos, em 1896?</q>
+    <q cat="Entretenimento" correta="c" a="Silvio Santos" b="Gugu Liberato" c="Fausto Silva" d="Xuxa">Qual apresentador comandou o Domingão por mais de 30 anos na TV Globo?</q>
+    <q cat="História" correta="d" a="Tratado de Viena" b="Tratado de Utrecht" c="Tratado de Paris" d="Tratado de Versalhes">Qual foi o tratado que encerrou formalmente a Primeira Guerra Mundial?</q>
+    <q cat="Ciências" correta="b" a="Celsius" b="Richter" c="Beaufort" d="Mercalli">Qual escala mede a magnitude dos terremotos?</q>
+  </carta>
+
+  <carta><!-- 20 -->
+    <q cat="Artes" correta="a" a="Jimi Hendrix" b="Eric Clapton" c="Jimmy Page" d="Carlos Santana">Qual guitarrista é considerado o maior da história do rock, famoso pelo show de Woodstock?</q>
+    <q cat="Geografia" correta="c" a="Toronto" b="Vancouver" c="Ottawa" d="Montreal">Qual é a capital do Canadá?</q>
+    <q cat="Esportes" correta="d" a="Santos" b="São Paulo" c="Flamengo" d="Corinthians">Qual time brasileiro venceu o Mundial de Clubes da FIFA em 2012?</q>
+    <q cat="Entretenimento" correta="b" a="P.D. James" b="Agatha Christie" c="Ruth Rendell" d="Dorothy Sayers">Qual escritora britânica criou o detetive Hercule Poirot?</q>
+    <q cat="História" correta="a" a="1990" b="1989" c="1991" d="1992">Em que ano a Alemanha foi oficialmente reunificada?</q>
+    <q cat="Ciências" correta="c" a="Glicólise" b="Fotossíntese" c="Respiração Celular" d="Fermentação">Qual processo obtém energia dos alimentos usando oxigênio nas células?</q>
+  </carta>
+
+  <carta><!-- 21 -->
+    <q cat="Artes" correta="c" a="Tempos Modernos" b="Metrópolis" c="O Cantor de Jazz" d="Nosferatu">Qual foi o primeiro filme sonoro da história, de 1927?</q>
+    <q cat="Geografia" correta="b" a="Fossa das Marianas" b="Mar Morto" c="Vale do Rift" d="Lago Asal">Qual é o ponto mais baixo da superfície terrestre, no Oriente Médio?</q>
+    <q cat="Esportes" correta="a" a="Nova Zelândia" b="África do Sul" c="Austrália" d="Inglaterra">Qual seleção de rugby ganhou mais títulos da Copa do Mundo?</q>
+    <q cat="Entretenimento" correta="d" a="Disney World" b="Epcot" c="Magic Kingdom" d="Disneyland">Qual foi o primeiro parque da Disney, inaugurado em 1955 na Califórnia?</q>
+    <q cat="História" correta="a" a="Constantino" b="Teodósio" c="Diocleciano" d="Adriano">Qual imperador romano se converteu ao cristianismo após visão antes de batalha?</q>
+    <q cat="Ciências" correta="d" a="Próton" b="Nêutron" c="Quark" d="Elétron">Qual é a partícula fundamental de carga negativa que orbita o núcleo atômico?</q>
+  </carta>
+
+  <carta><!-- 22 -->
+    <q cat="Artes" correta="b" a="Liszt" b="Chopin" c="Schumann" d="Brahms">Qual compositor polonês ficou famoso por suas Mazurkas e Noturnos para piano?</q>
+    <q cat="Geografia" correta="d" a="Madeira" b="Canárias" c="Cabo Verde" d="Açores">Qual arquipélago português fica no meio do Oceano Atlântico?</q>
+    <q cat="Esportes" correta="c" a="Morumbi" b="Mineirão" c="Maracanã" d="Castelão">Qual é o maior estádio de futebol do Brasil?</q>
+    <q cat="Entretenimento" correta="a" a="Parasita" b="1917" c="Coringa" d="Era Uma Vez em... Hollywood">Qual filme venceu o Oscar de Melhor Filme em 2020?</q>
+    <q cat="História" correta="d" a="EUA" b="Alemanha" c="França" d="URSS">Qual foi o primeiro país a enviar um satélite ao espaço, em 1957?</q>
+    <q cat="Ciências" correta="b" a="Absorção" b="Dispersão da luz pelo ar" c="Reflexo do oceano" d="Ausência de outras cores">Por que o céu é azul durante o dia?</q>
+  </carta>
+
+  <carta><!-- 23 -->
+    <q cat="Artes" correta="b" a="Chicago" b="Cats" c="Grease" d="Hair">Qual musical de Broadway é baseado nos poemas de T.S. Eliot sobre felinos?</q>
+    <q cat="Geografia" correta="c" a="Nova Zelândia" b="Indonésia" c="Austrália" d="Papua-Nova Guiné">Qual é o único país que ocupa um continente inteiro sozinho?</q>
+    <q cat="Esportes" correta="a" a="Jules Rimet" b="João Havelange" c="Sepp Blatter" d="Stanley Rous">Como se chamava o troféu original da Copa do Mundo de futebol?</q>
+    <q cat="Entretenimento" correta="c" a="Dark" b="Alice in Borderland" c="Round 6" d="3%">Qual série coreana da Netflix mostrou uma competição de jogos infantis mortais?</q>
+    <q cat="História" correta="a" a="Capitanias Hereditárias" b="Sesmarias" c="Engenhos" d="Câmaras Municipais">Qual foi o sistema colonial português de divisão do território brasileiro?</q>
+    <q cat="Ciências" correta="c" a="Destilação" b="Oxidação" c="Fermentação" d="Hidrólise">Qual processo converte açúcar em álcool por ação de microrganismos?</q>
+  </carta>
+
+  <carta><!-- 24 -->
+    <q cat="Artes" correta="b" a="Al Green" b="Marvin Gaye" c="Otis Redding" d="Sam Cooke">Qual cantor americano gravou What's Going On e Sexual Healing?</q>
+    <q cat="Geografia" correta="a" a="Aconcágua" b="Monte Roraima" c="Huascarán" d="Ojos del Salado">Qual é o pico mais alto das Américas?</q>
+    <q cat="Esportes" correta="b" a="União Soviética" b="EUA" c="China" d="Alemanha">Qual país ganhou mais medalhas de ouro em toda a história das Olimpíadas?</q>
+    <q cat="Entretenimento" correta="a" a="Naruto" b="Sasuke" c="Kakashi" d="Sakura">Qual é o nome do protagonista ninja do famoso anime sobre a Vila da Folha?</q>
+    <q cat="História" correta="d" a="Renascimento" b="Mercantilismo" c="Colonialismo" d="Era dos Descobrimentos">Qual período histórico marcou as grandes navegações portuguesas e espanholas?</q>
+    <q cat="Ciências" correta="b" a="Botânica" b="Micologia" c="Zoologia" d="Entomologia">Qual ramo da biologia estuda os fungos?</q>
+  </carta>
+
+  <carta><!-- 25 -->
+    <q cat="Artes" correta="c" a="Led Zeppelin" b="Genesis" c="Pink Floyd" d="Yes">Qual banda britânica criou o álbum conceitual The Wall em 1979?</q>
+    <q cat="Geografia" correta="b" a="Canárias" b="Galápagos" c="Açores" d="Havaí">Qual arquipélago no Equador foi estudado por Darwin e tem espécies únicas?</q>
+    <q cat="Esportes" correta="d" a="Zico" b="Ronaldo" c="Garrincha" d="Romário">Qual jogador brasileiro afirma ter marcado mil gols em partidas oficiais, como Pelé?</q>
+    <q cat="Entretenimento" correta="b" a="Hans Zimmer" b="John Williams" c="Ennio Morricone" d="Howard Shore">Qual compositor americano criou as trilhas de ET e Schindler's List?</q>
+    <q cat="História" correta="c" a="França" b="Portugal" c="Grã-Bretanha" d="Holanda">Qual país construiu o maior império colonial do século XIX?</q>
+    <q cat="Ciências" correta="a" a="Fóton" b="Elétron" c="Neutrino" d="Quark">Qual partícula sem massa compõe a luz?</q>
+  </carta>
+
+  <carta><!-- 26 -->
+    <q cat="Artes" correta="b" a="Goya" b="Velázquez" c="El Greco" d="Murillo">Qual pintor espanhol do século XVII criou Las Meninas e retratou reis Habsburgo?</q>
+    <q cat="Geografia" correta="a" a="Xangai" b="Pequim" c="Guangzhou" d="Shenzhen">Qual é a cidade mais populosa da China?</q>
+    <q cat="Esportes" correta="d" a="Carlos" b="Dida" c="Marcos" d="Taffarel">Qual goleiro brasileiro esteve nas Copas de 1994 e 1998, sendo titularem ambas?</q>
+    <q cat="Entretenimento" correta="c" a="James Bond" b="Mission Impossible" c="Jason Bourne" d="Jack Ryan">Qual saga de espionagem tem Matt Damon como protagonista?</q>
+    <q cat="História" correta="d" a="Three Mile Island" b="Fukushima" c="Windscale" d="Chernobyl">Qual acidente nuclear ocorreu em 1986 na Ucrânia soviética?</q>
+    <q cat="Ciências" correta="c" a="Ácido Sulfúrico" b="Ácido Acético" c="Ácido Clorídrico" d="Ácido Úrico">Qual ácido presente no estômago ajuda na digestão dos alimentos?</q>
+  </carta>
+
+  <carta><!-- 27 -->
+    <q cat="Artes" correta="b" a="Caetano Veloso" b="Chico Buarque" c="Milton Nascimento" d="Gilberto Gil">Qual cantor-compositor brasileiro venceu o Prêmio Camões em 2019?</q>
+    <q cat="Geografia" correta="c" a="Roterdã" b="Singapura" c="Xangai" d="Los Angeles">Qual é o maior porto comercial do mundo em volume de carga?</q>
+    <q cat="Esportes" correta="b" a="Glee" b="Esqui Alpino" c="Snowboard" d="Biatlo">Qual esporte de inverno desce pistas montanhosas em alta velocidade com esquis?</q>
+    <q cat="Entretenimento" correta="b" a="Heath Ledger" b="Joaquin Phoenix" c="Jack Nicholson" d="Jared Leto">Qual ator interpretou o Coringa no filme de Todd Phillips em 2019?</q>
+    <q cat="História" correta="a" a="Pax Romana" b="República Romana" c="Alto Império" d="Principado">Qual período de estabilidade romana durou do século I ao III d.C.?</q>
+    <q cat="Ciências" correta="d" a="Termômetro" b="Higrômetro" c="Anemômetro" d="Barômetro">Qual instrumento mede a pressão atmosférica?</q>
+  </carta>
+
+  <carta><!-- 28 -->
+    <q cat="Artes" correta="a" a="Cartola" b="Nelson Cavaquinho" c="Zeca Pagodinho" d="João Nogueira">Qual sambista carioca é considerado um dos maiores compositores da história do samba?</q>
+    <q cat="Geografia" correta="c" a="Reunião" b="Maurício" c="Maldivas" d="Comores">Qual arquipélago do Oceano Índico é famoso pelas praias paradisíacas e atóis?</q>
+    <q cat="Esportes" correta="b" a="Golfe" b="Tênis" c="Squash" d="Badminton">Em qual esporte se disputa a Copa Davis entre seleções nacionais?</q>
+    <q cat="Entretenimento" correta="a" a="Happy Birthday" b="Yesterday" c="Imagine" d="We Will Rock You">Qual é a música mais reconhecida internacionalmente e cantada em aniversários?</q>
+    <q cat="História" correta="c" a="Renascimento" b="Antiguidade Tardia" c="Idade Média" d="Modernidade">Qual período histórico ocorreu entre a queda do Império Romano e o Renascimento?</q>
+    <q cat="Ciências" correta="b" a="80°C" b="100°C" c="110°C" d="90°C">Qual é a temperatura de ebulição da água ao nível do mar?</q>
+  </carta>
+
+  <carta><!-- 29 -->
+    <q cat="Artes" correta="d" a="Jimmy Cliff" b="Peter Tosh" c="Burning Spear" d="Bob Marley">Qual músico jamaicano foi o maior representante do reggae no mundo?</q>
+    <q cat="Geografia" correta="b" a="Pó" b="Tibre" c="Arno" d="Adige">Qual é o rio que passa por Roma, Itália?</q>
+    <q cat="Esportes" correta="a" a="Decatlo" b="Heptatlo" c="Pentatlo" d="Triatlo">Qual modalidade do atletismo combina 10 provas em dois dias?</q>
+    <q cat="Entretenimento" correta="d" a="Memento" b="Interstellar" c="Batman Begins" d="Inception">Qual filme de Christopher Nolan mostra um ladrão que invade os sonhos das pessoas?</q>
+    <q cat="História" correta="b" a="Humanismo" b="Renascimento" c="Iluminismo" d="Romantismo">Qual movimento cultural do século XV valorizou a cultura greco-romana?</q>
+    <q cat="Ciências" correta="a" a="Cardiologia" b="Neurologia" c="Pneumologia" d="Hepatologia">Qual ramo da medicina estuda e trata doenças do coração?</q>
+  </carta>
+
+  <carta><!-- 30 -->
+    <q cat="Artes" correta="d" a="Royal Albert Hall" b="La Scala" c="Metropolitan Opera" d="Sydney Opera House">Qual é o nome do famoso teatro de ópera localizado em Sydney, Austrália?</q>
+    <q cat="Geografia" correta="b" a="Guatemala" b="Nicarágua" c="Honduras" d="Costa Rica">Qual é o maior país da América Central em extensão territorial?</q>
+    <q cat="Esportes" correta="c" a="Nado Sincronizado" b="Natação" c="Polo Aquático" d="Nado Artístico">Qual esporte aquático é disputado em piscina com dois times tentando marcar gols?</q>
+    <q cat="Entretenimento" correta="b" a="John Travolta" b="Samuel L. Jackson" c="Harvey Keitel" d="Tim Roth">Qual ator ficou famoso por Pulp Fiction e Django Livre?</q>
+    <q cat="História" correta="a" a="Primeira circunavegação do globo" b="Descoberta da América" c="Chegada às Índias" d="Exploração do Pacífico">Qual foi a conquista histórica de Fernão de Magalhães ao completar sua viagem?</q>
+    <q cat="Ciências" correta="d" a="Partenogênese" b="Pupação" c="Crisálida" d="Metamorfose">Qual é o processo pelo qual uma lagarta se transforma em borboleta?</q>
+  </carta>
+
+  <carta><!-- 31 -->
+    <q cat="Artes" correta="c" a="Anita Malfatti" b="Lygia Clark" c="Tarsila do Amaral" d="Tomie Ohtake">Quem pintou Abaporu, ícone do modernismo brasileiro?</q>
+    <q cat="Geografia" correta="b" a="Caracas" b="Bogotá" c="Lima" d="Quito">Qual é a capital da Colômbia?</q>
+    <q cat="Esportes" correta="d" a="Alemanha" b="Itália" c="França" d="Argentina">Qual seleção venceu a Copa do Mundo de futebol de 1986, no México?</q>
+    <q cat="Entretenimento" correta="a" a="Simpsons" b="Futurama" c="Family Guy" d="South Park">Qual desenho animado americano retrata a família de Homer, Marge, Bart e Lisa?</q>
+    <q cat="História" correta="c" a="1945" b="1953" c="1947" d="1949">Em que ano começou oficialmente a Guerra Fria com a Doutrina Truman?</q>
+    <q cat="Ciências" correta="b" a="Fissão" b="Fusão" c="Radiação" d="Fotoelétrico">Qual processo energético alimenta o Sol e as estrelas?</q>
+  </carta>
+
+  <carta><!-- 32 -->
+    <q cat="Artes" correta="a" a="Claude Monet" b="Pierre Renoir" c="Edgar Degas" d="Paul Cézanne">Quem pintou a famosa série de nenúfares (Water Lilies)?</q>
+    <q cat="Geografia" correta="c" a="Colômbia" b="Venezuela" c="Peru" d="Bolívia">Em qual país da América do Sul fica Machu Picchu?</q>
+    <q cat="Esportes" correta="d" a="Anfíbios" b="Decatlo" c="Corrida de barreiras" d="Maratona">Qual prova de atletismo tem exatamente 42,195 km?</q>
+    <q cat="Entretenimento" correta="b" a="Rihanna" b="Beyoncé" c="Alicia Keys" d="Nicki Minaj">Qual cantora ficou famosa pelos álbuns Lemonade e pelo grupo Destiny's Child?</q>
+    <q cat="História" correta="a" a="Gandhi" b="Nehru" c="Mandela" d="Martin Luther King">Qual líder foi assassinado em 1948, pouco depois da independência da Índia?</q>
+    <q cat="Ciências" correta="c" a="Boca" b="Estômago" c="Intestino Delgado" d="Intestino Grosso">Em qual parte do sistema digestivo ocorre a maior absorção de nutrientes?</q>
+  </carta>
+
+  <carta><!-- 33 -->
+    <q cat="Artes" correta="b" a="Gilberto Gil" b="Caetano Veloso" c="Gal Costa" d="Maria Bethânia">Qual artista baiano liderou o movimento Tropicália e foi ministro da Cultura no Brasil?</q>
+    <q cat="Geografia" correta="d" a="Nepal" b="Índia" c="China" d="Tibete">Em qual região fica o Monte Everest do ponto de vista político-histórico?</q>
+    <q cat="Esportes" correta="a" a="Michael Schumacher" b="Ayrton Senna" c="Lewis Hamilton" d="Alain Prost">Qual piloto alemão venceu sete títulos de Fórmula 1?</q>
+    <q cat="Entretenimento" correta="c" a="Seinfeld" b="How I Met Your Mother" c="Friends" d="The Big Bang Theory">Qual série americana mostra seis amigos em Nova York: Ross, Rachel, Chandler, Monica, Joey e Phoebe?</q>
+    <q cat="História" correta="b" a="1773" b="1775" c="1776" d="1783">Em que ano começou a Guerra de Independência dos Estados Unidos?</q>
+    <q cat="Ciências" correta="d" a="Fórmula" b="Equação" c="Axioma" d="Hipótese">Qual é o nome de uma explicação científica provisória que ainda precisa ser testada?</q>
+  </carta>
+
+  <carta><!-- 34 -->
+    <q cat="Artes" correta="a" a="Clarice Lispector" b="Rachel de Queiroz" c="Ana Maria Machado" d="Marina Colasanti">Qual escritora nascida na Ucrânia é considerada uma das maiores da literatura brasileira?</q>
+    <q cat="Geografia" correta="c" a="Amazônia" b="Cerrado" c="Pantanal" d="Caatinga">Qual é o maior pântano tropical do mundo, localizado no centro-oeste do Brasil?</q>
+    <q cat="Esportes" correta="b" a="Felipe Anderson" b="Neymar" c="Philippe Coutinho" d="Gabriel Jesus">Qual jogador brasileiro é o maior artilheiro da história da seleção?</q>
+    <q cat="Entretenimento" correta="d" a="Bruno Mars" b="Justin Timberlake" c="Pharrell Williams" d="Eminem">Qual rapper americano vendeu mais álbuns e é conhecido por Lose Yourself e Slim Shady?</q>
+    <q cat="História" correta="a" a="1453" b="1492" c="1415" d="1499">Em que ano caiu Constantinopla, marcando o fim da Idade Média?</q>
+    <q cat="Ciências" correta="c" a="Geotérmica" b="Eólica" c="Solar" d="Hidrelétrica">Qual fonte de energia usa painéis fotovoltaicos para converter luz em eletricidade?</q>
+  </carta>
+
+  <carta><!-- 35 -->
+    <q cat="Artes" correta="b" a="León Tolstói" b="Fiodor Dostoiévski" c="Máximo Gorki" d="Nikolai Gogol">Quem escreveu Crime e Castigo e Os Irmãos Karamazov?</q>
+    <q cat="Geografia" correta="d" a="2.000 km" b="3.000 km" c="5.000 km" d="6.259 km">Qual é o comprimento aproximado da Grande Muralha da China?</q>
+    <q cat="Esportes" correta="a" a="Gabriel Medina" b="Kelly Slater" c="Filipe Toledo" d="Italo Ferreira">Qual surfista brasileiro foi o primeiro campeão mundial do surfe profissional?</q>
+    <q cat="Entretenimento" correta="c" a="YouTube" b="Amazon Prime" c="Netflix" d="Disney+">Qual plataforma de streaming foi pioneira no modelo de séries originais on demand?</q>
+    <q cat="História" correta="b" a="1490" b="1492" c="1494" d="1498">Em que ano Cristóvão Colombo chegou à América pela primeira vez?</q>
+    <q cat="Ciências" correta="d" a="24.901 km" b="40.075 km" c="12.742 km" d="6.371 km">Qual é o raio médio da Terra em quilômetros?</q>
+  </carta>
+
+  <carta><!-- 36 -->
+    <q cat="Artes" correta="c" a="Mies van der Rohe" b="Walter Gropius" c="Antoni Gaudí" d="Frank Lloyd Wright">Qual arquiteto catalão projetou a Sagrada Família em Barcelona?</q>
+    <q cat="Geografia" correta="a" a="Islândia" b="Indonésia" c="Japão" d="Filipinas">Qual país europeu tem a maior densidade de vulcões ativos em relação à sua área?</q>
+    <q cat="Esportes" correta="b" a="Ian Thorpe" b="Michael Phelps" c="Ryan Lochte" d="Mark Spitz">Qual nadador americano conquistou 23 medalhas de ouro olímpicas?</q>
+    <q cat="Entretenimento" correta="d" a="Zara Larsson" b="Dua Lipa" c="Ava Max" d="Adele">Qual cantora britânica ficou conhecida pelos álbuns 21 e 25 e pela voz poderosa?</q>
+    <q cat="História" correta="a" a="Seis milhões" b="Dois milhões" c="Dez milhões" d="Um milhão">Quantos judeus foram assassinados durante o Holocausto nazista?</q>
+    <q cat="Ciências" correta="c" a="Mitose" b="Clonagem" c="Meiose" d="Fissão Binária">Qual divisão celular produz células com metade do número de cromossomos?</q>
+  </carta>
+
+  <carta><!-- 37 -->
+    <q cat="Artes" correta="b" a="Lulu Santos" b="Djavan" c="Ivan Lins" d="Milton Nascimento">Qual cantor e compositor brasileiro criou Flor de Lis e Oceano?</q>
+    <q cat="Geografia" correta="d" a="Goiânia" b="Campo Grande" c="Cuiabá" d="Brasília">Qual é a capital federal do Brasil, inaugurada em 1960?</q>
+    <q cat="Esportes" correta="a" a="Fórmula E" b="Fórmula 2" c="GP3" d="DTM">Qual categoria de automobilismo usa carros 100% elétricos?</q>
+    <q cat="Entretenimento" correta="c" a="Katy Perry" b="Lady Gaga" c="Adele" d="Sam Smith">Qual cantora britânica ganhou o Oscar com a música Skyfall, do filme 007?</q>
+    <q cat="História" correta="b" a="Renascimento" b="Iluminismo" c="Humanismo" d="Romantismo">Qual movimento filosófico do século XVIII defendia a razão e os direitos naturais?</q>
+    <q cat="Ciências" correta="d" a="80/60" b="110/90" c="100/70" d="120/80">Qual é a pressão arterial considerada normal em adultos (sistólica/diastólica)?</q>
+  </carta>
+
+  <carta><!-- 38 -->
+    <q cat="Artes" correta="a" a="Frida Kahlo" b="Georgia O'Keeffe" c="Remedios Varo" d="Leonora Carrington">Qual pintora mexicana ficou famosa por autorretratos que expressam dor e identidade?</q>
+    <q cat="Geografia" correta="c" a="Sahara" b="Mojave" c="Atacama" d="Namibe">Qual é o deserto mais seco do mundo, localizado no Chile?</q>
+    <q cat="Esportes" correta="b" a="São Paulo" b="Flamengo" c="Santos" d="Grêmio">Qual time brasileiro venceu a Copa Libertadores em 2019 e 2022?</q>
+    <q cat="Entretenimento" correta="d" a="Titanic" b="Pocahontas" c="Mulan" d="Avatar">Qual filme de James Cameron tornou-se o maior sucesso de bilheteria da história ao ser relançado?</q>
+    <q cat="História" correta="a" a="1776" b="1775" c="1783" d="1787">Em que ano os EUA declararam independência da Grã-Bretanha?</q>
+    <q cat="Ciências" correta="c" a="Gravitacional" b="Elétrica" c="Eletromagnética" d="Nuclear Fraca">Qual é a força responsável pela luz e pelo magnetismo, unificadas por Maxwell?</q>
+  </carta>
+
+  <carta><!-- 39 -->
+    <q cat="Artes" correta="b" a="Caravaggio" b="Johannes Vermeer" c="Frans Hals" d="Pieter de Hooch">Qual pintor holandês criou A Moça com Brinco de Pérola?</q>
+    <q cat="Geografia" correta="d" a="Venezuela" b="Colômbia" c="México" d="Panamá">Qual país da América Central tem o canal que liga os dois maiores oceanos?</q>
+    <q cat="Esportes" correta="a" a="Arthur Zanetti" b="Diego Hypolito" c="Daiane dos Santos" d="Jade Barbosa">Qual ginasta brasileiro ganhou o ouro no argolas nos Jogos de Londres 2012?</q>
+    <q cat="Entretenimento" correta="c" a="Divertida Mente 2" b="Valente" c="Divertida Mente" d="Soul">Qual filme da Pixar mostra as emoções personificadas na cabeça de uma menina?</q>
+    <q cat="História" correta="b" a="1096" b="1099" c="1187" d="1291">Em que ano os cruzados conquistaram Jerusalém na Primeira Cruzada?</q>
+    <q cat="Ciências" correta="d" a="A" b="B" c="AB" d="O">Qual é o tipo sanguíneo universal doador?</q>
+  </carta>
+
+  <carta><!-- 40 -->
+    <q cat="Artes" correta="c" a="Paganini" b="Vivaldi" c="Bach" d="Handel">Qual compositor barroco alemão criou as Variações Goldberg e as Paixões Segundo São Mateus?</q>
+    <q cat="Geografia" correta="a" a="Congo" b="Nilo" c="Zambeze" d="Níger">Qual é o segundo rio mais longo da África, que deságua no Atlântico?</q>
+    <q cat="Esportes" correta="b" a="Felipe Anderson" b="Ronaldinho Gaúcho" c="Kaká" d="Robinho">Qual jogador brasileiro ganhou a Bola de Ouro da FIFA em 2005?</q>
+    <q cat="Entretenimento" correta="d" a="The Office" b="Parks and Recreation" c="Brooklyn Nine-Nine" d="Community">Qual série americana cômica se passa em uma faculdade e tem Alison Brie e Joel McHale?</q>
+    <q cat="História" correta="a" a="Feudalismo" b="Capitalismo" c="Mercantilismo" d="Absolutismo">Qual sistema econômico da Idade Média era baseado em senhores, servos e vassalagem?</q>
+    <q cat="Ciências" correta="c" a="Veias" b="Capilares" c="Artérias" d="Linfáticos">Quais vasos sanguíneos transportam sangue rico em oxigênio do coração para o corpo?</q>
+  </carta>
+
+  <carta><!-- 41 -->
+    <q cat="Artes" correta="b" a="Chico Buarque" b="Jorge Amado" c="Guimarães Rosa" d="Érico Veríssimo">Quem escreveu Gabriela Cravo e Canela e Capitães da Areia?</q>
+    <q cat="Geografia" correta="d" a="Suécia" b="Dinamarca" c="Finlândia" d="Noruega">Qual país escandinavo tem mais fiordes e é conhecido pelas auroras boreais?</q>
+    <q cat="Esportes" correta="a" a="Brasil" b="Alemanha" c="Rússia" d="EUA">Qual país foi eliminado da Copa do Mundo de 2014 por 7 a 1 pelo time anfitrião?</q>
+    <q cat="Entretenimento" correta="c" a="Metallica" b="Slayer" c="Iron Maiden" d="Judas Priest">Qual banda britânica de heavy metal tem o mascote chamado Eddie?</q>
+    <q cat="História" correta="b" a="Pizarro" b="Hernán Cortés" c="Vasco de Balboa" d="Alvar Núñez">Quem conquistou o Império Asteca para a Espanha no século XVI?</q>
+    <q cat="Ciências" correta="d" a="Termosfera" b="Mesosfera" c="Estratosfera" d="Troposfera">Em qual camada da atmosfera ocorrem os fenômenos climáticos como chuvas e ventos?</q>
+  </carta>
+
+  <carta><!-- 42 -->
+    <q cat="Artes" correta="a" a="Gabriel García Márquez" b="Mario Vargas Llosa" c="Julio Cortázar" d="Pablo Neruda">Quem escreveu Cem Anos de Solidão?</q>
+    <q cat="Geografia" correta="c" a="Barein" b="Qatar" c="Omã" d="Kuwait">Qual país ocupa a ponta sudeste da Península Arábica?</q>
+    <q cat="Esportes" correta="b" a="Edwin Moses" b="Roger Bannister" c="Peter Snell" d="Herb Elliott">Quem foi o primeiro atleta a correr a milha em menos de 4 minutos?</q>
+    <q cat="Entretenimento" correta="d" a="Gladiador" b="Spartacus" c="Tróia" d="Ben-Hur">Qual filme épico ganhou o Oscar de Melhor Filme em 1960, com Charlton Heston?</q>
+    <q cat="História" correta="a" a="Tratado de Tordesilhas" b="Paz de Westfália" c="Congresso de Viena" d="Tratado de Utrecht">Qual acordo de 1494 dividiu o mundo entre Portugal e Espanha?</q>
+    <q cat="Ciências" correta="c" a="Espelho côncavo" b="Espelho plano" c="Lente convergente" d="Lente divergente">Qual elemento óptico é usado em lupas e óculos para hipermetropia?</q>
+  </carta>
+
+  <carta><!-- 43 -->
+    <q cat="Artes" correta="b" a="Roberto Carlos" b="Elis Regina" c="Gal Costa" d="Maria Bethânia">Qual cantora brasileira é considerada a maior intérprete da MPB de todos os tempos?</q>
+    <q cat="Geografia" correta="d" a="Itália" b="Grécia" c="Espanha" d="Turquia">Qual país tem mais sítios históricos inscritos na UNESCO do Mediterrâneo oriental?</q>
+    <q cat="Esportes" correta="a" a="Nadia Comaneci" b="Olga Korbut" c="Vera Čáslavská" d="Larissa Latynina">Qual ginasta foi a primeira a tirar nota 10 em uma Olimpíada, em Montreal 1976?</q>
+    <q cat="Entretenimento" correta="c" a="Portishead" b="Massive Attack" c="Tricky" d="Goldie">Qual artista britânico lançou Maxinquaye, álbum trip-hop influente dos anos 1990?</q>
+    <q cat="História" correta="b" a="1789" b="1804" c="1815" d="1799">Em que ano Napoleão se coroou imperador da França?</q>
+    <q cat="Ciências" correta="d" a="Dióxido de Carbono" b="Metano" c="Vapor d'água" d="Ozônio">Qual gás forma a camada protetora na estratosfera que bloqueia raios ultravioleta?</q>
+  </carta>
+
+  <carta><!-- 44 -->
+    <q cat="Artes" correta="a" a="James Joyce" b="Virginia Woolf" c="D.H. Lawrence" d="E.M. Forster">Quem escreveu Ulisses, considerado um dos romances mais complexos da língua inglesa?</q>
+    <q cat="Geografia" correta="c" a="Hanói" b="Ho Chi Minh" c="Hanói" d="Da Nang">Qual é a capital do Vietnã?</q>
+    <q cat="Esportes" correta="b" a="Franco Baresi" b="Paolo Maldini" c="Alessandro Costacurta" d="Fabio Cannavaro">Qual defensor italiano jogou mais de 900 partidas pelo AC Milan?</q>
+    <q cat="Entretenimento" correta="d" a="Ozzy Osbourne" b="Alice Cooper" c="Marilyn Manson" d="Rob Zombie">Qual músico americano fundiu horror com heavy metal e dirige filmes como Casa dos 1000 Corpos?</q>
+    <q cat="História" correta="a" a="Suleimão, o Magnífico" b="Mehmed II" c="Selim I" d="Bajazeto I">Qual sultão otomano governou no auge do Império Otomano no século XVI?</q>
+    <q cat="Ciências" correta="c" a="Ribossomo" b="Mitocôndria" c="Núcleo" d="Retículo Endoplasmático">Qual organela contém o DNA na célula eucariota?</q>
+  </carta>
+
+  <carta><!-- 45 -->
+    <q cat="Artes" correta="b" a="Caravaggio" b="Botticelli" c="Raphael" d="Fra Angelico">Quem pintou O Nascimento de Vênus durante o Renascimento italiano?</q>
+    <q cat="Geografia" correta="d" a="Kampala" b="Nairóbi" c="Dar es Salaam" d="Adis Abeba">Qual é a capital da Etiópia?</q>
+    <q cat="Esportes" correta="a" a="Haile Gebrselassie" b="Kenenisa Bekele" c="Eliud Kipchoge" d="Paul Tergat">Quem foi o primeiro atleta a correr os 10.000m em menos de 26 minutos?</q>
+    <q cat="Entretenimento" correta="c" a="Spike Jonze" b="Michel Gondry" c="Sofia Coppola" d="David Fincher">Quem dirigiu Lost in Translation e O Virgem Suicida?</q>
+    <q cat="História" correta="b" a="1905" b="1917" c="1920" d="1924">Em que ano ocorreu a Revolução Bolchevique na Rússia?</q>
+    <q cat="Ciências" correta="d" a="6,02 × 10²²" b="6,02 × 10²⁴" c="6,02 × 10²¹" d="6,02 × 10²³">Qual é o valor do número de Avogadro?</q>
+  </carta>
+
+  <carta><!-- 46 -->
+    <q cat="Artes" correta="a" a="Giuseppe Verdi" b="Giacomo Puccini" c="Gaetano Donizetti" d="Gioachino Rossini">Quem compôs as óperas Aida e Otello?</q>
+    <q cat="Geografia" correta="c" a="Bruxelas" b="Amsterdã" c="Luxemburgo" d="Haia">Qual é a capital do Grão-Ducado de Luxemburgo?</q>
+    <q cat="Esportes" correta="b" a="Fórmula Renault" b="Fórmula 2" c="GP3" d="Fórmula E">Qual é a principal categoria de acesso à Fórmula 1 atualmente?</q>
+    <q cat="Entretenimento" correta="d" a="Ariana Grande" b="Selena Gomez" c="Miley Cyrus" d="Demi Lovato">Qual cantora americana iniciou a carreira em Camp Rock e ficou famosa por Skyscraper?</q>
+    <q cat="História" correta="a" a="Tratado de Tordesilhas" b="Paz de Westfália" c="Congresso de Viena" d="Tratado de Madrid">Qual tratado de 1494 dividiu o mundo entre Portugal e Espanha?</q>
+    <q cat="Ciências" correta="c" a="Espelho côncavo" b="Prisma" c="Lente convexa" d="Lente côncava">Qual elemento óptico é usado em lupas e óculos de leitura?</q>
+  </carta>
+
+  <carta><!-- 47 -->
+    <q cat="Artes" correta="b" a="Noel Rosa" b="Tom Jobim" c="Paulinho da Viola" d="João Bosco">Quem compôs Corcovado, Águas de Março e Garota de Ipanema?</q>
+    <q cat="Geografia" correta="d" a="Tashkent" b="Almaty" c="Bishkek" d="Astana">Qual é a capital do Cazaquistão?</q>
+    <q cat="Esportes" correta="a" a="Magic Johnson" b="Larry Bird" c="Charles Barkley" d="Scottie Pippen">Quem ganhou três títulos da NBA pelo Los Angeles Lakers nos anos 1980?</q>
+    <q cat="Entretenimento" correta="c" a="Arcade Fire" b="Vampire Weekend" c="The Strokes" d="Franz Ferdinand">Qual banda nova-iorquina lançou Is This It, álbum que revitalizou o rock no início dos anos 2000?</q>
+    <q cat="História" correta="b" a="1932" b="1936" c="1940" d="1934">Em que ano ocorreram as Olimpíadas de Berlim com as quatro vitórias de Jesse Owens?</q>
+    <q cat="Ciências" correta="d" a="Força de atrito" b="Força centrípeta" c="Força gravitacional" d="Força elétrica">Qual força age entre cargas elétricas, segundo a lei de Coulomb?</q>
+  </carta>
+
+  <carta><!-- 48 -->
+    <q cat="Artes" correta="a" a="Graciliano Ramos" b="Jorge Amado" c="Rachel de Queiroz" d="José Lins do Rego">Quem escreveu Vidas Secas, retrato da seca e da miséria no sertão nordestino?</q>
+    <q cat="Geografia" correta="c" a="Reykjavik" b="Tallinn" c="Helsinki" d="Riga">Qual é a capital da Finlândia?</q>
+    <q cat="Esportes" correta="b" a="Artur Zanetti" b="Thiago Braz" c="Lauro de Souza" d="Caio Souza">Qual atleta brasileiro ganhou o ouro olímpico no salto com vara no Rio 2016?</q>
+    <q cat="Entretenimento" correta="d" a="The Office UK" b="Parks and Recreation" c="Brooklyn Nine-Nine" d="The Office US">Qual sitcom americano tem Michael Scott como gerente regional de uma empresa de papel?</q>
+    <q cat="História" correta="a" a="1517" b="1492" c="1543" d="1530">Em que ano Lutero afixou suas 95 teses, iniciando a Reforma Protestante?</q>
+    <q cat="Ciências" correta="c" a="Cobre" b="Ferro" c="Alumínio" d="Zinco">Qual é o metal mais abundante na crosta terrestre?</q>
+  </carta>
+
+  <carta><!-- 49 -->
+    <q cat="Artes" correta="b" a="Ravel" b="Debussy" c="Satie" d="Fauré">Qual compositor francês criou Clair de Lune e é considerado pai do impressionismo musical?</q>
+    <q cat="Geografia" correta="d" a="800 km" b="1.200 km" c="160 km" d="193 km">Qual é o comprimento aproximado do Canal de Suez?</q>
+    <q cat="Esportes" correta="a" a="Jesse Owens" b="Carl Lewis" c="Bob Hayes" d="Jim Hines">Quem ganhou quatro medalhas de ouro no atletismo nas Olimpíadas de Berlim 1936?</q>
+    <q cat="Entretenimento" correta="c" a="Radiohead" b="Coldplay" c="Portishead" d="Massive Attack">Qual banda britânica é conhecida pelo álbum Dummy e pelo estilo trip-hop melancólico?</q>
+    <q cat="História" correta="b" a="1789" b="1804" c="1812" d="1815">Em que ano Napoleão se tornou imperador da França?</q>
+    <q cat="Ciências" correta="d" a="Sódio" b="Ferro" c="Cálcio" d="Potássio">Qual mineral é essencial para a função cardíaca e muscular e está presente em bananas?</q>
+  </carta>
+
+  <carta><!-- 50 -->
+    <q cat="Artes" correta="a" a="Pablo Neruda" b="Octavio Paz" c="César Vallejo" d="Jorge Luis Borges">Quem escreveu Vinte Poemas de Amor e uma Canção Desesperada?</q>
+    <q cat="Geografia" correta="c" a="Teerã" b="Istambul" c="Ancara" d="Bagdá">Qual é a capital da Turquia?</q>
+    <q cat="Esportes" correta="b" a="Roger Federer" b="André Agassi" c="Pete Sampras" d="Stefan Edberg">Qual tenista foi o único a ganhar os quatro Grand Slams em sequência (Golden Slam)?</q>
+    <q cat="Entretenimento" correta="d" a="Blade Runner" b="Her" c="Ex Machina" d="2001: Uma Odisseia no Espaço">Qual filme de Kubrick apresenta a inteligência artificial HAL 9000?</q>
+    <q cat="História" correta="a" a="1789" b="1799" c="1815" d="1804">Em que ano eclodiu a Revolução Francesa?</q>
+    <q cat="Ciências" correta="c" a="Célula nervosa" b="Glóbulo vermelho" c="Neurônio motor" d="Célula epitelial">Qual tipo de célula humana pode atingir comprimentos acima de um metro?</q>
+  </carta>
+
+
+  <carta><!-- 51 -->
+    <q cat="Artes" correta="c" a="Rembrandt" b="Frans Hals" c="Vermeer" d="Jan Steen">Qual pintor holandês do século XVII ficou famoso pelo uso dramático de luz e sombra em autorretratos?</q>
+    <q cat="Geografia" correta="a" a="Moscou" b="São Petersburgo" c="Novosibirsk" d="Vladivostok">Qual é a capital da Rússia?</q>
+    <q cat="Esportes" correta="d" a="Steffi Graf" b="Martina Navratilova" c="Billie Jean King" d="Serena Williams">Qual tenista tem mais títulos de Grand Slam femininos na era aberta?</q>
+    <q cat="Entretenimento" correta="b" a="Vingadores" b="Liga da Justiça" c="X-Men" d="Guardiões da Galáxia">Qual equipe reúne Superman, Batman e Mulher Maravilha?</q>
+    <q cat="História" correta="a" a="Napoleão Bonaparte" b="Luís XIV" c="Luís XVI" d="Carlos Magno">Quem foi o general francês que se tornou imperador no início do século XIX?</q>
+    <q cat="Ciências" correta="c" a="Deutério" b="Trítio" c="Hidrogênio" d="Hélio">Qual é o elemento mais abundante no universo?</q>
+  </carta>
+
+  <carta><!-- 52 -->
+    <q cat="Artes" correta="b" a="Schönberg" b="Alban Berg" c="Anton Webern" d="Hans Eisler">Quem compôs a ópera expressionista Wozzeck, baseada na peça de Büchner?</q>
+    <q cat="Geografia" correta="d" a="Barein" b="Qatar" c="Kuwait" d="Emirados Árabes Unidos">Qual país árabe tem Dubai e Abu Dhabi como principais cidades?</q>
+    <q cat="Esportes" correta="a" a="Lasse Virén" b="Emiel Puttemans" c="Brendan Foster" d="Dick Quax">Qual atleta finlandês ganhou os 5.000m e 10.000m nas Olimpíadas de 1972 e 1976?</q>
+    <q cat="Entretenimento" correta="c" a="Alejandro González Iñárritu" b="Alfonso Cuarón" c="Guillermo del Toro" d="Carlos Reygadas">Quem dirigiu O Labirinto do Fauno e A Forma da Água?</q>
+    <q cat="História" correta="b" a="Mehmed I" b="Mehmed II" c="Selim I" d="Murade II">Qual sultão otomano conquistou Constantinopla em 1453?</q>
+    <q cat="Ciências" correta="d" a="Fotorreceptores" b="Bastonetes" c="Cones" d="Células ganglionares">Quais células da retina transmitem sinais pelo nervo óptico ao cérebro?</q>
+  </carta>
+
+  <carta><!-- 53 -->
+    <q cat="Artes" correta="a" a="Igor Stravinsky" b="Sergei Prokofiev" c="Dmitri Shostakovich" d="Béla Bartók">Quem compôs A Sagração da Primavera e O Pássaro de Fogo?</q>
+    <q cat="Geografia" correta="c" a="Malawi" b="Zâmbia" c="Tanzânia" d="Moçambique">Em qual país africano fica o Monte Kilimanjaro?</q>
+    <q cat="Esportes" correta="b" a="Maradona" b="Eusébio" c="Johan Cruyff" d="George Best">Qual jogador português de origem moçambicana foi artilheiro da Copa do Mundo de 1966?</q>
+    <q cat="Entretenimento" correta="d" a="Wim Wenders" b="Rainer Werner Fassbinder" c="Werner Herzog" d="Volker Schlöndorff">Quem ganhou a Palma de Ouro em Cannes com O Tambor em 1979?</q>
+    <q cat="História" correta="a" a="Aníbal Barca" b="Cipião Africano" c="Marco Cláudio Marcelo" d="Lúcio Emílio Paulo">Quem cruzou os Alpes com elefantes para atacar Roma na Segunda Guerra Púnica?</q>
+    <q cat="Ciências" correta="c" a="Zinco" b="Chumbo" c="Cádmio" d="Bismuto">Qual metal pesado é responsável pela doença de Itai-itai, registrada no Japão?</q>
+  </carta>
+
+  <carta><!-- 54 -->
+    <q cat="Artes" correta="b" a="Gustave Flaubert" b="Marcel Proust" c="Émile Zola" d="Stendhal">Quem escreveu Em Busca do Tempo Perdido, obra monumental em sete volumes?</q>
+    <q cat="Geografia" correta="d" a="Katmandu" b="Islamabad" c="Colombo" d="Thimphu">Qual é a capital do Butão?</q>
+    <q cat="Esportes" correta="a" a="Bellini" b="Mauro Ramos" c="Nilton Santos" d="Djalma Santos">Quem foi o capitão do Brasil na Copa de 1958 e ergueu a Taça Jules Rimet pela primeira vez?</q>
+    <q cat="Entretenimento" correta="d" a="Elio Petri" b="Bernardo Bertolucci" c="Marco Ferreri" d="Federico Fellini">Quem dirigiu 8½ e Amarcord, dois marcos do cinema italiano?</q>
+    <q cat="História" correta="a" a="1415" b="1419" c="1434" d="1444">Em que ano Portugal tomou Ceuta, iniciando a Era dos Descobrimentos?</q>
+    <q cat="Ciências" correta="c" a="Max Planck" b="Louis de Broglie" c="Erwin Schrödinger" d="Paul Dirac">Quem criou a equação de onda que descreve o comportamento quântico das partículas?</q>
+  </carta>
+
+  <carta><!-- 55 -->
+    <q cat="Artes" correta="b" a="Anselm Kiefer" b="Georg Baselitz" c="Sigmar Polke" d="Gerhard Richter">Qual artista alemão ficou famoso por pintar figuras humanas de cabeça para baixo?</q>
+    <q cat="Geografia" correta="d" a="Fiji" b="Palau" c="Micronésia" d="Papua-Nova Guiné">Qual é o país mais populoso da Oceania, excluindo Austrália e Nova Zelândia?</q>
+    <q cat="Esportes" correta="a" a="Haile Gebrselassie" b="Kenenisa Bekele" c="Eliud Kipchoge" d="Hicham El Guerrouj">Quem foi o primeiro a correr os 10.000m abaixo de 26 minutos?</q>
+    <q cat="Entretenimento" correta="c" a="Ingmar Bergman" b="Andrei Tarkovsky" c="Akira Kurosawa" d="Yasujiro Ozu">Quem dirigiu Rashomon e Os Sete Samurais?</q>
+    <q cat="História" correta="b" a="Ramsés II" b="Tutancâmon" c="Amenhotep IV" d="Senuserte III">Qual faraó ficou famoso pela descoberta de sua tumba intacta por Howard Carter em 1922?</q>
+    <q cat="Ciências" correta="d" a="Fusão" b="Fissão" c="Decaimento Beta" d="Decaimento Alfa">Qual processo radioativo emite uma partícula com 2 prótons e 2 nêutrons?</q>
+  </carta>
+
+  <carta><!-- 56 -->
+    <q cat="Artes" correta="a" a="Johann Sebastian Bach" b="Georg Friedrich Handel" c="Georg Philipp Telemann" d="Antonio Vivaldi">Quem compôs as Variações Goldberg e a Missa em Si Menor?</q>
+    <q cat="Geografia" correta="c" a="Iquique" b="Arica" c="San Pedro de Atacama" d="Antofagasta">Qual região do norte do Chile é uma das mais secas e áridas do mundo?</q>
+    <q cat="Esportes" correta="b" a="Dick Fosbury" b="Bob Beamon" c="Carl Lewis" d="Jonathan Edwards">Quem saltou 8,90m no México 1968, recorde do salto em distância que durou 23 anos?</q>
+    <q cat="Entretenimento" correta="d" a="Tommy Lee Jones" b="Sam Neill" c="Jeff Goldblum" d="Richard Attenborough">Quem interpretou o visionário criador do parque de dinossauros em Jurassic Park?</q>
+    <q cat="História" correta="a" a="Bismarck" b="Cavour" c="Garibaldi" d="Mazzini">Quem foi o principal arquiteto diplomático da unificação da Alemanha no século XIX?</q>
+    <q cat="Ciências" correta="c" a="30 anos" b="5.730 décadas" c="5.730 anos" d="57.300 anos">Qual é a meia-vida do carbono-14, usado na datação arqueológica?</q>
+  </carta>
+
+  <carta><!-- 57 -->
+    <q cat="Artes" correta="b" a="Frank Lloyd Wright" b="Le Corbusier" c="Mies van der Rohe" d="Walter Gropius">Qual arquiteto propôs os cinco pontos da nova arquitetura e a Unidade de Habitação?</q>
+    <q cat="Geografia" correta="d" a="Letônia" b="Estônia" c="Finlândia" d="Lituânia">Qual país báltico tem Vilnius como capital?</q>
+    <q cat="Esportes" correta="a" a="Secretariat" b="Man o' War" c="Phar Lap" d="Frankel">Qual cavalo americano ganhou a Tríplice Coroa em 1973 com recordes em cada prova?</q>
+    <q cat="Entretenimento" correta="c" a="Tom Tykwer" b="Lars von Trier" c="Michael Haneke" d="Wim Wenders">Quem dirigiu A Fita Branca e Amor, ambos Palma de Ouro em Cannes?</q>
+    <q cat="História" correta="b" a="1218" b="1204" c="1189" d="1241">Em que ano os cruzados desviaram e saquearam Constantinopla?</q>
+    <q cat="Ciências" correta="d" a="Voltagem" b="Resistência" c="Indutância" d="Capacitância">O que é medido em Farads?</q>
+  </carta>
+
+  <carta><!-- 58 -->
+    <q cat="Artes" correta="a" a="Giotto" b="Cimabue" c="Duccio" d="Simone Martini">Qual pintor do século XIV humanizou as figuras e é considerado precursor do Renascimento?</q>
+    <q cat="Geografia" correta="c" a="5.642 m" b="5.895 m" c="4.808 m" d="6.194 m">Qual é a altitude do Mont Blanc, o ponto mais alto dos Alpes?</q>
+    <q cat="Esportes" correta="b" a="Ronnie O'Sullivan" b="Stephen Hendry" c="Steve Davis" d="John Higgins">Qual jogador de snooker ganhou sete títulos mundiais, recorde absoluto da modalidade?</q>
+    <q cat="Entretenimento" correta="d" a="Leonard Cohen" b="Bob Dylan" c="Paul Simon" d="Randy Newman">Qual compositor americano escreveu You've Got a Friend in Me para o filme Toy Story?</q>
+    <q cat="História" correta="a" a="Ésquilo" b="Sófocles" c="Eurípides" d="Aristófanes">Qual dramaturgo grego escreveu a trilogia Oresteia?</q>
+    <q cat="Ciências" correta="c" a="Éter" b="Flogisto" c="Próton" d="Calórico">Qual partícula do núcleo atômico tem carga positiva?</q>
+  </carta>
+
+  <carta><!-- 59 -->
+    <q cat="Artes" correta="b" a="Janáček" b="Dvořák" c="Smetana" d="Fibich">Quem compôs a Sinfonia Do Novo Mundo, inspirado em temas folclóricos americanos?</q>
+    <q cat="Geografia" correta="d" a="8.611 m" b="8.516 m" c="8.485 m" d="8.091 m">Qual é a altitude do Annapurna, o décimo pico mais alto do mundo?</q>
+    <q cat="Esportes" correta="a" a="1978" b="1982" c="1974" d="1986">Em que ano a Argentina venceu sua primeira Copa do Mundo em casa?</q>
+    <q cat="Entretenimento" correta="c" a="Lars von Trier" b="Ingmar Bergman" c="Roy Andersson" d="Mikael Håfström">Qual diretor sueco criou a peculiar trilogia Sobre o Ser Humano?</q>
+    <q cat="História" correta="b" a="Mao Tsé-Tung" b="Deng Xiaoping" c="Zhou Enlai" d="Jiang Zemin">Quem lançou as reformas econômicas que transformaram a China a partir de 1978?</q>
+    <q cat="Ciências" correta="d" a="1950" b="1953" c="1962" d="1969">Em que ano o homem chegou à Lua pela primeira vez?</q>
+  </carta>
+
+  <carta><!-- 60 -->
+    <q cat="Artes" correta="a" a="El Greco" b="Velázquez" c="Zurbarán" d="Murillo">Qual pintor maneirista de origem cretense viveu em Toledo e ficou famoso por figuras alongadas?</q>
+    <q cat="Geografia" correta="c" a="Danúbio" b="Volga" c="Reno" d="Elba">Qual rio europeu faz fronteira natural entre Alemanha e França?</q>
+    <q cat="Esportes" correta="b" a="Olga Korbut" b="Nadia Comaneci" c="Vera Čáslavská" d="Larysa Latynina">Qual ginasta tirou o primeiro 10 perfeito olímpico em Montreal 1976?</q>
+    <q cat="Entretenimento" correta="d" a="Nick Hornby" b="Irvine Welsh" c="Douglas Coupland" d="Bret Easton Ellis">Quem escreveu American Psycho, perturbador romance sobre um yuppie assassino?</q>
+    <q cat="História" correta="a" a="Artaxerxes II" b="Dario I" c="Ciro, o Grande" d="Xerxes I">Qual rei persa mandou construir a grandiosa capital Persépolis?</q>
+    <q cat="Ciências" correta="c" a="1954" b="1966" c="1958" d="1970">Em que ano a NASA foi fundada nos Estados Unidos?</q>
+  </carta>
+
+  <carta><!-- 61 -->
+    <q cat="Artes" correta="b" a="Cézanne" b="Seurat" c="Signac" d="Pissarro">Quem desenvolveu o pontilhismo e pintou Uma Tarde de Domingo na Ilha de Grande Jatte?</q>
+    <q cat="Geografia" correta="d" a="Porto Alegre" b="Florianópolis" c="Curitiba" d="São Paulo">Qual é a maior cidade da região sudeste do Brasil?</q>
+    <q cat="Esportes" correta="a" a="Yogi Berra" b="Babe Ruth" c="Lou Gehrig" d="Willie Mays">Qual receptor do New York Yankees ganhou dez títulos da World Series?</q>
+    <q cat="Entretenimento" correta="c" a="Bon Iver" b="Fleet Foxes" c="Sufjan Stevens" d="Iron and Wine">Qual músico americano lançou o álbum Illinois, conceitual sobre um estado americano?</q>
+    <q cat="História" correta="b" a="1099" b="1187" c="1244" d="1291">Em que ano Saladino reconquistou Jerusalém dos cruzados?</q>
+    <q cat="Ciências" correta="d" a="Neutrófilo" b="Linfócito T" c="Linfócito B" d="Macrófago">Qual célula imune fagocita patógenos e apresenta antígenos aos linfócitos?</q>
+  </carta>
+
+  <carta><!-- 62 -->
+    <q cat="Artes" correta="a" a="1889" b="1893" c="1900" d="1885">Em que ano Van Gogh pintou A Noite Estrelada?</q>
+    <q cat="Geografia" correta="c" a="51° N" b="60° N" c="66,5° N" d="70° N">Em que latitude aproximada fica o Círculo Polar Ártico?</q>
+    <q cat="Esportes" correta="b" a="Jesse Owens" b="Fanny Blankers-Koen" c="Wilma Rudolph" d="Florence Griffith">Qual atleta holandesa ganhou quatro medalhas de ouro nas Olimpíadas de 1948?</q>
+    <q cat="Entretenimento" correta="d" a="Jean-Luc Godard" b="Alain Resnais" c="Chris Marker" d="Jacques Demy">Quem dirigiu os musicais franceses Os Guarda-Chuvas de Cherburgo e Os Jovens Lobos?</q>
+    <q cat="História" correta="a" a="Concílio de Nicéia" b="Concílio de Trento" c="Concílio de Constança" d="Concílio Vaticano I">Qual concílio de 325 d.C. estabeleceu o credo cristão e condenou o arianismo?</q>
+    <q cat="Ciências" correta="c" a="Andrômeda" b="Grande Nuvem de Magalhães" c="Via Láctea" d="Triângulo">A qual galáxia pertence o sistema solar?</q>
+  </carta>
+
+  <carta><!-- 63 -->
+    <q cat="Artes" correta="b" a="Tanizaki" b="Mishima" c="Kawabata" d="Dazai">Qual escritor japonês morreu ritualmente em 1970 após um discurso político?</q>
+    <q cat="Geografia" correta="d" a="Xã Anau" b="Jericó" c="Çatalhöyük" d="Ain Ghazal">Qual sítio arqueológico na Jordânia tem estátuas humanas de 9.000 anos?</q>
+    <q cat="Esportes" correta="c" a="Brendan Foster" b="Steve Cram" c="Sebastian Coe" d="Steve Ovett">Qual atleta britânico ganhou ouro nos 1.500m nas Olimpíadas de 1980 e 1984?</q>
+    <q cat="Entretenimento" correta="c" a="David Lynch" b="Jim Jarmusch" c="John Cassavetes" d="Robert Altman">Quem é considerado o pai do cinema independente americano com o filme Shadows (1959)?</q>
+    <q cat="História" correta="b" a="1890" b="1895" c="1898" d="1900">Em que ano os irmãos Lumière realizaram a primeira projeção de cinema para o público?</q>
+    <q cat="Ciências" correta="d" a="Próton" b="Nêutron" c="Elétron" d="Quark">Qual é a partícula mais fundamental que compõe prótons e nêutrons?</q>
+  </carta>
+
+  <carta><!-- 64 -->
+    <q cat="Artes" correta="a" a="Wassily Kandinsky" b="Paul Klee" c="Franz Marc" d="August Macke">Quem é considerado o criador da pintura abstrata, com as primeiras abstrações de 1910?</q>
+    <q cat="Geografia" correta="c" a="Niger" b="Congo" c="Volta" d="Senegal">Qual rio de Gana deu nome à maior represa construída nos anos 1960 no país?</q>
+    <q cat="Esportes" correta="b" a="1905" b="1891" c="1895" d="1876">Em que ano James Naismith criou o basquete, no YMCA de Springfield?</q>
+    <q cat="Entretenimento" correta="d" a="Don Van Vliet" b="Perry Blake" c="Prefab Sprout" d="Scott Walker">Qual artista americano gravou o austero álbum Tilt em 1995 explorando música experimental?</q>
+    <q cat="História" correta="a" a="Hammurabi" b="Nebucadnesar II" c="Sargão de Acádia" d="Tiglate-Pileser III">Qual rei babilônico codificou um dos primeiros conjuntos de leis escritas da história?</q>
+    <q cat="Ciências" correta="c" a="1930" b="1940" c="1928" d="1935">Em que ano Fleming descobriu a penicilina ao observar um fungo inibindo bactérias?</q>
+  </carta>
+
+  <carta><!-- 65 -->
+    <q cat="Artes" correta="b" a="Schönberg" b="Alban Berg" c="Anton Webern" d="Paul Hindemith">Quem compôs a ópera Wozzeck, baseada na peça inacabada de Georg Büchner?</q>
+    <q cat="Geografia" correta="d" a="Pampas" b="Llanos" c="Gran Chaco" d="Patagônia">Qual região compartilhada por Argentina e Chile é conhecida por glaciares e paisagens áridas?</q>
+    <q cat="Esportes" correta="a" a="Kristin Otto" b="Janet Evans" c="Summer Sanders" d="Amy Van Dyken">Qual nadadora da Alemanha Oriental ganhou seis medalhas de ouro em Seul 1988?</q>
+    <q cat="Entretenimento" correta="c" a="Sun Ra" b="Albert Ayler" c="Ornette Coleman" d="Cecil Taylor">Quem desenvolveu o free jazz e lançou The Shape of Jazz to Come em 1959?</q>
+    <q cat="História" correta="b" a="1307" b="1314" c="1320" d="1321">Em que ano ocorreu a Batalha de Bannockburn, garantindo a independência escocesa?</q>
+    <q cat="Ciências" correta="d" a="Parênquima" b="Colênquima" c="Floema" d="Xilema">Qual tecido vegetal conduz água e sais minerais das raízes às folhas?</q>
+  </carta>
+
+  <carta><!-- 66 -->
+    <q cat="Artes" correta="a" a="Portinari" b="Di Cavalcanti" c="Tarsila do Amaral" d="Anita Malfatti">Quem pintou os murais Guerra e Paz no Palácio da ONU em Nova York?</q>
+    <q cat="Geografia" correta="c" a="Harare" b="Lusaka" c="Maputo" d="Lilongwe">Qual é a capital de Moçambique?</q>
+    <q cat="Esportes" correta="b" a="Carlos" b="Romário" c="Ronaldo" d="Zico">Quem marcou o gol de número 1000 em partidas profissionais, em 1994?</q>
+    <q cat="Entretenimento" correta="d" a="Cidade de Deus" b="Central do Brasil" c="O Auto da Compadecida" d="Tropa de Elite">Qual filme brasileiro de José Padilha ganhou o Urso de Ouro no Festival de Berlim?</q>
+    <q cat="História" correta="a" a="1648" b="1618" c="1683" d="1700">Em que ano foi assinada a Paz de Westfália, encerrando a Guerra dos Trinta Anos?</q>
+    <q cat="Ciências" correta="c" a="Centígrado" b="Fahrenheit" c="-273,15°C" d="Rankine">Qual é a temperatura do zero absoluto em graus Celsius?</q>
+  </carta>
+
+  <carta><!-- 67 -->
+    <q cat="Artes" correta="b" a="Ravel" b="Debussy" c="Satie" d="Saint-Saëns">Quem criou a ópera Pelléas et Mélisande e o poema sinfônico La Mer?</q>
+    <q cat="Geografia" correta="d" a="Bogotá" b="Lima" c="Quito" d="Caracas">Qual é a capital da Venezuela?</q>
+    <q cat="Esportes" correta="a" a="Flamengo" b="São Paulo" c="Santos" d="Grêmio">Qual time brasileiro venceu a Copa Libertadores de 2019 com virada dramática na final?</q>
+    <q cat="Entretenimento" correta="c" a="Breaking Bad" b="Sopranos" c="The Wire" d="Oz">Qual série americana ambientada em Baltimore é considerada um retrato fiel do crime urbano?</q>
+    <q cat="História" correta="b" a="Alexandre, o Grande" b="Júlio César" c="Napoleão Bonaparte" d="Carlos Magno">Quem foi assassinado por conspiradores liderados por Brutus em 44 a.C.?</q>
+    <q cat="Ciências" correta="d" a="Urânio" b="Radônio" c="Polônio" d="Carbono">Qual elemento é a base de todas as moléculas orgânicas dos seres vivos?</q>
+  </carta>
+
+  <carta><!-- 68 -->
+    <q cat="Artes" correta="a" a="Bertolt Brecht" b="Henrik Ibsen" c="August Strindberg" d="Anton Tchékhov">Quem escreveu A Ópera dos Três Vinténs e o conceito de teatro épico?</q>
+    <q cat="Geografia" correta="c" a="Eritreia" b="Djibuti" c="Somália" d="Quênia">Qual país africano está localizado no Corno da África e tem Mogadíscio como capital?</q>
+    <q cat="Esportes" correta="b" a="Emil Zátopek" b="Paavo Nurmi" c="Hannes Kolehmainen" d="Albin Stenroos">Quem é chamado de "A Locomotiva Humana" e ganhou cinco ouros em três Olimpíadas no fundo?</q>
+    <q cat="Entretenimento" correta="d" a="Federico Fellini" b="Michelangelo Antonioni" c="Luchino Visconti" d="Pier Paolo Pasolini">Quem dirigiu Saló ou os 120 Dias de Sodoma e foi assassinado em 1975?</q>
+    <q cat="História" correta="a" a="1054" b="1378" c="1517" d="1648">Em que ano ocorreu o Grande Cisma entre as igrejas Católica Romana e Ortodoxa?</q>
+    <q cat="Ciências" correta="c" a="ATP sintase" b="RNA polimerase" c="DNA polimerase" d="Topoisomerase">Qual enzima sintetiza novas fitas de DNA durante a replicação celular?</q>
+  </carta>
+
+  <carta><!-- 69 -->
+    <q cat="Artes" correta="b" a="Clarice Lispector" b="Lygia Fagundes Telles" c="Nélida Piñon" d="Hilda Hilst">Qual escritora brasileira escreveu As Meninas, romance sobre três mulheres em um pensionato?</q>
+    <q cat="Geografia" correta="d" a="10.924 m" b="10.655 m" c="10.720 m" d="11.034 m">Qual é a profundidade máxima da Fossa das Marianas?</q>
+    <q cat="Esportes" correta="a" a="Jahangir Khan" b="Jansher Khan" c="Nick Matthew" d="Ramy Ashour">Quem ficou invicto no squash por 5 anos e 8 meses entre 1981 e 1986?</q>
+    <q cat="Entretenimento" correta="c" a="Prefab Sprout" b="The Blue Nile" c="Talk Talk" d="This Mortal Coil">Qual banda inglesa criou o álbum Spirit of Eden (1988), pivô do post-rock?</q>
+    <q cat="História" correta="b" a="1683" b="1529" c="1520" d="1699">Em que ano os otomanos sitiaram Viena pela primeira vez?</q>
+    <q cat="Ciências" correta="d" a="Pressão osmótica" b="Tensão superficial" c="Capilaridade" d="Viscosidade">Qual propriedade dos fluidos mede a resistência interna ao escoamento?</q>
+  </carta>
+
+  <carta><!-- 70 -->
+    <q cat="Artes" correta="a" a="1642" b="1635" c="1650" d="1660">Em que ano Rembrandt pintou A Ronda Noturna?</q>
+    <q cat="Geografia" correta="c" a="Tunísia" b="Líbia" c="Argélia" d="Mali">Qual é o maior país do norte da África por área territorial?</q>
+    <q cat="Esportes" correta="b" a="Nino Schurter" b="Nicolas Vouilloz" c="Anne-Caroline Chausson" d="Steve Peat">Qual francês ganhou dez títulos mundiais de downhill em mountain bike?</q>
+    <q cat="Entretenimento" correta="d" a="Francis Ford Coppola" b="Brian De Palma" c="Martin Scorsese" d="Sidney Lumet">Quem dirigiu 12 Homens e uma Sentença (1957) e Tarde Demais para Chorar (1975)?</q>
+    <q cat="História" correta="a" a="Richelieu" b="Mazarino" c="Colbert" d="Fouquet">Qual cardeal foi o verdadeiro governante da França durante a menoridade de Luís XIV?</q>
+    <q cat="Ciências" correta="c" a="Spin" b="Carga" c="Estranheza" d="Charme">Qual número quântico foi proposto para explicar decaimentos lentos de partículas estranhas?</q>
+  </carta>
+
+  <carta><!-- 71 -->
+    <q cat="Artes" correta="b" a="Henry Moore" b="Constantin Brâncuși" c="Jean Arp" d="Jacques Lipchitz">Qual escultor romeno criou Pássaro no Espaço, forma abstrata altamente polida?</q>
+    <q cat="Geografia" correta="d" a="Bratislava" b="Ljubljana" c="Zagreb" d="Belgrado">Qual é a capital da Sérvia?</q>
+    <q cat="Esportes" correta="a" a="Kristin Otto" b="Janet Evans" c="Tracy Caulkins" d="Mary T. Meagher">Qual nadadora ganhou seis ouros em Seul 1988 pela Alemanha Oriental?</q>
+    <q cat="Entretenimento" correta="c" a="Sun Ra" b="Albert Ayler" c="Ornette Coleman" d="Eric Dolphy">Quem criou o álbum free jazz The Shape of Jazz to Come em 1959?</q>
+    <q cat="História" correta="b" a="Xerxes I" b="Leônidas I" c="Temístocles" d="Pausânias">Quem liderou os 300 espartanos na Batalha das Termópilas?</q>
+    <q cat="Ciências" correta="d" a="Parenquima" b="Colênquima" c="Floema" d="Xilema">Qual tecido vegetal transporta água das raízes para as partes aéreas da planta?</q>
+  </carta>
+
+  <carta><!-- 72 -->
+    <q cat="Artes" correta="a" a="Franz Schubert" b="Hector Berlioz" c="Robert Schumann" d="Johannes Brahms">Quem compôs a Sinfonia Inacabada (nº 8 em Si menor)?</q>
+    <q cat="Geografia" correta="c" a="Wuhan" b="Xangai" c="Pequim" d="Cantão">Qual é a capital da China?</q>
+    <q cat="Esportes" correta="b" a="San Francisco 49ers" b="New England Patriots" c="Dallas Cowboys" d="Green Bay Packers">Qual time de futebol americano venceu seis títulos de Super Bowl?</q>
+    <q cat="Entretenimento" correta="d" a="Kurt Cobain" b="Dave Grohl" c="Krist Novoselic" d="Eddie Vedder">Quem é o vocalista do Pearl Jam, banda que revolucionou o grunge nos anos 1990?</q>
+    <q cat="História" correta="a" a="306 a.C." b="323 a.C." c="330 a.C." d="336 a.C.">Em que ano Alexandre, o Grande, morreu em Babilônia?</q>
+    <q cat="Ciências" correta="c" a="Potássio" b="Cálcio" c="Flúor" d="Iodo">Qual elemento é adicionado à pasta de dente para proteger o esmalte dentário?</q>
+  </carta>
+
+  <carta><!-- 73 -->
+    <q cat="Artes" correta="b" a="Paul Éluard" b="André Breton" c="Louis Aragon" d="Philippe Soupault">Quem escreveu o Manifesto Surrealista de 1924?</q>
+    <q cat="Geografia" correta="d" a="780 km" b="1.200 km" c="960 km" d="193 km">Qual é o comprimento do Canal de Suez em quilômetros?</q>
+    <q cat="Esportes" correta="a" a="Nikolai Adrianov" b="Akinori Nakayama" c="Mitsuo Tsukahara" d="Sawao Kato">Qual ginasta soviético tem o maior número de medalhas olímpicas na ginástica masculina?</q>
+    <q cat="Entretenimento" correta="c" a="Twin Peaks: Fire Walk with Me" b="Lost Highway" c="Mulholland Drive" d="Inland Empire">Qual filme de David Lynch foi eleito o melhor do século XXI pela BBC em 2016?</q>
+    <q cat="História" correta="b" a="1185" b="1192" c="1200" d="1183">Em que ano Minamoto no Yoritomo estabeleceu o Shogunato de Kamakura no Japão?</q>
+    <q cat="Ciências" correta="d" a="Aceleração de Coriolis" b="Força de Lorentz" c="Força centrípeta" d="Efeito de Coriolis">Qual fenômeno explica por que ventos giram em sentidos opostos nos dois hemisférios?</q>
+  </carta>
+
+  <carta><!-- 74 -->
+    <q cat="Artes" correta="a" a="Osip Mandelstam" b="Boris Pasternak" c="Marina Tsvetaeva" d="Anna Akhmatova">Qual poeta russo morreu em um campo de trânsito estalinista em 1938?</q>
+    <q cat="Geografia" correta="c" a="Islândia" b="Filipinas" c="Indonésia" d="Papua-Nova Guiné">Qual arquipélago tem o maior número de vulcões ativos do mundo?</q>
+    <q cat="Esportes" correta="b" a="Dick Tiger" b="Archie Moore" c="Joey Maxim" d="Harold Johnson">Quem defendeu o título de meio-pesado mais vezes na história do boxe?</q>
+    <q cat="Entretenimento" correta="d" a="Donald Fagen" b="Walter Becker" c="Aja" d="Steely Dan">Qual duo americano é conhecido por fusão de jazz e rock com o álbum Aja (1977)?</q>
+    <q cat="História" correta="a" a="1648" b="1618" c="1635" d="1660">Em que ano foi assinada a Paz de Westfália, considerada origem do sistema de Estados-nação?</q>
+    <q cat="Ciências" correta="c" a="Átomo de carbono" b="Molécula de água" c="Elétron" d="Próton">Qual partícula tem carga elétrica negativa e massa de aproximadamente 9,1 × 10⁻³¹ kg?</q>
+  </carta>
+
+  <carta><!-- 75 -->
+    <q cat="Artes" correta="b" a="Graciliano Ramos" b="Guimarães Rosa" c="Érico Veríssimo" d="José Lins do Rego">Quem escreveu Grande Sertão: Veredas, obra considerada o maior romance brasileiro?</q>
+    <q cat="Geografia" correta="d" a="Harare" b="Lusaka" c="Lilongwe" d="Gaborone">Qual é a capital de Botsuana?</q>
+    <q cat="Esportes" correta="a" a="Rafael Nadal" b="Roger Federer" c="Pete Sampras" d="André Agassi">Quem tem o maior número de títulos de Roland Garros na história do tênis?</q>
+    <q cat="Entretenimento" correta="c" a="Breaking Bad" b="Narcos" c="Game of Thrones" d="Stranger Things">Qual série é baseada nos livros As Crônicas de Gelo e Fogo de George R.R. Martin?</q>
+    <q cat="História" correta="b" a="Mahatma Gandhi" b="Nelson Mandela" c="Desmond Tutu" d="Steve Biko">Quem foi o primeiro presidente negro eleito da África do Sul?</q>
+    <q cat="Ciências" correta="d" a="Urânio" b="Radônio" c="Polônio" d="Carbono-14">Qual isótopo do carbono é usado para datação de materiais orgânicos arqueológicos?</q>
+  </carta>
+
+  <carta><!-- 76 -->
+    <q cat="Artes" correta="c" a="Gilberto Gil" b="Chico Buarque" c="Milton Nascimento" d="Ivan Lins">Qual compositor mineiro criou Travessia e Clube da Esquina com Lô Borges?</q>
+    <q cat="Geografia" correta="b" a="Portugal" b="Brasil" c="Angola" d="Moçambique">Qual é o maior país de língua portuguesa do mundo em extensão?</q>
+    <q cat="Esportes" correta="d" a="Grêmio" b="Santos" c="Palmeiras" d="Flamengo">Qual time brasileiro venceu o Campeonato Brasileiro de 2019?</q>
+    <q cat="Entretenimento" correta="a" a="Mulher Maravilha" b="Capitã Marvel" c="Viúva Negra" d="Starfire">Qual heroína da DC Comics é uma princesa guerreira da ilha Themyscira?</q>
+    <q cat="História" correta="c" a="Dom João V" b="Dom José I" c="Dom João VI" d="Dom Pedro I">Qual rei português transferiu a corte para o Brasil em 1808?</q>
+    <q cat="Ciências" correta="b" a="Troposfera" b="Estratosfera" c="Mesosfera" d="Termosfera">Em qual camada da atmosfera fica a camada de ozônio?</q>
+  </carta>
+
+  <carta><!-- 77 -->
+    <q cat="Artes" correta="d" a="Gustave Courbet" b="Eugène Delacroix" c="Jean-Auguste Ingres" d="Édouard Manet">Quem pintou O Almoço na Relva, obra que escandalizou Paris em 1863?</q>
+    <q cat="Geografia" correta="a" a="Nairobi" b="Kinshasa" c="Lagos" d="Accra">Qual é a capital do Quênia?</q>
+    <q cat="Esportes" correta="c" a="Renault" b="Ferrari" c="McLaren" d="Williams">Com qual equipe Ayrton Senna venceu seus três títulos mundiais de Fórmula 1?</q>
+    <q cat="Entretenimento" correta="b" a="Jason Bourne" b="Ethan Hunt" c="James Bond" d="Jack Bauer">Qual é o nome do agente secreto interpretado por Tom Cruise na saga Mission Impossible?</q>
+    <q cat="História" correta="d" a="1820" b="1830" c="1840" d="1848">Em que ano ocorreram as Revoluções liberais em toda a Europa, conhecidas como Primavera dos Povos?</q>
+    <q cat="Ciências" correta="c" a="Joule" b="Newton" c="Watt" d="Pascal">Em qual unidade se mede a potência elétrica?</q>
+  </carta>
+
+  <carta><!-- 78 -->
+    <q cat="Artes" correta="b" a="Tamara de Lempicka" b="Frida Kahlo" c="Leonora Carrington" d="Meret Oppenheim">Qual artista pintou Las Dos Fridas, retrato de sua identidade dividida?</q>
+    <q cat="Geografia" correta="d" a="Lagos" b="Abuja" c="Kano" d="Abuja">Qual é a capital da Nigéria, inaugurada como sede do governo em 1991?</q>
+    <q cat="Esportes" correta="a" a="Guga Kuerten" b="Fernando Meligeni" c="Thomas Koch" d="Luiz Mattar">Qual tenista brasileiro venceu Roland Garros três vezes, em 1997, 2000 e 2001?</q>
+    <q cat="Entretenimento" correta="c" a="Martin Scorsese" b="Brian De Palma" c="Francis Ford Coppola" d="Sidney Lumet">Quem dirigiu O Poderoso Chefão e Apocalypse Now?</q>
+    <q cat="História" correta="b" a="Pedro I" b="Tiradentes" c="José Bonifácio" d="Barão do Rio Branco">Quem liderou a Inconfidência Mineira e foi enforcado e esquartejado em 1792?</q>
+    <q cat="Ciências" correta="d" a="Escala Fahrenheit" b="Escala Celsius" c="Escala Rankine" d="Escala Kelvin">Qual escala de temperatura começa no zero absoluto?</q>
+  </carta>
+
+  <carta><!-- 79 -->
+    <q cat="Artes" correta="a" a="Portinari" b="Di Cavalcanti" c="Goeldi" d="Volpi">Qual pintor brasileiro é mundialmente reconhecido pelos retratos de trabalhadores e crianças do nordeste?</q>
+    <q cat="Geografia" correta="c" a="Mianmar" b="Laos" c="Camboja" d="Tailândia">Em qual país asiático fica o complexo de templos de Angkor Wat?</q>
+    <q cat="Esportes" correta="b" a="Flamengo" b="São Paulo FC" c="Corinthians" d="Grêmio">Qual time brasileiro venceu a Copa Intercontinental em 1992 e 1993?</q>
+    <q cat="Entretenimento" correta="d" a="Jurassic Park" b="Tubarão" c="ET – O Extraterrestre" d="Indiana Jones">Qual saga de aventura tem Harrison Ford como um arqueólogo que enfrenta nazistas?</q>
+    <q cat="História" correta="a" a="Cruzadas" b="Guerra dos Cem Anos" c="Guerra do Peloponeso" d="Reconquista">Qual série de guerras medievais visava retomar Jerusalém dos muçulmanos?</q>
+    <q cat="Ciências" correta="c" a="Força × tempo" b="Massa × distância" c="Força × distância" d="Pressão × volume">O que é trabalho em física?</q>
+  </carta>
+
+  <carta><!-- 80 -->
+    <q cat="Artes" correta="b" a="Chico Buarque" b="Nelson Rodrigues" c="Jorge Andrade" d="Plínio Marcos">Qual dramaturgo carioca escreveu Vestido de Noiva e O Beijo no Asfalto?</q>
+    <q cat="Geografia" correta="d" a="Irã" b="Iraque" c="Arábia Saudita" d="Kuwait">Qual pequeno país árabe fica entre o Iraque e a Arábia Saudita, rico em petróleo?</q>
+    <q cat="Esportes" correta="a" a="Garrincha" b="Pelé" c="Didi" d="Amarildo">Quem foi eleito o melhor jogador da Copa do Mundo de 1962 no Chile?</q>
+    <q cat="Entretenimento" correta="c" a="Pulp Fiction" b="Django Livre" c="Cães de Aluguel" d="Kill Bill">Qual foi o primeiro longa-metragem dirigido por Quentin Tarantino?</q>
+    <q cat="História" correta="b" a="Eiffel" b="Gustave Eiffel" c="Viollet-le-Duc" d="Hausmann">Qual engenheiro projetou a Torre Eiffel para a Exposição Universal de 1889?</q>
+    <q cat="Ciências" correta="d" a="Newton" b="Joule" c="Watt" d="Pascal">Em qual unidade se mede a pressão no Sistema Internacional?</q>
+  </carta>
+
+  <carta><!-- 81 -->
+    <q cat="Artes" correta="c" a="ABBA" b="Roxette" c="Björk" d="A-ha">Qual cantora islandesa ficou famosa pelos álbuns Debut e Post com sua voz peculiar?</q>
+    <q cat="Geografia" correta="b" a="Accra" b="Dakar" c="Bamako" d="Conacri">Qual é a capital do Senegal?</q>
+    <q cat="Esportes" correta="d" a="Roger Federer" b="Pete Sampras" c="André Agassi" d="Rafael Nadal">Quem venceu mais vezes o torneio de Roland Garros na história?</q>
+    <q cat="Entretenimento" correta="b" a="Grey's Anatomy" b="House" c="Scrubs" d="ER">Em qual série médica o protagonista diagnostica casos raros com sarcasmo e desrespeita regras?</q>
+    <q cat="História" correta="a" a="Leônidas I" b="Alexandre, o Grande" c="Xerxes I" d="Péricles">Quem liderou os 300 espartanos na Batalha das Termópilas em 480 a.C.?</q>
+    <q cat="Ciências" correta="c" a="Espinhamento" b="Fragmentação" c="Clonagem" d="Partenogênese">Qual técnica biotecnológica cria uma cópia geneticamente idêntica de um organismo?</q>
+  </carta>
+
+  <carta><!-- 82 -->
+    <q cat="Artes" correta="d" a="Björk" b="ABBA" c="Roxette" d="ABBA">Qual grupo sueco lançou Dancing Queen e Waterloo nos anos 1970?</q>
+    <q cat="Geografia" correta="c" a="Accra" b="Dakar" c="Nairóbi" d="Bamako">Qual é a capital do Quênia?</q>
+    <q cat="Esportes" correta="b" a="Brasil" b="Alemanha" c="Itália" d="Argentina">Qual seleção venceu a Copa do Mundo de 1990 com Lothar Matthäus como capitão?</q>
+    <q cat="Entretenimento" correta="a" a="Game of Thrones" b="Breaking Bad" c="The Sopranos" d="The Wire">Qual série da HBO estreou em 2011 e se tornou a mais cara da televisão na época?</q>
+    <q cat="História" correta="d" a="Marco Polo" b="Vasco da Gama" c="Cristóvão Colombo" d="Hernán Cortés">Quem conquistou o Império Asteca para a coroa espanhola no século XVI?</q>
+    <q cat="Ciências" correta="b" a="Vitamina D" b="Vitamina A" c="Vitamina E" d="Vitamina K">Qual vitamina, quando deficiente, causa cegueira noturna?</q>
+  </carta>
+
+  <carta><!-- 83 -->
+    <q cat="Artes" correta="c" a="Gustave Courbet" b="Jean-François Millet" c="Edgar Degas" d="Camille Pissarro">Qual pintor impressionista foi também escultor e representou constantemente bailarinas?</q>
+    <q cat="Geografia" correta="a" a="Oslo" b="Estocolmo" c="Copenhague" d="Helsinki">Qual é a capital da Noruega?</q>
+    <q cat="Esportes" correta="d" a="Fluminense" b="Botafogo" c="Vasco" d="Palmeiras">Qual clube brasileiro tem mais títulos do Campeonato Paulista?</q>
+    <q cat="Entretenimento" correta="b" a="Spike Lee" b="Coen Brothers" c="Richard Linklater" d="Woody Allen">Quais diretores criaram Fargo, O Grande Lebowski e Onde os Fracos Não Têm Vez?</q>
+    <q cat="História" correta="c" a="1517" b="1534" c="1545" d="1563">Em que ano começou o Concílio de Trento, resposta católica à Reforma Protestante?</q>
+    <q cat="Ciências" correta="d" a="Carbono" b="Oxigênio" c="Nitrogênio" d="Ferro">Qual elemento é encontrado na hemoglobina e é responsável pelo transporte de oxigênio?</q>
+  </carta>
+
+  <carta><!-- 84 -->
+    <q cat="Artes" correta="b" a="Cassandra Wilson" b="Nina Simone" c="Billie Holiday" d="Sarah Vaughan">Qual cantora e pianista americana ficou conhecida por Feeling Good e I Put a Spell on You?</q>
+    <q cat="Geografia" correta="d" a="Mandalay" b="Naipidau" c="Yangon" d="Kuala Lumpur">Qual é a capital da Malásia?</q>
+    <q cat="Esportes" correta="a" a="Pelé" b="Ronaldo" c="Romário" d="Garrincha">Quem foi o único jogador a vencer três Copas do Mundo de futebol?</q>
+    <q cat="Entretenimento" correta="c" a="David Bowie" b="Freddie Mercury" c="Elton John" d="Billy Joel">Qual cantor britânico é famoso por Rocket Man e Crocodile Rock?</q>
+    <q cat="História" correta="b" a="1492" b="1776" c="1812" d="1848">Em que ano os Estados Unidos declararam independência da Inglaterra?</q>
+    <q cat="Ciências" correta="d" a="Força" b="Energia" c="Pressão" d="Velocidade">Qual grandeza física é medida em metros por segundo?</q>
+  </carta>
+
+  <carta><!-- 85 -->
+    <q cat="Artes" correta="c" a="Chico Buarque" b="Caetano Veloso" c="Tom Zé" d="Gilberto Gil">Qual artista baiano, membro original da Tropicália, só ganhou reconhecimento tardio com a ajuda de David Byrne?</q>
+    <q cat="Geografia" correta="a" a="Montevidéu" b="Assunção" c="La Paz" d="Quito">Qual é a capital do Uruguai?</q>
+    <q cat="Esportes" correta="b" a="1900" b="1896" c="1904" d="1908">Em que ano foram realizados os primeiros Jogos Olímpicos da era moderna?</q>
+    <q cat="Entretenimento" correta="d" a="Nirvana" b="Pearl Jam" c="Alice in Chains" d="Soundgarden">Qual banda do grunge era liderada pelo vocalista Chris Cornell?</q>
+    <q cat="História" correta="a" a="Bismarck" b="Cavour" c="Garibaldi" d="Mazzini">Qual chanceler alemão unificou a Alemanha em 1871?</q>
+    <q cat="Ciências" correta="c" a="30 anos" b="5.730 décadas" c="5.730 anos" d="57.300 anos">Qual é a meia-vida do carbono-14 usado na datação arqueológica?</q>
+  </carta>
+
+  <carta><!-- 86 -->
+    <q cat="Artes" correta="b" a="Lygia Clark" b="Hélio Oiticica" c="Cildo Meireles" d="Tunga">Qual artista brasileiro criou os Parangolés, capas para serem usadas e dançadas?</q>
+    <q cat="Geografia" correta="d" a="Rio Branco" b="Porto Velho" c="Macapá" d="Belém">Qual é a maior cidade da região norte do Brasil?</q>
+    <q cat="Esportes" correta="a" a="Fórmula 1" b="Fórmula E" c="Fórmula 2" d="IndyCar">Em qual categoria Lewis Hamilton competiu e venceu sete títulos mundiais?</q>
+    <q cat="Entretenimento" correta="c" a="Adele" b="Amy Winehouse" c="Duffy" d="Lily Allen">Qual cantora galesa ficou famosa com Mercy e Warwick Avenue nos anos 2000?</q>
+    <q cat="História" correta="b" a="Francisco Pizarro" b="Hernán Cortés" c="Diego Velázquez" d="Ponce de León">Quem conquistou o Império Asteca e fundou a Cidade do México?</q>
+    <q cat="Ciências" correta="d" a="Fígado" b="Rim" c="Pulmão" d="Coração">Qual órgão do corpo humano tem quatro câmaras e bombeia sangue?</q>
+  </carta>
+
+  <carta><!-- 87 -->
+    <q cat="Artes" correta="c" a="Rembrandt" b="Rubens" c="Vermeer" d="Van Dyck">Qual pintor holandês do século XVII é famoso por interiores domésticos com luz filtrada pelas janelas?</q>
+    <q cat="Geografia" correta="b" a="Ancara" b="Istambul" c="Izmir" d="Bursa">Qual cidade turca fica ao mesmo tempo na Europa e na Ásia?</q>
+    <q cat="Esportes" correta="d" a="Neymar" b="Ronaldinho" c="Kaká" d="Ronaldo Fenômeno">Qual atacante brasileiro foi eleito melhor jogador do mundo pela FIFA em 1997 e 2002?</q>
+    <q cat="Entretenimento" correta="a" a="Radiohead" b="Coldplay" c="Muse" d="Travis">Qual banda britânica lançou OK Computer em 1997, álbum eleito um dos melhores da história?</q>
+    <q cat="História" correta="c" a="1863" b="1865" c="1861" d="1860">Em que ano começou a Guerra de Secessão americana?</q>
+    <q cat="Ciências" correta="b" a="Linfócito" b="Eritrócito" c="Neutrófilo" d="Macrófago">Qual é o outro nome para glóbulo vermelho?</q>
+  </carta>
+
+  <carta><!-- 88 -->
+    <q cat="Artes" correta="d" a="Alban Berg" b="Anton Webern" c="Paul Hindemith" d="Arnold Schoenberg">Quem criou o método dodecafônico e é considerado o pai da música atonal?</q>
+    <q cat="Geografia" correta="a" a="Varsóvia" b="Cracóvia" c="Gdańsk" d="Wrocław">Qual é a capital da Polônia?</q>
+    <q cat="Esportes" correta="c" a="Kobe Bryant" b="LeBron James" c="Michael Jordan" d="Shaquille O'Neal">Quem venceu seis títulos da NBA pelo Chicago Bulls nos anos 1990?</q>
+    <q cat="Entretenimento" correta="b" a="The Strokes" b="Arctic Monkeys" c="Franz Ferdinand" d="Interpol">Qual banda britânica lançou Whatever People Say I Am, That's What I'm Not em 2006?</q>
+    <q cat="História" correta="d" a="Otto I" b="Carlos Magno" c="Frederico Barbarossa" d="Frederico II">Qual imperador do Sacro Império Romano foi chamado de Stupor Mundi pelo seu brilhantismo?</q>
+    <q cat="Ciências" correta="c" a="Condensação" b="Precipitação" c="Sublimação" d="Solidificação">Qual processo transforma um sólido diretamente em gás sem passar pelo estado líquido?</q>
+  </carta>
+
+  <carta><!-- 89 -->
+    <q cat="Artes" correta="b" a="Allen Ginsberg" b="Jack Kerouac" c="William S. Burroughs" d="Lawrence Ferlinghetti">Quem escreveu On the Road, romance símbolo da Geração Beat americana?</q>
+    <q cat="Geografia" correta="d" a="Niamey" b="Bamako" c="Uagadugu" d="N'Djamena">Qual é a capital do Chade?</q>
+    <q cat="Esportes" correta="a" a="Italo Ferreira" b="Gabriel Medina" c="Filipe Toledo" d="Jadson André">Qual surfista brasileiro ganhou a primeira medalha de ouro olímpica no surfe, em Tóquio 2020?</q>
+    <q cat="Entretenimento" correta="c" a="The Wire" b="Oz" c="Breaking Bad" d="Dexter">Qual série é frequentemente apontada como a melhor da televisão americana?</q>
+    <q cat="História" correta="b" a="1944" b="1945" c="1946" d="1947">Em que ano foram realizados os Julgamentos de Nuremberg, que condenaram crimes de guerra nazistas?</q>
+    <q cat="Ciências" correta="d" a="Vitamina C" b="Vitamina B12" c="Vitamina D" d="Vitamina E">Qual vitamina age como antioxidante e protege membranas celulares da oxidação?</q>
+  </carta>
+
+  <carta><!-- 90 -->
+    <q cat="Artes" correta="c" a="Chico Buarque" b="Caetano Veloso" c="Gonzaguinha" d="Geraldo Azevedo">Qual compositor brasileiro é filho do músico Luiz Gonzaga Junior e criou E Vamos à Luta?</q>
+    <q cat="Geografia" correta="b" a="Assunção" b="São Paulo" c="Buenos Aires" d="Lima">Qual é a cidade com maior número de japoneses fora do Japão?</q>
+    <q cat="Esportes" correta="d" a="Abel Ferreira" b="Vanderlei Luxemburgo" c="Luiz Felipe Scolari" d="Tite">Qual treinador levou o Brasil ao título da Copa América em 2019?</q>
+    <q cat="Entretenimento" correta="a" a="Toy Story" b="Shrek" c="Antz" d="Bug's Life">Qual foi o primeiro longa-metragem totalmente gerado por computação gráfica, em 1995?</q>
+    <q cat="História" correta="c" a="Tiglate-Pileser I" b="Sargão II" c="Assurbanipal" d="Senaqueribe">Qual rei assírio criou uma das primeiras grandes bibliotecas do mundo em Nínive?</q>
+    <q cat="Ciências" correta="b" a="Gripe" b="AIDS" c="Malária" d="Tuberculose">Qual doença é causada pelo vírus HIV?</q>
+  </carta>
+
+  <carta><!-- 91 -->
+    <q cat="Artes" correta="d" a="Cézanne" b="Gauguin" c="Toulouse-Lautrec" d="Seurat">Quem desenvolveu o pontilhismo, técnica baseada em pequenos pontos de cor pura?</q>
+    <q cat="Geografia" correta="a" a="Brasília" b="Manaus" c="Recife" d="Fortaleza">Qual é a capital que fica mais ao centro geográfico do Brasil?</q>
+    <q cat="Esportes" correta="c" a="Chicago Bulls" b="Golden State Warriors" c="Los Angeles Lakers" d="Boston Celtics">Qual time de basquete tem mais títulos da NBA?</q>
+    <q cat="Entretenimento" correta="b" a="Christopher Nolan" b="Steven Spielberg" c="James Cameron" d="George Lucas">Quem dirigiu E.T., Raiders of the Lost Ark e Saving Private Ryan?</q>
+    <q cat="História" correta="d" a="1820" b="1830" c="1836" d="1840">Em que ano teve início o processo da Independência do Uruguai, com a separação do Brasil?</q>
+    <q cat="Ciências" correta="c" a="250 km/s" b="300.000 km/h" c="300.000 km/s" d="150.000 km/s">Qual é a velocidade da luz no vácuo?</q>
+  </carta>
+
+  <carta><!-- 92 -->
+    <q cat="Artes" correta="b" a="Portinari" b="Tarsila do Amaral" c="Lygia Clark" d="Di Cavalcanti">Quem pintou Operários e O Lavrador de Café, ícones do modernismo e do povo brasileiro?</q>
+    <q cat="Geografia" correta="d" a="Chile" b="Peru" c="Equador" d="Bolívia">Qual país sul-americano não tem saída para o mar desde a Guerra do Pacífico?</q>
+    <q cat="Esportes" correta="a" a="Brasil" b="Argentina" c="Uruguai" d="Chile">Qual seleção venceu a Copa América mais vezes na história?</q>
+    <q cat="Entretenimento" correta="c" a="Spotify" b="Apple Music" c="Last.fm" d="Deezer">Qual plataforma foi pioneira em streaming de música e criou as primeiras rádios online?</q>
+    <q cat="História" correta="b" a="Pedro Álvares Cabral" b="Tiradentes" c="Frei Caneca" d="Joaquim José da Silva Xavier">Qual é o nome civil do Tiradentes, líder da Inconfidência Mineira?</q>
+    <q cat="Ciências" correta="d" a="Alveólos" b="Brônquios" c="Traqueia" d="Diafragma">Qual músculo é responsável pelos movimentos de inspiração e expiração?</q>
+  </carta>
+
+  <carta><!-- 93 -->
+    <q cat="Artes" correta="c" a="David Hockney" b="Lucian Freud" c="Francis Bacon" d="Peter Blake">Qual pintor britânico ficou famoso pelos Triptych estudos e pelo retrato atormentado de figuras humanas?</q>
+    <q cat="Geografia" correta="a" a="Porto" b="Lisboa" c="Braga" d="Coimbra">Qual é a segunda maior cidade de Portugal?</q>
+    <q cat="Esportes" correta="b" a="Marcelinho Carioca" b="Zico" c="Falcão" d="Sócrates">Qual jogador brasileiro ficou famoso por seu chute certeiro e foi ídolo do Flamengo nos anos 1980?</q>
+    <q cat="Entretenimento" correta="d" a="Led Zeppelin" b="Deep Purple" c="Black Sabbath" d="AC/DC">Qual banda australiana lançou Highway to Hell e Back in Black?</q>
+    <q cat="História" correta="a" a="Pombal" b="D. José I" c="D. Maria I" d="D. João VI">Qual ministro português reconstruiu Lisboa após o terremoto de 1755?</q>
+    <q cat="Ciências" correta="c" a="Serina" b="Alanina" c="Triptofano" d="Valina">Qual aminoácido essencial é precursor da serotonina no cérebro?</q>
+  </carta>
+
+  <carta><!-- 94 -->
+    <q cat="Artes" correta="b" a="Cândido Portinari" b="Anita Malfatti" c="Lasar Segall" d="Victor Brecheret">Qual artista brasileira foi pioneira do modernismo e expôs obras polêmicas em 1917?</q>
+    <q cat="Geografia" correta="d" a="Caracas" b="Bogotá" c="Lima" d="Santiago">Qual é a capital do Chile?</q>
+    <q cat="Esportes" correta="a" a="Real Madrid" b="Barcelona" c="Atletico de Madrid" d="Sevilla">Qual time espanhol mais títulos da Copa do Rei tem na história?</q>
+    <q cat="Entretenimento" correta="c" a="Parasite" b="Oldboy" c="Train to Busan" d="The Wailing">Qual filme coreano de zumbis se passa inteiramente dentro de um trem?</q>
+    <q cat="História" correta="b" a="1066" b="1215" c="1348" d="1381">Em que ano foi assinada a Magna Carta na Inglaterra?</q>
+    <q cat="Ciências" correta="d" a="Proteínas" b="Lipídios" c="Vitaminas" d="Carboidratos">Qual macronutriente é a principal fonte de energia para o cérebro?</q>
+  </carta>
+
+  <carta><!-- 95 -->
+    <q cat="Artes" correta="c" a="Ravel" b="Fauré" c="Saint-Saëns" d="Bizet">Quem compôs O Carnaval dos Animais e a Dança Macabra?</q>
+    <q cat="Geografia" correta="a" a="Suécia" b="Noruega" c="Finlândia" d="Islândia">Qual país escandinavo tem Estocolmo como capital?</q>
+    <q cat="Esportes" correta="b" a="Flamengo" b="Independiente" c="Estudiantes" d="River Plate">Qual time argentino tem mais títulos da Copa Libertadores?</q>
+    <q cat="Entretenimento" correta="d" a="Woody Allen" b="Roman Polanski" c="Stanley Kubrick" d="Martin Scorsese">Quem dirigiu Taxi Driver, Goodfellas e The Departed?</q>
+    <q cat="História" correta="a" a="Waterloo" b="Austerlitz" c="Trafalgar" d="Jena">Em qual batalha de 1815 Napoleão foi definitivamente derrotado?</q>
+    <q cat="Ciências" correta="c" a="Decibéis" b="Newtons" c="Kelvin" d="Joules">Em qual unidade se mede a temperatura absoluta?</q>
+  </carta>
+
+  <carta><!-- 96 -->
+    <q cat="Artes" correta="b" a="Guimarães Rosa" b="Graciliano Ramos" c="José Lins do Rego" d="Rachel de Queiroz">Quem escreveu Angústia e Memórias do Cárcere, obras do regionalismo crítico nordestino?</q>
+    <q cat="Geografia" correta="d" a="Vietnam" b="Laos" c="Camboja" d="Tailândia">Qual país asiático tem Bangkok como capital e é famoso pelos templos budistas?</q>
+    <q cat="Esportes" correta="a" a="Wimbledon" b="Roland Garros" c="Australian Open" d="US Open">Qual Grand Slam de tênis é jogado na grama e é o mais antigo do mundo?</q>
+    <q cat="Entretenimento" correta="c" a="Spike Lee" b="John Singleton" c="Jordan Peele" d="Ryan Coogler">Quem dirigiu Get Out e Nós, filmes de terror com crítica social sobre raça nos EUA?</q>
+    <q cat="História" correta="b" a="Pedro I" b="Dom Pedro II" c="Princesa Isabel" d="Deodoro da Fonseca">Quem foi o segundo e último imperador do Brasil, governando de 1841 a 1889?</q>
+    <q cat="Ciências" correta="d" a="Plutônio" b="Rádio" c="Polônio" d="Urânio">Qual elemento radioativo é o combustível mais usado em usinas nucleares?</q>
+  </carta>
+
+  <carta><!-- 97 -->
+    <q cat="Artes" correta="c" a="Lalo Schifrin" b="Ennio Morricone" c="Nino Rota" d="Bernard Herrmann">Quem compôs a trilha sonora de O Poderoso Chefão e Romeu e Julieta (1968)?</q>
+    <q cat="Geografia" correta="a" a="Luanda" b="Kinshasa" c="Maputo" d="Harare">Qual é a capital de Angola?</q>
+    <q cat="Esportes" correta="b" a="Botafogo" b="Grêmio" c="Cruzeiro" d="Athletico-PR">Qual time brasileiro venceu a Copa Libertadores em 1983 e 1995?</q>
+    <q cat="Entretenimento" correta="d" a="Jon Snow" b="Daenerys Targaryen" c="Tyrion Lannister" d="Cersei Lannister">Qual personagem de Game of Thrones é conhecida pela frase Quando você joga o jogo dos tronos?</q>
+    <q cat="História" correta="a" a="1789" b="1793" c="1799" d="1815">Em que ano começou a Revolução Francesa?</q>
+    <q cat="Ciências" correta="c" a="Lipase" b="Pepsina" c="Amilase" d="Lactase">Qual enzima salivar inicia a digestão do amido na boca?</q>
+  </carta>
+
+  <carta><!-- 98 -->
+    <q cat="Artes" correta="b" a="Luiz Gonzaga" b="Dorival Caymmi" c="Jackson do Pandeiro" d="Trio Nordestino">Qual compositor baiano criou Saudade da Bahia e é considerado o pai da música baiana?</q>
+    <q cat="Geografia" correta="d" a="Jordânia" b="Líbano" c="Síria" d="Israel">Qual país do Oriente Médio tem Jerusalém como capital proclamada?</q>
+    <q cat="Esportes" correta="a" a="Daiane dos Santos" b="Arthur Zanetti" c="Diego Hypolito" d="Jade Barbosa">Qual ginasta brasileira foi campeã mundial do solo em 2003?</q>
+    <q cat="Entretenimento" correta="c" a="AMC" b="Showtime" c="HBO" d="FX">Qual canal americano produziu The Sopranos, The Wire e Game of Thrones?</q>
+    <q cat="História" correta="b" a="Temístocles" b="Péricles" c="Sócrates" d="Aristides">Qual líder ateniense transformou a cidade no apogeu da democracia e cultura no século V a.C.?</q>
+    <q cat="Ciências" correta="d" a="Vitamina C" b="Vitamina B12" c="Ácido Fólico" d="Vitamina D">Qual vitamina é produzida pela pele ao se expor ao sol?</q>
+  </carta>
+
+  <carta><!-- 99 -->
+    <q cat="Artes" correta="c" a="Paulo Autran" b="Fernanda Montenegro" c="Bibi Ferreira" d="Cacilda Becker">Qual atriz brasileira ficou conhecida por protagonizar musicais como My Fair Lady e Evita?</q>
+    <q cat="Geografia" correta="a" a="Porto Príncipe" b="Santo Domingo" c="Kingston" d="Nassau">Qual é a capital do Haiti?</q>
+    <q cat="Esportes" correta="b" a="Fluminense" b="São Paulo FC" c="Corinthians" d="Internacional">Qual time brasileiro venceu o Campeonato Brasileiro de 2006 e 2007 consecutivamente?</q>
+    <q cat="Entretenimento" correta="d" a="Nirvana" b="Pearl Jam" c="Soundgarden" d="Nirvana">Qual banda americana com Kurt Cobain lançou Nevermind em 1991?</q>
+    <q cat="História" correta="a" a="Simón Bolívar" b="José de San Martín" c="Bernardo O'Higgins" d="Antonio José de Sucre">Quem libertou Colômbia, Venezuela, Equador, Peru e Bolívia do domínio espanhol?</q>
+    <q cat="Ciências" correta="c" a="Força" b="Velocidade" c="Energia" d="Pressão">O que é medido em Joules?</q>
+  </carta>
+
+  <carta><!-- 100 -->
+    <q cat="Artes" correta="b" a="Caetano Veloso" b="Gilberto Gil" c="Gal Costa" d="Maria Bethânia">Qual artista baiano se tornou ministro da Cultura no governo Lula (2003-2008)?</q>
+    <q cat="Geografia" correta="d" a="Brasília" b="Rio de Janeiro" c="São Paulo" d="Recife">Qual é a capital do estado de Pernambuco?</q>
+    <q cat="Esportes" correta="a" a="Brasil" b="Argentina" c="Alemanha" d="Itália">Qual seleção venceu a Copa das Confederações de 2013 em casa?</q>
+    <q cat="Entretenimento" correta="c" a="Superman" b="Batman" c="Flash" d="Lanterna Verde">Qual super-herói da DC Comics tem o poder de correr na velocidade da luz?</q>
+    <q cat="História" correta="b" a="1780" b="1789" c="1799" d="1815">Em que ano Luis XVI convocou os Estados Gerais, desencadeando a Revolução Francesa?</q>
+    <q cat="Ciências" correta="d" a="Coração" b="Pulmão" c="Fígado" d="Rins">Quais órgãos filtram o sangue e produzem urina?</q>
+  </carta>
+
+</cartas>

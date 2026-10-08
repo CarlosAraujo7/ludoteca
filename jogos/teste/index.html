@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Teste de conexão · Ludoteca</title>
+  <meta name="theme-color" content="#0e1020">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="../../assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+</head>
+<body>
+  <main id="app" class="app"></main>
+
+  <script src="../../assets/vendor/peerjs.min.js"></script>
+  <script src="../../assets/vendor/qrcode.js"></script>
+  <script src="../../assets/js/util.js"></script>
+  <script src="../../assets/js/net.js"></script>
+  <script src="../../assets/js/lobby.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    var L = window.Ludoteca, esc = L.util.esc;
+
+    window.lobby = L.Lobby({
+      root: document.getElementById('app'),
+      game: 'teste',
+      title: 'Teste de conexão',
+      emoji: '📡',
+      tagline: 'Descubra se os celulares conseguem jogar juntos',
+      accent: '#4da3ff',
+      min: 1, max: 8,
+      showStart: false,
+      showPing: true,
+      extra: diagnostics,
+      onStart: function (s, data) { L.util.toast('Partida iniciada! Dados recebidos: ' + JSON.stringify(data), 'ok'); },
+    });
+
+    /* Painel de diagnóstico dentro da sala: registro, bate-papo e botão de queda. */
+    function diagnostics(s, el) {
+      el.innerHTML =
+        '<div class="stack">' +
+          '<div class="panel stack"><h2>Minha conexão</h2>' +
+            '<div id="t-me" class="small muted">…</div>' +
+            '<button class="btn btn-ghost block" data-t="drop">🔌 Simular queda de rede</button>' +
+            (s.isHost ? '<button class="btn btn-ghost block" data-t="start">▶ Simular início de partida</button>' : '') +
+            '<p class="small muted">Derruba a conexão de propósito para você ver a reconexão automática funcionando.</p>' +
+          '</div>' +
+          '<div class="panel"><h2>Bate-papo de teste</h2>' +
+            '<div class="chat" id="t-chat" aria-live="polite"></div>' +
+            '<form class="row" id="t-form" autocomplete="off">' +
+              '<input class="input grow" id="t-msg" maxlength="140" placeholder="Escreva algo e envie" enterkeyhint="send">' +
+              '<button class="btn btn-primary" type="submit">Enviar</button>' +
+            '</form>' +
+          '</div>' +
+          '<div class="panel"><h2>Registro</h2><div class="log" id="t-log"></div></div>' +
+        '</div>';
+
+      var $ = function (id) { return el.querySelector(id); };
+      var logEl = $('#t-log');
+      function log(text) {
+        var t = new Date().toLocaleTimeString('pt-BR');
+        logEl.insertAdjacentHTML('beforeend', '<div>' + esc(t) + '  ' + esc(text) + '</div>');
+        logEl.scrollTop = logEl.scrollHeight;
+      }
+      function chat(from, text) {
+        var c = $('#t-chat');
+        c.insertAdjacentHTML('beforeend', '<div><b>' + esc(from) + ':</b> ' + esc(text) + '</div>');
+        c.scrollTop = c.scrollHeight;
+      }
+
+      log('Na sala ' + s.code + (s.isHost ? ' como anfitrião.' : ' como convidado.'));
+
+      /* mensagens: o convidado manda ao anfitrião, que repassa para todos */
+      s.on('message', function (d) { if (d && d.chat) chat(d.from, d.chat); });
+      if (s.isHost) {
+        s.host.on('message', function (p, d) {
+          if (d && typeof d.chat === 'string') s.host.broadcast({ chat: d.chat.slice(0, 140), from: p.name });
+        });
+        ['join', 'rejoin', 'disconnect', 'leave'].forEach(function (ev) {
+          s.host.on(ev, function (p) { log(p.name + ' → ' + ev); });
+        });
+      }
+      s.on('status', function (st) { log('Estado da conexão: ' + st); });
+
+      el.querySelector('#t-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var input = $('#t-msg'), text = input.value.trim();
+        if (!text) return;
+        if (!s.send({ chat: text })) L.util.toast('Sem conexão agora.', 'err');
+        input.value = '';
+      });
+      var startBtn = el.querySelector('[data-t="start"]');
+      if (startBtn) startBtn.addEventListener('click', function () { s.host.start({ teste: true, quando: Date.now() }); });
+      el.querySelector('[data-t="drop"]').addEventListener('click', function () {
+        if (s.isHost) { L.util.toast('O anfitrião não pode simular queda: entre como convidado.'); return; }
+        log('Derrubando a conexão de propósito…');
+        s.debugDrop();
+      });
+
+      /* resumo da conexão, atualizado a cada 2 s */
+      setInterval(function () {
+        var me = $('#t-me');
+        if (!me) return;
+        var label = { online: '🟢 Conectado', reconnecting: '🟡 Reconectando…', connecting: '🟡 Conectando…', closed: '🔴 Fora da sala' }[s.status] || s.status;
+        if (s.isHost) { me.innerHTML = label + ' · você é o anfitrião (os outros conectam em você)'; return; }
+        var base = label + (s.rtt ? ' · ' + s.rtt + ' ms' : '');
+        if (s.status !== 'online') { me.textContent = base; return; }
+        s.route().then(function (r) {
+          me.textContent = base + (r ? ' · conexão ' + L.Net.routeLabel(r) : '');
+        });
+      }, 2000);
+    }
+  })();
+  </script>
+</body>
+</html>

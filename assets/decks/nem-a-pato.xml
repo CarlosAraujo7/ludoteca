@@ -1,0 +1,2696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartas>
+  <carta tema="ANIMAIS" patos="2">
+    <pergunta resposta="1200">
+      <texto>Até quantos batimentos por minuto pode atingir o coração de um colibri em pleno voo?</texto>
+      <contexto>O coração do colibri bate normalmente entre 250 e 1200 vezes por minuto durante o voo, um dos ritmos mais altos do reino animal.</contexto>
+    </pergunta>
+    <pergunta resposta="150">
+      <texto>Quantos anos pode viver uma tartaruga-de-Galápagos?</texto>
+      <contexto>Tartarugas gigantes de Galápagos podem viver mais de 150 anos; a tartaruga Harriet viveu cerca de 175 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="110">
+      <texto>Qual a velocidade máxima, em km/h, que uma chita pode atingir?</texto>
+      <contexto>A chita é o mamífero terrestre mais rápido, podendo chegar a cerca de 110 km/h em curtas distâncias.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos mil músculos tem a tromba de um elefante, sem nenhum osso?</texto>
+      <contexto>A tromba do elefante contém cerca de 40 mil músculos, sem nenhum osso, permitindo movimentos extremamente precisos.</contexto>
+    </pergunta>
+    <pergunta resposta="22">
+      <texto>Quanto tempo, em meses, dura a gestação de uma elefanta?</texto>
+      <contexto>A gestação da elefanta é a mais longa entre os mamíferos terrestres, durando cerca de 22 meses (quase 2 anos).</contexto>
+    </pergunta>
+    <pergunta resposta="220">
+      <texto>Quantos litros de sangue o coração de uma baleia-azul pode bombear por batida?</texto>
+      <contexto>O coração da baleia-azul, do tamanho de um carro pequeno, bombeia cerca de 220 litros de sangue por batida.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ESPAÇO SIDERAL" patos="3">
+    <pergunta resposta="27">
+      <texto>Quantos dias a Lua leva para completar uma volta em torno da Terra?</texto>
+      <contexto>A Lua leva cerca de 27,3 dias (mês sideral) para orbitar completamente a Terra.</contexto>
+    </pergunta>
+    <pergunta resposta="-229">
+      <texto>Qual a temperatura média, em graus Celsius negativos, da superfície de Plutão?</texto>
+      <contexto>Plutão tem temperatura média de cerca de -229°C, um dos lugares mais frios do sistema solar.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos planetas do sistema solar têm anéis visíveis?</texto>
+      <contexto>Júpiter, Saturno, Urano e Netuno possuem sistemas de anéis, embora os de Saturno sejam os mais visíveis.</contexto>
+    </pergunta>
+    <pergunta resposta="1969">
+      <texto>Em que ano o homem pisou na Lua pela primeira vez?</texto>
+      <contexto>Neil Armstrong pisou na Lua em 20 de julho de 1969, durante a missão Apollo 11.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos minutos a luz do Sol leva para chegar à Terra?</texto>
+      <contexto>A luz solar leva cerca de 8 minutos e 20 segundos para percorrer os 150 milhões de km até a Terra.</contexto>
+    </pergunta>
+    <pergunta resposta="146">
+      <texto>Quantas luas confirmadas tem o planeta Saturno?</texto>
+      <contexto>Saturno tem 146 luas confirmadas, o maior número entre os planetas do sistema solar (dado de 2023).</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CINEMA" patos="2">
+    <pergunta resposta="1977">
+      <texto>Em que ano foi lançado o primeiro filme da saga Star Wars?</texto>
+      <contexto>Star Wars: Uma Nova Esperança foi lançado em 25 de maio de 1977.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos Oscars o filme "Titanic" (1997) ganhou?</texto>
+      <contexto>Titanic ganhou 11 estatuetas do Oscar, recorde empatado com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei.</contexto>
+    </pergunta>
+    <pergunta resposta="201">
+      <texto>Quanto tempo, em minutos, dura o filme "O Senhor dos Anéis: O Retorno do Rei"?</texto>
+      <contexto>A versão de cinema dura 201 minutos (3h21), um dos filmes mais longos a vencer o Oscar de Melhor Filme.</contexto>
+    </pergunta>
+    <pergunta resposta="1986">
+      <texto>Em que ano foi fundada a Pixar?</texto>
+      <contexto>A Pixar foi fundada em 1986, após ser comprada por Steve Jobs da divisão de computação gráfica da Lucasfilm.</contexto>
+    </pergunta>
+    <pergunta resposta="2.9">
+      <texto>Quantos bilhões de dólares, aproximadamente, "Avatar" (2009) faturou nas bilheterias mundiais?</texto>
+      <contexto>Avatar arrecadou cerca de 2,9 bilhões de dólares, sendo um dos filmes mais lucrativos da história.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos filmes compõem a trilogia original de "De Volta para o Futuro"?</texto>
+      <contexto>A trilogia De Volta para o Futuro tem 3 filmes, lançados entre 1985 e 1990.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="HISTÓRIA DO BRASIL" patos="3">
+    <pergunta resposta="1500">
+      <texto>Em que ano o Brasil foi descoberto pelos portugueses?</texto>
+      <contexto>Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500.</contexto>
+    </pergunta>
+    <pergunta resposta="1822">
+      <texto>Em que ano foi proclamada a independência do Brasil?</texto>
+      <contexto>D. Pedro I proclamou a independência em 7 de setembro de 1822, às margens do rio Ipiranga.</contexto>
+    </pergunta>
+    <pergunta resposta="1888">
+      <texto>Em que ano foi abolida a escravidão no Brasil?</texto>
+      <contexto>A Lei Áurea foi assinada pela Princesa Isabel em 13 de maio de 1888.</contexto>
+    </pergunta>
+    <pergunta resposta="21">
+      <texto>Quantos anos durou o período da Ditadura Militar no Brasil?</texto>
+      <contexto>O regime militar durou de 1964 a 1985, totalizando 21 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="1960">
+      <texto>Em que ano foi inaugurada a cidade de Brasília?</texto>
+      <contexto>Brasília foi inaugurada em 21 de abril de 1960, tornando-se a nova capital federal.</contexto>
+    </pergunta>
+    <pergunta resposta="1889">
+      <texto>Em que ano o Brasil se tornou uma república?</texto>
+      <contexto>A Proclamação da República ocorreu em 15 de novembro de 1889, liderada pelo Marechal Deodoro da Fonseca.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="AVIAÇÃO" patos="3">
+    <pergunta resposta="1906">
+      <texto>Em que ano Santos Dumont voou o 14-Bis?</texto>
+      <contexto>Santos Dumont realizou o primeiro voo público do 14-Bis em 23 de outubro de 1906, em Paris.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>A que altitude de cruzeiro, em quilômetros, voa normalmente um avião comercial?</texto>
+      <contexto>Aviões comerciais costumam cruzar entre 9 e 12 km de altitude, cerca de 10 km em média (equivalente a 10 mil metros).</contexto>
+    </pergunta>
+    <pergunta resposta="2180">
+      <texto>Qual a velocidade máxima de cruzeiro, em km/h, do Concorde?</texto>
+      <contexto>O Concorde alcançava cerca de 2.180 km/h, mais que o dobro da velocidade do som.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos motores tem o avião Boeing 747 clássico?</texto>
+      <contexto>O Boeing 747 "Jumbo" utiliza 4 motores, dois em cada ala.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantas horas, aproximadamente, dura um voo direto de São Paulo a Londres?</texto>
+      <contexto>O voo direto entre São Paulo e Londres dura cerca de 11 horas.</contexto>
+    </pergunta>
+    <pergunta resposta="1967">
+      <texto>Em que ano o Boeing 737 fez seu primeiro voo?</texto>
+      <contexto>O Boeing 737 voou por primeira vez em 1967 e se tornou o avião comercial mais vendido da história.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="INSETOS" patos="2">
+    <pergunta resposta="1">
+      <texto>Quantos milhões de espécies de insetos já catalogadas existem no mundo, aproximadamente?</texto>
+      <contexto>Já foram catalogadas mais de 1 milhão de espécies de insetos, o grupo animal mais diverso do planeta.</contexto>
+    </pergunta>
+    <pergunta resposta="50">
+      <texto>Quantas vezes o próprio peso corporal uma formiga pode carregar?</texto>
+      <contexto>Algumas formigas conseguem carregar até 50 vezes o próprio peso corporal.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos grandes olhos compostos tem uma libélula?</texto>
+      <contexto>A libélula tem 2 grandes olhos compostos, cada um formado por até 30 mil omatídeos (lentes individuais).</contexto>
+    </pergunta>
+    <pergunta resposta="55">
+      <texto>Quantos quilômetros por hora pode voar uma libélula em fuga?</texto>
+      <contexto>Libélulas podem atingir até 55 km/h, sendo um dos insetos voadores mais rápidos.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quanto tempo, em dias, vive uma abelha operária no verão?</texto>
+      <contexto>Em média, uma abelha operária vive cerca de 40 dias durante o verão, devido ao desgaste do trabalho intenso.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantas asas funcionais tem uma mosca comum?</texto>
+      <contexto>Diferente da maioria dos insetos, que tem 4 asas, as moscas (ordem Diptera) têm apenas 2 asas funcionais.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="VULCÕES" patos="3">
+    <pergunta resposta="1200">
+      <texto>Qual a temperatura aproximada, em graus Celsius, da lava basáltica de um vulcão?</texto>
+      <contexto>A lava basáltica pode atingir temperaturas de até 1.200°C ao sair do vulcão.</contexto>
+    </pergunta>
+    <pergunta resposta="79">
+      <texto>Em que ano (depois de Cristo) a erupção do Vesúvio destruiu Pompeia?</texto>
+      <contexto>O Monte Vesúvio entrou em erupção no ano 79 d.C., destruindo as cidades de Pompeia e Herculano.</contexto>
+    </pergunta>
+    <pergunta resposta="1500">
+      <texto>Quantos vulcões potencialmente ativos existem aproximadamente no mundo?</texto>
+      <contexto>Estima-se que existam cerca de 1.500 vulcões potencialmente ativos no mundo, sem contar os submarinos.</contexto>
+    </pergunta>
+    <pergunta resposta="3776">
+      <texto>Qual a altura, em metros, do vulcão Monte Fuji, no Japão?</texto>
+      <contexto>O Monte Fuji tem 3.776 metros de altitude, sendo o ponto mais alto do Japão.</contexto>
+    </pergunta>
+    <pergunta resposta="1247">
+      <texto>Quantos metros de altitude tem o cume do vulcão Kilauea, no Havaí?</texto>
+      <contexto>O Kilauea, no Havaí, tem cume a 1.247 metros de altitude e é um dos vulcões mais ativos do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="35">
+      <texto>Quantos quilômetros de altura a coluna de cinzas do vulcão Pinatubo atingiu em 1991?</texto>
+      <contexto>A erupção do Pinatubo, nas Filipinas em 1991, lançou cinzas a até 35 km de altura na atmosfera.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="RIOS DO MUNDO" patos="3">
+    <pergunta resposta="6992">
+      <texto>Quantos quilômetros de extensão tem o Rio Amazonas, aproximadamente?</texto>
+      <contexto>O Rio Amazonas tem cerca de 6.992 km, sendo considerado por muitos estudos o rio mais longo do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="6650">
+      <texto>Quantos quilômetros mede o Rio Nilo, aproximadamente?</texto>
+      <contexto>O Rio Nilo tem aproximadamente 6.650 km de extensão, atravessando 11 países da África.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos países o Rio Danúbio atravessa?</texto>
+      <contexto>O Rio Danúbio passa por 10 países europeus, mais que qualquer outro rio do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos milhões de litros de água por segundo o Rio Amazonas despeja no oceano, aproximadamente?</texto>
+      <contexto>O Amazonas despeja cerca de 200 milhões de litros de água por segundo no Oceano Atlântico.</contexto>
+    </pergunta>
+    <pergunta resposta="2914">
+      <texto>Quantos quilômetros tem o Rio São Francisco, o "rio da integração nacional"?</texto>
+      <contexto>O Rio São Francisco tem cerca de 2.914 km e corta cinco estados brasileiros.</contexto>
+    </pergunta>
+    <pergunta resposta="6300">
+      <texto>Quantos quilômetros de extensão tem o Rio Yangtzé, o mais longo da Ásia?</texto>
+      <contexto>O Rio Yangtzé, com cerca de 6.300 km, é o rio mais longo da Ásia e da China.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FUTEBOL" patos="2">
+    <pergunta resposta="5">
+      <texto>Quantas Copas do Mundo a Seleção Brasileira já venceu?</texto>
+      <contexto>O Brasil é pentacampeão mundial, com títulos em 1958, 1962, 1970, 1994 e 2002.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos jogadores titulares cada time de futebol coloca em campo?</texto>
+      <contexto>Cada equipe de futebol joga com 11 jogadores em campo, incluindo o goleiro.</contexto>
+    </pergunta>
+    <pergunta resposta="90">
+      <texto>Quanto tempo, em minutos, dura uma partida oficial de futebol (sem prorrogação)?</texto>
+      <contexto>Uma partida de futebol tem 90 minutos, divididos em dois tempos de 45 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="1930">
+      <texto>Em que ano foi disputada a primeira Copa do Mundo de futebol?</texto>
+      <contexto>A primeira Copa do Mundo foi realizada no Uruguai em 1930, e o anfitrião foi o campeão.</contexto>
+    </pergunta>
+    <pergunta resposta="767">
+      <texto>Quantos gols Pelé marcou oficialmente em sua carreira, segundo contagem da Fifa?</texto>
+      <contexto>Pelé marcou 767 gols em jogos oficiais por clubes e seleção, segundo contagem da Fifa.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Qual a largura oficial, em metros, do gol de futebol?</texto>
+      <contexto>O gol de futebol tem 7,32 metros de largura por 2,44 metros de altura.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FÓRMULA 1" patos="4">
+    <pergunta resposta="7">
+      <texto>Quantos títulos mundiais de pilotos Michael Schumacher conquistou?</texto>
+      <contexto>Schumacher venceu 7 campeonatos mundiais, recorde empatado com Lewis Hamilton.</contexto>
+    </pergunta>
+    <pergunta resposta="370">
+      <texto>Qual a velocidade máxima, em km/h, que um carro de Fórmula 1 já registrou em pista?</texto>
+      <contexto>Carros de F1 já registraram velocidades acima de 370 km/h em retas longas, como em Monza.</contexto>
+    </pergunta>
+    <pergunta resposta="78">
+      <texto>Quantas voltas tem o tradicional GP de Mônaco?</texto>
+      <contexto>O GP de Mônaco tem 78 voltas no circuito de rua mais icônico da F1.</contexto>
+    </pergunta>
+    <pergunta resposta="1950">
+      <texto>Em que ano a Fórmula 1 realizou sua primeira temporada de campeonato mundial?</texto>
+      <contexto>O primeiro campeonato mundial de Fórmula 1 ocorreu em 1950, com vitória de Giuseppe Farina.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos campeonatos mundiais de pilotos Ayrton Senna conquistou?</texto>
+      <contexto>Ayrton Senna foi tricampeão mundial, em 1988, 1990 e 1991, todos pela McLaren.</contexto>
+    </pergunta>
+    <pergunta resposta="798">
+      <texto>Quanto pesa, em kg, um carro de Fórmula 1 atual (com piloto, sem combustível)?</texto>
+      <contexto>O peso mínimo regulamentar de um carro de F1 em 2023 era de 798 kg, incluindo o piloto.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CULINÁRIA BRASILEIRA" patos="2">
+    <pergunta resposta="10">
+      <texto>Quantos ingredientes principais compõem a feijoada tradicional, aproximadamente?</texto>
+      <contexto>A feijoada tradicional reúne cerca de 10 ingredientes principais entre carnes, feijão preto e temperos.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantas calorias, aproximadamente, tem um acarajé médio?</texto>
+      <contexto>O acarajé, prato típico da Bahia feito com massa de feijão-fradinho fritada em azeite de dendê, tem cerca de 200 calorias por unidade.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos minutos, em média, leva o preparo do arroz branco?</texto>
+      <contexto>O arroz branco tradicional leva em média 20 minutos para cozinhar.</contexto>
+    </pergunta>
+    <pergunta resposta="180">
+      <texto>Quantos graus Celsius, em média, é a temperatura ideal da brasa para um bom churrasco?</texto>
+      <contexto>A temperatura ideal da brasa para churrasco, símbolo cultural da Região Sul, gira em torno de 180°C.</contexto>
+    </pergunta>
+    <pergunta resposta="300">
+      <texto>Quantas calorias, aproximadamente, tem uma coxinha de frango média?</texto>
+      <contexto>Uma coxinha média tem cerca de 300 calorias, dependendo do tamanho e do preparo.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Em que século a mandioca já era cultivada pelos povos indígenas no Brasil?</texto>
+      <contexto>A mandioca já era cultivada por povos indígenas antes da chegada dos portugueses no século 16, tornando-se base da culinária brasileira.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CHOCOLATE" patos="2">
+    <pergunta resposta="3000">
+      <texto>Há quantos anos, aproximadamente, o cacau é cultivado pelos povos da América Central?</texto>
+      <contexto>O cultivo do cacau remonta a cerca de 3.000 anos, sendo usado por maias e astecas no atual México.</contexto>
+    </pergunta>
+    <pergunta resposta="545">
+      <texto>Quantas calorias, aproximadamente, tem uma barra de chocolate ao leite de 100g?</texto>
+      <contexto>Uma barra de chocolate ao leite de 100g tem em média 545 calorias.</contexto>
+    </pergunta>
+    <pergunta resposta="1847">
+      <texto>Em que ano foi criada a primeira barra de chocolate sólido?</texto>
+      <contexto>A primeira barra de chocolate sólido foi criada pela empresa Fry's, na Inglaterra, em 1847.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos quilos de chocolate, em média, um brasileiro consome por ano?</texto>
+      <contexto>O consumo médio de chocolate no Brasil é de cerca de 2 a 3 kg por pessoa ao ano.</contexto>
+    </pergunta>
+    <pergunta resposta="50">
+      <texto>Qual a porcentagem mínima de cacau exigida para um chocolate ser considerado "amargo" no Brasil?</texto>
+      <contexto>Pela legislação brasileira, o chocolate amargo deve ter no mínimo 50% de cacau em sua composição.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Que porcentagem da produção mundial de cacau, aproximadamente, vem da Costa do Marfim, maior produtora do mundo?</texto>
+      <contexto>A Costa do Marfim é o maior produtor mundial de cacau, respondendo por cerca de 40% da produção global.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="TECNOLOGIA" patos="3">
+    <pergunta resposta="2007">
+      <texto>Em que ano foi lançado o primeiro iPhone?</texto>
+      <contexto>O primeiro iPhone foi lançado por Steve Jobs em 9 de janeiro de 2007.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos bilhões de transistores, aproximadamente, tem um chip de smartphone moderno topo de linha?</texto>
+      <contexto>Chips modernos de smartphones topo de linha contêm mais de 15 bilhões de transistores.</contexto>
+    </pergunta>
+    <pergunta resposta="1975">
+      <texto>Em que ano foi fundada a empresa Microsoft?</texto>
+      <contexto>A Microsoft foi fundada por Bill Gates e Paul Allen em 1975.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Aproximadamente quantos países o sistema GPS cobre com sinal de satélite?</texto>
+      <contexto>O sistema GPS oferece cobertura global, alcançando praticamente todos os mais de 190 países do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="1977">
+      <texto>Em que ano foi lançado o computador Apple II?</texto>
+      <contexto>O Apple II foi lançado em 1977, sendo um dos primeiros computadores pessoais de sucesso comercial.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos milhares de satélites, aproximadamente, a constelação Starlink já colocou em órbita?</texto>
+      <contexto>A Starlink, da SpaceX, já tinha mais de 5 mil satélites em órbita até 2024.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="INTERNET" patos="3">
+    <pergunta resposta="1969">
+      <texto>Em que ano a ARPANET, precursora da internet, foi criada?</texto>
+      <contexto>A ARPANET, precursora da internet, foi criada em 1969 nos Estados Unidos.</contexto>
+    </pergunta>
+    <pergunta resposta="1989">
+      <texto>Em que ano Tim Berners-Lee propôs a World Wide Web?</texto>
+      <contexto>Tim Berners-Lee propôs a World Wide Web em 1989, no laboratório CERN.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos bilhões de usuários de internet existem aproximadamente no mundo?</texto>
+      <contexto>Estima-se que mais de 5 bilhões de pessoas usem a internet no mundo atualmente.</contexto>
+    </pergunta>
+    <pergunta resposta="1998">
+      <texto>Em que ano o Google foi fundado?</texto>
+      <contexto>O Google foi fundado por Larry Page e Sergey Brin em 1998.</contexto>
+    </pergunta>
+    <pergunta resposta="2004">
+      <texto>Em que ano foi lançado o Facebook?</texto>
+      <contexto>O Facebook foi lançado por Mark Zuckerberg em 2004, inicialmente para estudantes de Harvard.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantas horas de vídeo, aproximadamente, são enviadas ao YouTube por minuto?</texto>
+      <contexto>Estima-se que mais de 500 horas de vídeo sejam enviadas ao YouTube a cada minuto.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="VIDEOGAMES" patos="2">
+    <pergunta resposta="1985">
+      <texto>Em que ano foi lançado o primeiro Super Mario Bros.?</texto>
+      <contexto>Super Mario Bros. foi lançado em 1985 para o Nintendo Entertainment System (NES).</contexto>
+    </pergunta>
+    <pergunta resposta="300">
+      <texto>Quantos milhões de cópias, aproximadamente, o jogo Minecraft já vendeu?</texto>
+      <contexto>Minecraft já vendeu mais de 300 milhões de cópias, sendo o jogo mais vendido da história.</contexto>
+    </pergunta>
+    <pergunta resposta="1994">
+      <texto>Em que ano foi lançado o primeiro PlayStation?</texto>
+      <contexto>O primeiro PlayStation foi lançado pela Sony no Japão em dezembro de 1994.</contexto>
+    </pergunta>
+    <pergunta resposta="350">
+      <texto>Quantos milhões de jogadores registrados, aproximadamente, o game Fortnite tinha em 2020?</texto>
+      <contexto>O Fortnite alcançou cerca de 350 milhões de jogadores registrados em 2020.</contexto>
+    </pergunta>
+    <pergunta resposta="1889">
+      <texto>Em que ano foi fundada a empresa Nintendo, originalmente como fabricante de cartas?</texto>
+      <contexto>A Nintendo foi fundada em 1889 no Japão, originalmente como fabricante de cartas Hanafuda.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos botões de ação tem o controle clássico do PlayStation (excluindo direcionais e analógicos)?</texto>
+      <contexto>O controle do PlayStation tem 4 botões de ação principais: X, Círculo, Quadrado e Triângulo.</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="MÚSICA POP" patos="2">
+    <pergunta resposta="10">
+      <texto>Quantos álbuns de estúdio Michael Jackson lançou como artista solo?</texto>
+      <contexto>Michael Jackson lançou 10 álbuns de estúdio solo entre 1972 e 2001.</contexto>
+    </pergunta>
+    <pergunta resposta="1982">
+      <texto>Em que ano foi lançado o álbum "Thriller", de Michael Jackson?</texto>
+      <contexto>Thriller foi lançado em 1982 e é o álbum mais vendido da história, com mais de 70 milhões de cópias.</contexto>
+    </pergunta>
+    <pergunta resposta="32">
+      <texto>Quantos Grammys a cantora Beyoncé já ganhou, recorde até 2023?</texto>
+      <contexto>Beyoncé é a artista com mais Grammys da história, com 32 prêmios até 2023.</contexto>
+    </pergunta>
+    <pergunta resposta="1970">
+      <texto>Em que ano os Beatles se separaram oficialmente?</texto>
+      <contexto>Os Beatles anunciaram o fim da banda em 1970, após mais de uma década de carreira.</contexto>
+    </pergunta>
+    <pergunta resposta="19">
+      <texto>Quantas semanas a música "Old Town Road" ficou em 1º lugar na Billboard Hot 100?</texto>
+      <contexto>Old Town Road, de Lil Nas X, ficou 19 semanas consecutivas em 1º lugar, um recorde.</contexto>
+    </pergunta>
+    <pergunta resposta="1983">
+      <texto>Em que ano Madonna lançou seu primeiro álbum?</texto>
+      <contexto>Madonna lançou seu álbum de debut homônimo em 1983.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="DINOSSAUROS" patos="3">
+    <pergunta resposta="66">
+      <texto>Há quantos milhões de anos os dinossauros foram extintos, aproximadamente?</texto>
+      <contexto>Os dinossauros foram extintos há cerca de 66 milhões de anos, no fim do período Cretáceo.</contexto>
+    </pergunta>
+    <pergunta resposta="35">
+      <texto>Quantos metros de comprimento podia ter um Argentinossauro, um dos maiores dinossauros conhecidos?</texto>
+      <contexto>O Argentinossauro podia atingir até 35 metros de comprimento, um dos maiores animais terrestres já existentes.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantos dentes, aproximadamente, tinha um Tiranossauro Rex?</texto>
+      <contexto>O T-Rex tinha cerca de 60 dentes serrilhados, alguns com até 30 cm de comprimento incluindo a raiz.</contexto>
+    </pergunta>
+    <pergunta resposta="19">
+      <texto>Em que século o termo "dinossauro" foi criado pela ciência?</texto>
+      <contexto>O termo "dinossauro" foi criado em 1842, no século 19, quando os primeiros fósseis foram descritos cientificamente.</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Quantas toneladas, aproximadamente, podia pesar um Argentinossauro?</texto>
+      <contexto>Estima-se que o Argentinossauro pesasse até 70 toneladas, equivalente a cerca de 10 elefantes.</contexto>
+    </pergunta>
+    <pergunta resposta="165">
+      <texto>Por quantos milhões de anos os dinossauros habitaram a Terra, aproximadamente, antes de serem extintos?</texto>
+      <contexto>Os dinossauros existiram por cerca de 165 milhões de anos, muito mais tempo que os humanos modernos existem.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MATEMÁTICA" patos="3">
+    <pergunta resposta="100">
+      <texto>Quantos trilhões de casas decimais do número Pi, aproximadamente, já foram calculadas por computadores?</texto>
+      <contexto>Computadores já calcularam mais de 100 trilhões de dígitos decimais de Pi.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantas faces triangulares tem um icosaedro?</texto>
+      <contexto>O icosaedro é um poliedro com 20 faces triangulares, um dos cinco sólidos platônicos.</contexto>
+    </pergunta>
+    <pergunta resposta="2.72">
+      <texto>Qual o valor aproximado, com duas casas decimais, do número de Euler (e)?</texto>
+      <contexto>O número de Euler é aproximadamente 2,71828, fundamental em cálculo e crescimento exponencial.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Em que século antes de Cristo viveu o matemático grego Pitágoras, aproximadamente?</texto>
+      <contexto>Pitágoras viveu por volta do século 6 a.C., conhecido pelo famoso teorema sobre triângulos retângulos.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos lados tem um hexágono?</texto>
+      <contexto>Um hexágono é um polígono de 6 lados, como o formato dos favos de mel.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Qual o valor da raiz quadrada de 144?</texto>
+      <contexto>A raiz quadrada de 144 é 12, pois 12 multiplicado por 12 resulta em 144.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PAÍSES DO MUNDO" patos="2">
+    <pergunta resposta="193">
+      <texto>Quantos países são reconhecidos atualmente como Estados-membros da ONU?</texto>
+      <contexto>A ONU reconhece atualmente 193 Estados-membros.</contexto>
+    </pergunta>
+    <pergunta resposta="1428">
+      <texto>Quantos milhões de habitantes, aproximadamente, tem a Índia, o país mais populoso do mundo?</texto>
+      <contexto>Desde 2023, a Índia superou a China e se tornou o país mais populoso do mundo, com cerca de 1.428 milhões de habitantes.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos fusos horários tem a Rússia, o maior país do mundo em área?</texto>
+      <contexto>A Rússia abrange 11 fusos horários diferentes devido à sua enorme extensão territorial.</contexto>
+    </pergunta>
+    <pergunta resposta="0.44">
+      <texto>Quantos km², aproximadamente, tem o Vaticano, o menor país do mundo em área territorial?</texto>
+      <contexto>O Vaticano é o menor país do mundo, com apenas 0,44 km² de área.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos países fazem fronteira terrestre com o Brasil?</texto>
+      <contexto>O Brasil faz fronteira com 10 países sul-americanos, todos exceto Chile e Equador.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Quantos milhões de km², aproximadamente, tem a Rússia, o maior país do mundo em área?</texto>
+      <contexto>A Rússia é o maior país do mundo, com mais de 17 milhões de km².</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MONTANHAS" patos="3">
+    <pergunta resposta="8849">
+      <texto>Quantos metros de altitude tem o Monte Everest?</texto>
+      <contexto>O Monte Everest, na fronteira entre Nepal e China, tem 8.849 metros, sendo o ponto mais alto do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="1953">
+      <texto>Em que ano o Monte Everest foi escalado pela primeira vez com sucesso?</texto>
+      <contexto>Edmund Hillary e Tenzing Norgay alcançaram o topo do Everest em 29 de maio de 1953.</contexto>
+    </pergunta>
+    <pergunta resposta="2995">
+      <texto>Qual a altitude, em metros, do Pico da Neblina, o ponto mais alto do Brasil?</texto>
+      <contexto>O Pico da Neblina, na Amazônia, tem 2.995 metros de altitude.</contexto>
+    </pergunta>
+    <pergunta resposta="6961">
+      <texto>Quantos metros tem o Aconcágua, a montanha mais alta da América?</texto>
+      <contexto>O Aconcágua, na Argentina, tem 6.961 metros, sendo o ponto mais alto fora da Ásia.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Das 14 montanhas do mundo com mais de 8.000 metros, quantas ficam na cordilheira do Himalaia?</texto>
+      <contexto>Das 14 montanhas com mais de 8.000 metros do mundo, 10 estão no Himalaia, incluindo o Everest.</contexto>
+    </pergunta>
+    <pergunta resposta="-60">
+      <texto>A quantos graus Celsius negativos pode chegar a temperatura no topo do Everest no inverno?</texto>
+      <contexto>No inverno, a temperatura no topo do Everest pode cair a até -60°C.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MEDICINA" patos="3">
+    <pergunta resposta="206">
+      <texto>Quantos ossos tem o corpo humano adulto?</texto>
+      <contexto>O esqueleto humano adulto tem 206 ossos, número menor que ao nascer devido à fusão de ossos.</contexto>
+    </pergunta>
+    <pergunta resposta="1955">
+      <texto>Em que ano Jonas Salk anunciou a vacina contra a poliomielite?</texto>
+      <contexto>Jonas Salk anunciou a vacina contra a poliomielite em 1955, marco da saúde pública mundial.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos litros de sangue, em média, tem o corpo de um adulto?</texto>
+      <contexto>Um adulto médio tem cerca de 5 litros de sangue circulando pelo corpo.</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Quantos batimentos por minuto, em média, tem o coração humano em repouso?</texto>
+      <contexto>O coração humano bate em média 60 a 100 vezes por minuto em repouso, cerca de 70 em média.</contexto>
+    </pergunta>
+    <pergunta resposta="1928">
+      <texto>Em que ano Alexander Fleming descobriu a penicilina?</texto>
+      <contexto>Fleming descobriu a penicilina em 1928, revolucionando o tratamento de infecções bacterianas.</contexto>
+    </pergunta>
+    <pergunta resposta="280">
+      <texto>Quantos dias, em média, dura uma gravidez humana?</texto>
+      <contexto>A gestação humana dura em média 280 dias, ou 40 semanas, contados da última menstruação.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ASTRONOMIA" patos="3">
+    <pergunta resposta="8">
+      <texto>Quantos planetas existem no sistema solar atualmente, desde a reclassificação de Plutão?</texto>
+      <contexto>Desde 2006, o sistema solar conta com 8 planetas, após Plutão ser reclassificado como planeta-nano.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>A quantos anos-luz de distância está a estrela mais próxima do Sol, Proxima Centauri?</texto>
+      <contexto>Proxima Centauri está a cerca de 4,2 anos-luz da Terra, a estrela mais próxima do Sol.</contexto>
+    </pergunta>
+    <pergunta resposta="365">
+      <texto>Quantos dias a Terra leva para completar uma volta em torno do Sol?</texto>
+      <contexto>A Terra leva cerca de 365 dias e 6 horas para orbitar o Sol completamente.</contexto>
+    </pergunta>
+    <pergunta resposta="109">
+      <texto>Quantas vezes maior é o diâmetro do Sol comparado ao da Terra, aproximadamente?</texto>
+      <contexto>O Sol tem cerca de 1,4 milhões de km de diâmetro, o que representa aproximadamente 109 vezes o diâmetro da Terra.</contexto>
+    </pergunta>
+    <pergunta resposta="1990">
+      <texto>Em que ano foi lançado o Telescópio Espacial Hubble?</texto>
+      <contexto>O Hubble foi lançado em 1990 e revolucionou a astronomia com imagens detalhadas do universo.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos trilhões de galáxias, aproximadamente, estima-se que existam no universo observável?</texto>
+      <contexto>Estima-se que existam cerca de 2 trilhões de galáxias no universo observável.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="JOGOS OLÍMPICOS" patos="3">
+    <pergunta resposta="1896">
+      <texto>Em que ano ocorreram os primeiros Jogos Olímpicos da era moderna?</texto>
+      <contexto>Os primeiros Jogos Olímpicos modernos ocorreram em Atenas, na Grécia, em 1896.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>De quantos em quantos anos ocorrem os Jogos Olímpicos de Verão?</texto>
+      <contexto>Os Jogos Olímpicos de Verão ocorrem a cada 4 anos, com exceção de cancelamentos como em 1916, 1940 e 1944.</contexto>
+    </pergunta>
+    <pergunta resposta="207">
+      <texto>Quantos países participaram dos Jogos Olímpicos do Rio de Janeiro, em 2016?</texto>
+      <contexto>Os Jogos Olímpicos do Rio de Janeiro de 2016 contaram com a participação de 207 países, um recorde olímpico na época.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos anéis tem a bandeira olímpica?</texto>
+      <contexto>A bandeira olímpica tem 5 anéis entrelaçados, representando os cinco continentes participantes.</contexto>
+    </pergunta>
+    <pergunta resposta="23">
+      <texto>Quantas medalhas de ouro o nadador Michael Phelps ganhou em toda a carreira olímpica?</texto>
+      <contexto>Michael Phelps é o atleta mais condecorado da história olímpica, com 23 medalhas de ouro.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Em que século a.C. ocorreram os primeiros Jogos Olímpicos da Antiguidade, em Olímpia?</texto>
+      <contexto>Os primeiros Jogos Olímpicos da Antiguidade ocorreram em 776 a.C., no século 8 a.C., em Olímpia, na Grécia.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="NATAÇÃO" patos="2">
+    <pergunta resposta="50">
+      <texto>Quantos metros tem uma piscina olímpica de natação?</texto>
+      <contexto>A piscina olímpica padrão tem 50 metros de comprimento.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantas raias, em geral, tem uma piscina olímpica oficial?</texto>
+      <contexto>Piscinas olímpicas oficiais têm geralmente 8 raias de competição.</contexto>
+    </pergunta>
+    <pergunta resposta="46">
+      <texto>Qual o recorde mundial aproximado, em segundos, dos 100m livre masculino?</texto>
+      <contexto>O recorde mundial dos 100m livre masculino está perto de 46 segundos, detido por César Cielo desde 2009.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos estilos oficiais de nado existem na natação olímpica?</texto>
+      <contexto>Existem 4 estilos oficiais: livre, costas, peito e borboleta, além do medley que combina todos.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos metros de profundidade, em geral, tem uma piscina olímpica?</texto>
+      <contexto>Piscinas olímpicas têm em geral cerca de 2 a 3 metros de profundidade.</contexto>
+    </pergunta>
+    <pergunta resposta="2008">
+      <texto>Em que ano o nadador brasileiro César Cielo ganhou ouro olímpico nos 50m livre?</texto>
+      <contexto>César Cielo conquistou o ouro olímpico nos 50m livre em Pequim, em 2008.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="TÊNIS" patos="2">
+    <pergunta resposta="24">
+      <texto>Quantos Grand Slams o tenista Novak Djokovic já conquistou, recorde até 2023?</texto>
+      <contexto>Djokovic é o maior vencedor de Grand Slams da história masculina, com 24 títulos até 2023.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos sets, no máximo, é disputada uma partida de tênis masculina em Grand Slam?</texto>
+      <contexto>Partidas masculinas em Grand Slams podem ir até 5 sets, enquanto femininas vão até 3.</contexto>
+    </pergunta>
+    <pergunta resposta="1891">
+      <texto>Em que ano foi disputado o primeiro Campeonato Francês de Tênis, que daria origem ao Roland Garros?</texto>
+      <contexto>O torneio foi disputado pela primeira vez em 1891, como Campeonato Francês, tornando-se internacionalmente aberto em 1925 e recebendo o nome Roland Garros em 1928.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos pontos são necessários para vencer um game de tênis, sem contar vantagem?</texto>
+      <contexto>Um game de tênis é vencido com 4 pontos, desde que haja diferença de 2 pontos sobre o adversário.</contexto>
+    </pergunta>
+    <pergunta resposta="1877">
+      <texto>Em que ano foi disputado o primeiro torneio de Wimbledon, o Grand Slam mais antigo da história?</texto>
+      <contexto>O torneio de Wimbledon foi disputado pela primeira vez em 1877, sendo o Grand Slam mais antigo da história do tênis.</contexto>
+    </pergunta>
+    <pergunta resposta="23">
+      <texto>Quantos Grand Slams a tenista Serena Williams conquistou em simples?</texto>
+      <contexto>Serena Williams venceu 23 torneios de Grand Slam em simples, recorde da era profissional.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="BASQUETE" patos="2">
+    <pergunta resposta="5">
+      <texto>Quantos jogadores cada time coloca em quadra no basquete?</texto>
+      <contexto>Cada equipe de basquete joga com 5 jogadores em quadra simultaneamente.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos pontos vale uma cesta convertida de fora do arco no basquete?</texto>
+      <contexto>Arremessos feitos de fora do arco de 3 pontos valem 3 pontos no basquete.</contexto>
+    </pergunta>
+    <pergunta resposta="1946">
+      <texto>Em que ano a NBA foi fundada?</texto>
+      <contexto>A NBA foi fundada em 1946, nos Estados Unidos, como Basketball Association of America (BAA).</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos títulos de NBA o astro Michael Jordan conquistou?</texto>
+      <contexto>Michael Jordan venceu 6 títulos de NBA, todos pelo Chicago Bulls.</contexto>
+    </pergunta>
+    <pergunta resposta="48">
+      <texto>Quantos minutos de jogo, em geral, dura uma partida oficial de basquete da NBA?</texto>
+      <contexto>Uma partida da NBA tem 48 minutos de jogo, divididos em 4 quartos de 12 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="3.05">
+      <texto>Qual a altura aproximada, em metros, da cesta de basquete oficial?</texto>
+      <contexto>A cesta de basquete fica a 3,05 metros (10 pés) de altura do solo.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="SURF" patos="3">
+    <pergunta resposta="1000">
+      <texto>Há quantos anos, aproximadamente, o surfe é praticado pelos povos polinésios no Havaí, segundo tradições históricas?</texto>
+      <contexto>O surfe é uma tradição polinésia com pelo menos 1.000 anos de história, tendo surgido no Havaí como prática cultural e espiritual.</contexto>
+    </pergunta>
+    <pergunta resposta="2020">
+      <texto>Em que edição (ano nominal) os Jogos Olímpicos incluíram o surfe pela primeira vez?</texto>
+      <contexto>O surfe debutou como modalidade olímpica nos Jogos de Tóquio, realizados em 2021 mas batizados de 2020.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Qual a altura aproximada, em metros, das maiores ondas já surfadas em Nazaré, Portugal?</texto>
+      <contexto>Ondas em Nazaré já foram registradas com até cerca de 30 metros de altura, entre as maiores do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos metros de altura, em média, podem atingir as ondas da praia de Itaúna, em Saquarema, famosa pelo surfe?</texto>
+      <contexto>As ondas da praia de Itaúna, em Saquarema (Rio de Janeiro), podem atingir até 3 metros de altura, sendo cenário de campeonatos internacionais de surfe.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantas pranchas, em geral, um surfista profissional leva para uma competição?</texto>
+      <contexto>Surfistas profissionais costumam levar de 3 a 5 pranchas variadas para se adaptar às condições do mar.</contexto>
+    </pergunta>
+    <pergunta resposta="2014">
+      <texto>Em que ano o brasileiro Gabriel Medina conquistou seu primeiro título mundial de surfe?</texto>
+      <contexto>Gabriel Medina foi o primeiro brasileiro e o primeiro não-australiano/americano a ser campeão mundial, em 2014.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PLANTAS" patos="2">
+    <pergunta resposta="90">
+      <texto>Quantos metros de altura pode atingir uma sequoia gigante?</texto>
+      <contexto>Sequoias gigantes podem atingir mais de 90 metros de altura, entre as árvores mais altas do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="1000">
+      <texto>Quantos anos, aproximadamente, pode viver uma árvore de oliveira?</texto>
+      <contexto>Oliveiras podem viver mais de 1.000 anos, algumas estimadas em até 2.000 anos ou mais.</contexto>
+    </pergunta>
+    <pergunta resposta="300">
+      <texto>Quantas espécies de plantas com flores existem catalogadas no mundo, em milhares, aproximadamente?</texto>
+      <contexto>Existem cerca de 300 mil espécies catalogadas de plantas com flores (angiospermas) no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="1000">
+      <texto>Quantos quilos, em média, pode pesar uma abóbora gigante em concursos agrícolas?</texto>
+      <contexto>Abóboras gigantes em concursos agrícolas podem pesar mais de 1.000 kg (1 tonelada).</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos quilos, aproximadamente, pode pesar a Rafflesia arnoldii, a maior flor do mundo, encontrada na Indonésia?</texto>
+      <contexto>A Rafflesia arnoldii, da Indonésia, pode pesar até 10 kg e medir mais de 1 metro de diâmetro, sendo considerada a maior flor do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos litros de água, em média, uma árvore adulta pode absorver e transpirar por dia?</texto>
+      <contexto>Uma árvore adulta pode absorver e transpirar cerca de 200 litros de água por dia, dependendo da espécie e clima.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CAFÉ" patos="2">
+    <pergunta resposta="150">
+      <texto>Há quantos anos, aproximadamente, o Brasil é o maior produtor mundial de café?</texto>
+      <contexto>O Brasil é o maior produtor e exportador mundial de café há mais de 150 anos, liderando o mercado global consistentemente.</contexto>
+    </pergunta>
+    <pergunta resposta="95">
+      <texto>Quantos miligramas de cafeína, em média, tem uma xícara de café de 150ml?</texto>
+      <contexto>Uma xícara média de café contém cerca de 95 mg de cafeína.</contexto>
+    </pergunta>
+    <pergunta resposta="9">
+      <texto>Em que século o café foi descoberto e começou a ser consumido na Etiópia, segundo a tradição histórica?</texto>
+      <contexto>Segundo a tradição histórica, o café foi descoberto na Etiópia, na África, por volta do século 9, com a história do pastor Kaldi e suas cabras agitadas.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos tipos principais de espécies de café são cultivados comercialmente no mundo?</texto>
+      <contexto>As duas principais espécies comerciais são o Arábica e o Robusta (Conilon).</contexto>
+    </pergunta>
+    <pergunta resposta="92">
+      <texto>Quantos graus Celsius, aproximadamente, é a temperatura ideal da água para o café filtrado?</texto>
+      <contexto>A temperatura ideal para extração do café filtrado é entre 90°C e 96°C, cerca de 92°C em média.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantos milhões de sacas de 60kg de café, aproximadamente, o Brasil produz por ano?</texto>
+      <contexto>O Brasil produz cerca de 60 milhões de sacas de 60 kg de café por ano.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CERVEJA" patos="2">
+    <pergunta resposta="4">
+      <texto>Quantos ingredientes básicos compõem a cerveja segundo a lei alemã de pureza?</texto>
+      <contexto>A Reinheitsgebot (lei de pureza alemã de 1516) define 4 ingredientes: água, malte, lúpulo e levedura.</contexto>
+    </pergunta>
+    <pergunta resposta="1516">
+      <texto>Em que ano foi promulgada a lei alemã de pureza da cerveja (Reinheitsgebot)?</texto>
+      <contexto>A Reinheitsgebot foi promulgada na Baviera em 1516, uma das leis alimentares mais antigas do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Qual o teor alcoólico médio, em porcentagem, de uma cerveja pilsen comum?</texto>
+      <contexto>A cerveja pilsen tradicional tem em média cerca de 5% de teor alcoólico.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantos litros de cerveja, em média, um brasileiro consome por ano?</texto>
+      <contexto>O consumo médio de cerveja no Brasil é de cerca de 60 litros por pessoa ao ano.</contexto>
+    </pergunta>
+    <pergunta resposta="1810">
+      <texto>Em que ano foi realizada a primeira Oktoberfest em Munique, festa que se tornou a maior do mundo?</texto>
+      <contexto>A primeira Oktoberfest foi realizada em Munique, Alemanha, em 1810, para celebrar o casamento do rei Ludwig I da Baviera.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos graus Celsius, em média, é considerada a temperatura ideal para servir uma cerveja pilsen?</texto>
+      <contexto>A temperatura ideal para servir uma pilsen é entre 2°C e 5°C, geralmente próxima de 4°C.</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="VINHO" patos="2">
+    <pergunta resposta="10">
+      <texto>Quantos dias, em média, dura a fermentação do vinho tinto?</texto>
+      <contexto>A fermentação do vinho tinto dura em média de 5 a 14 dias, cerca de 10 dias em média.</contexto>
+    </pergunta>
+    <pergunta resposta="1855">
+      <texto>Em que ano foi criado o famoso sistema de classificação oficial dos vinhos de Bordeaux, por ocasião de uma Exposição Universal?</texto>
+      <contexto>O sistema de classificação de vinhos de Bordeaux foi criado em 1855, para a Exposição Universal de Paris, e é referência mundial até hoje.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>Qual o teor alcoólico médio, em porcentagem, de um vinho tinto comum?</texto>
+      <contexto>Vinhos tintos comuns têm teor alcoólico médio de cerca de 12% a 14%, geralmente 13%.</contexto>
+    </pergunta>
+    <pergunta resposta="1000">
+      <texto>Quantas variedades de uvas, aproximadamente, são usadas na produção comercial de vinho no mundo?</texto>
+      <contexto>Existem mais de 1.000 variedades de uvas usadas comercialmente na produção de vinho no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="150">
+      <texto>Há quantos anos, aproximadamente, a tradição vinícola italiana chegou ao Sul do Brasil com os imigrantes?</texto>
+      <contexto>Os imigrantes italianos trouxeram a cultura vinícola para o Sul do Brasil há cerca de 150 anos, estabelecendo a tradição que hoje concentra a maior produção nacional, na Serra Gaúcha.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Quantos graus Celsius, aproximadamente, é a temperatura ideal para servir um vinho tinto?</texto>
+      <contexto>A temperatura ideal para servir vinho tinto é entre 16°C e 18°C, cerca de 17°C em média.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PIRÂMIDES DO EGITO" patos="3">
+    <pergunta resposta="146">
+      <texto>Quantos metros de altura tinha a Grande Pirâmide de Gizé originalmente?</texto>
+      <contexto>A Grande Pirâmide de Gizé tinha originalmente cerca de 146 metros de altura, hoje um pouco menor devido à erosão.</contexto>
+    </pergunta>
+    <pergunta resposta="4500">
+      <texto>Há quantos anos, aproximadamente, a Grande Pirâmide de Gizé foi construída?</texto>
+      <contexto>A Grande Pirâmide foi construída há cerca de 4.500 anos, por volta de 2560 a.C.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos milhões de blocos de pedra, aproximadamente, formam a Grande Pirâmide de Gizé?</texto>
+      <contexto>Estima-se que a Grande Pirâmide tenha mais de 2 milhões de blocos de pedra em sua estrutura.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantas pirâmides principais formam o complexo de Gizé, no Egito?</texto>
+      <contexto>O complexo de Gizé é formado por 3 grandes pirâmides: Quéops, Quéfren e Miquerinos.</contexto>
+    </pergunta>
+    <pergunta resposta="2.5">
+      <texto>Quantas toneladas, em média, pesa cada bloco de pedra da Grande Pirâmide?</texto>
+      <contexto>Cada bloco de pedra da Grande Pirâmide pesa em média 2,5 toneladas.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>A quantos quilômetros do centro do Cairo ficam as pirâmides de Gizé, próximas ao Rio Nilo?</texto>
+      <contexto>As pirâmides de Gizé ficam a cerca de 13 km do centro do Cairo, próximas à margem ocidental do Rio Nilo.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="SEGUNDA GUERRA MUNDIAL" patos="4">
+    <pergunta resposta="1939">
+      <texto>Em que ano começou a Segunda Guerra Mundial?</texto>
+      <contexto>A Segunda Guerra Mundial começou em 1º de setembro de 1939, com a invasão da Polônia pela Alemanha.</contexto>
+    </pergunta>
+    <pergunta resposta="1945">
+      <texto>Em que ano terminou a Segunda Guerra Mundial?</texto>
+      <contexto>A guerra terminou em 1945, com a rendição do Japão em setembro, após os bombardeios atômicos.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos países, aproximadamente, estiveram diretamente envolvidos na Segunda Guerra Mundial?</texto>
+      <contexto>Mais de 30 países estiveram diretamente envolvidos no conflito, em diferentes alianças.</contexto>
+    </pergunta>
+    <pergunta resposta="1944">
+      <texto>Em que ano ocorreu o desembarque na Normandia, conhecido como Dia D?</texto>
+      <contexto>O Dia D ocorreu em 6 de junho de 1944, marcando a invasão aliada na Normandia, França.</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Quantos milhões de pessoas, aproximadamente, morreram na Segunda Guerra Mundial?</texto>
+      <contexto>Estima-se que cerca de 70 a 85 milhões de pessoas morreram durante a Segunda Guerra Mundial.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Em que dia do mês de agosto de 1945 foi lançada a primeira bomba atômica sobre Hiroshima, no Japão?</texto>
+      <contexto>A primeira bomba atômica foi lançada em 6 de agosto de 1945, sobre a cidade de Hiroshima, causando devastação sem precedentes.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PRESIDENTES DO BRASIL" patos="3">
+    <pergunta resposta="1889">
+      <texto>Em que ano o Marechal Deodoro da Fonseca assumiu como primeiro presidente do Brasil, após a Proclamação da República?</texto>
+      <contexto>Marechal Deodoro da Fonseca tornou-se o primeiro presidente do Brasil em 1889, após liderar a Proclamação da República em 15 de novembro.</contexto>
+    </pergunta>
+    <pergunta resposta="18">
+      <texto>Quantos anos, aproximadamente, Getúlio Vargas governou o Brasil somando seus mandatos?</texto>
+      <contexto>Getúlio Vargas governou o Brasil por cerca de 18 anos, entre 1930-1945 e 1951-1954.</contexto>
+    </pergunta>
+    <pergunta resposta="1955">
+      <texto>Em que ano Juscelino Kubitschek foi eleito presidente do Brasil?</texto>
+      <contexto>Juscelino Kubitschek foi eleito em 1955, sendo o responsável pela construção de Brasília.</contexto>
+    </pergunta>
+    <pergunta resposta="1989">
+      <texto>Em que ano o Brasil teve sua primeira eleição presidencial por voto direto após a ditadura militar?</texto>
+      <contexto>Fernando Collor foi eleito em 1989, na primeira eleição presidencial direta após a redemocratização.</contexto>
+    </pergunta>
+    <pergunta resposta="39">
+      <texto>Quantos presidentes, aproximadamente, o Brasil já teve desde a Proclamação da República, contando interinos?</texto>
+      <contexto>O Brasil já teve cerca de 39 presidentes (contando interinos) desde 1889.</contexto>
+    </pergunta>
+    <pergunta resposta="2011">
+      <texto>Em que ano Dilma Rousseff tomou posse como primeira mulher presidente do Brasil?</texto>
+      <contexto>Dilma Rousseff tomou posse como primeira mulher presidente do Brasil em janeiro de 2011.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="AMAZÔNIA" patos="3">
+    <pergunta resposta="9">
+      <texto>Quantos países, aproximadamente, compartilham o território da floresta Amazônica?</texto>
+      <contexto>A Amazônia se estende por 9 países da América do Sul, sendo o Brasil o que detém a maior parte.</contexto>
+    </pergunta>
+    <pergunta resposta="5.5">
+      <texto>Quantos milhões de km² tem a floresta Amazônica, aproximadamente?</texto>
+      <contexto>A Amazônia tem cerca de 5,5 milhões de km² de extensão total.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Que porcentagem do oxigênio mundial a Amazônia é popularmente citada como produtora?</texto>
+      <contexto>Embora popularmente citada como produtora de 20% do oxigênio mundial, cientistas apontam que esse número é superestimado.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Quantos milhares de espécies de árvores, aproximadamente, estima-se que existam na Amazônia?</texto>
+      <contexto>Estima-se que existam cerca de 16 mil espécies de árvores na floresta Amazônica.</contexto>
+    </pergunta>
+    <pergunta resposta="6992">
+      <texto>Quantos quilômetros de extensão tem o Rio Amazonas, a principal artéria fluvial da bacia?</texto>
+      <contexto>O Rio Amazonas, com cerca de 6.992 km, é a principal artéria fluvial da bacia amazônica.</contexto>
+    </pergunta>
+    <pergunta resposta="28">
+      <texto>Quantos milhões de pessoas, aproximadamente, vivem na Amazônia Legal brasileira?</texto>
+      <contexto>Estima-se que cerca de 28 milhões de pessoas vivam na Amazônia Legal brasileira.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="BALEIAS" patos="3">
+    <pergunta resposta="30">
+      <texto>Quantos metros de comprimento pode atingir uma baleia-azul, o maior animal do planeta?</texto>
+      <contexto>A baleia-azul pode atingir até 30 metros de comprimento, sendo o maior animal já existente.</contexto>
+    </pergunta>
+    <pergunta resposta="180">
+      <texto>Quantas toneladas pode pesar uma baleia-azul adulta?</texto>
+      <contexto>Uma baleia-azul adulta pode pesar até 180 toneladas.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos meses, aproximadamente, dura a gestação de uma baleia-jubarte?</texto>
+      <contexto>A gestação da baleia-jubarte dura cerca de 11 meses.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos milhares de quilômetros uma baleia-jubarte pode migrar por ano, aproximadamente?</texto>
+      <contexto>Baleias-jubarte podem migrar mais de 8 mil km por ano entre áreas de alimentação e reprodução.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos litros de leite por dia, aproximadamente, uma baleia pode produzir para o filhote?</texto>
+      <contexto>Algumas espécies de baleia podem produzir até 200 litros de leite por dia para os filhotes.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Por quantos minutos, em média, uma baleia pode ficar submersa sem respirar?</texto>
+      <contexto>Baleias podem permanecer submersas por cerca de 20 minutos antes de precisar respirar na superfície.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="COBRAS" patos="3">
+    <pergunta resposta="9">
+      <texto>Quantos metros de comprimento pode atingir uma sucuri-verde (anaconda)?</texto>
+      <contexto>A sucuri-verde pode atingir até 9 metros de comprimento, uma das maiores cobras do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="3900">
+      <texto>Quantas espécies de cobras, aproximadamente, são conhecidas no mundo?</texto>
+      <contexto>Existem cerca de 3.900 espécies de cobras catalogadas no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantas espécies de cobras venenosas, aproximadamente, existem no Brasil?</texto>
+      <contexto>O Brasil tem cerca de 60 espécies de cobras venenosas, entre jararacas, cascavéis e corais.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantas presas de veneno tem uma cobra venenosa típica, em geral?</texto>
+      <contexto>A maioria das cobras venenosas tem 2 presas principais usadas para injetar veneno.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantos quilos pode pesar uma sucuri adulta de grande porte?</texto>
+      <contexto>Sucuris adultas de grande porte podem pesar mais de 100 kg.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos anos, em média, pode viver uma cobra em cativeiro com cuidados adequados?</texto>
+      <contexto>Muitas espécies de cobras podem viver 20 anos ou mais em cativeiro, com cuidados adequados.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ARANHAS" patos="2">
+    <pergunta resposta="50">
+      <texto>Quantos milhares de espécies de aranhas, aproximadamente, já foram catalogadas no mundo?</texto>
+      <contexto>Já foram catalogadas cerca de 50 mil espécies de aranhas no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantas patas tem uma aranha?</texto>
+      <contexto>Todas as aranhas têm 8 patas, diferente dos insetos que têm 6.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantas vezes mais resistente que um fio de aço de mesmo diâmetro pode ser a seda de aranha?</texto>
+      <contexto>A seda de aranha pode ser até 5 vezes mais resistente que um fio de aço de mesmo diâmetro, proporcionalmente ao peso.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos olhos tem a maioria das espécies de aranhas?</texto>
+      <contexto>A maioria das espécies de aranhas tem 8 olhos, embora algumas tenham menos.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantas espécies de aranha-armadeira (Phoneutria), uma das mais venenosas do mundo, existem no Brasil, aproximadamente?</texto>
+      <contexto>Existem cerca de 5 espécies de aranha-armadeira (Phoneutria) no Brasil, sendo todas consideradas perigosas devido ao veneno potente.</contexto>
+    </pergunta>
+    <pergunta resposta="1">
+      <texto>Em quantos dias, em média, uma aranha pode construir uma teia completa?</texto>
+      <contexto>Muitas aranhas conseguem construir uma teia completa em menos de 1 dia, às vezes em poucas horas.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CACHOEIRAS" patos="2">
+    <pergunta resposta="51">
+      <texto>Quantos metros de altura tem a queda americana das Cataratas do Niágara, aproximadamente?</texto>
+      <contexto>A queda americana das Cataratas do Niágara tem cerca de 51 metros de altura.</contexto>
+    </pergunta>
+    <pergunta resposta="979">
+      <texto>Quantos metros de altura tem o Salto Angel, na Venezuela, a maior cachoeira do mundo?</texto>
+      <contexto>O Salto Angel tem 979 metros de altura, sendo a maior cachoeira contínua do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="80">
+      <texto>Quantos metros de altura tem as Cataratas do Iguaçu em seu ponto mais alto?</texto>
+      <contexto>As Cataratas do Iguaçu têm cerca de 80 metros de altura em seu ponto mais alto.</contexto>
+    </pergunta>
+    <pergunta resposta="275">
+      <texto>Quantas quedas de água, aproximadamente, compõem o complexo das Cataratas do Iguaçu?</texto>
+      <contexto>O complexo das Cataratas do Iguaçu é formado por cerca de 275 quedas de água.</contexto>
+    </pergunta>
+    <pergunta resposta="108">
+      <texto>Quantos metros de altura tem a cachoeira Victoria Falls, na fronteira entre Zâmbia e Zimbábue?</texto>
+      <contexto>A cachoeira Victoria Falls, na fronteira entre Zâmbia e Zimbábue, na África, tem cerca de 108 metros de altura, uma das maiores do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos milhões de litros de água por segundo, aproximadamente, passam pelas Cataratas do Iguaçu na cheia?</texto>
+      <contexto>Na época de cheia, as Cataratas do Iguaçu podem ter vazão de até 12 milhões de litros por segundo.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ILHAS" patos="2">
+    <pergunta resposta="80">
+      <texto>Que porcentagem do território da Groenlândia, a maior ilha do mundo, é coberta por gelo, aproximadamente?</texto>
+      <contexto>A Groenlândia é a maior ilha do mundo, com cerca de 2,1 milhões de km², e aproximadamente 80% do seu território é coberto por gelo.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantas ilhas principais, aproximadamente, compõem o arquipélago do Havaí?</texto>
+      <contexto>O arquipélago do Havaí é formado por 8 ilhas principais, além de centenas de ilhotas menores.</contexto>
+    </pergunta>
+    <pergunta resposta="1000">
+      <texto>A quantos quilômetros, aproximadamente, da costa do Equador ficam as Ilhas Galápagos, no Oceano Pacífico?</texto>
+      <contexto>O arquipélago de Galápagos, no Oceano Pacífico, fica a cerca de 1.000 km da costa do Equador.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos mil km² tem a Ilha de Marajó, a maior ilha fluvial do mundo, no Brasil?</texto>
+      <contexto>A Ilha de Marajó, no Pará, tem cerca de 40 mil km², sendo a maior ilha fluvial do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos milhões de turistas estrangeiros, em média, Bali recebe por ano, sendo um dos destinos mais visitados da Indonésia?</texto>
+      <contexto>Bali, ilha turística da Indonésia, recebe em média cerca de 6 milhões de turistas estrangeiros por ano.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Quantas mil ilhas, aproximadamente, compõem o arquipélago da Indonésia, o maior do mundo?</texto>
+      <contexto>A Indonésia é formada por mais de 17 mil ilhas, o maior arquipélago do mundo.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="DESERTOS" patos="2">
+    <pergunta resposta="11">
+      <texto>Por quantos países africanos se estende o deserto do Saara, o maior deserto quente do mundo?</texto>
+      <contexto>O Saara se estende por 11 países africanos, do Atlântico ao Mar Vermelho, sendo o maior deserto quente do planeta.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos milímetros de precipitação anual, em média, a Antártida recebe, o que a torna tecnicamente o maior deserto do mundo?</texto>
+      <contexto>A Antártida recebe menos de 200 mm de precipitação por ano, o que a torna tecnicamente o maior deserto do mundo segundo a definição climática.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos milímetros de chuva, em média por ano, recebe o deserto do Atacama, um dos mais secos do mundo?</texto>
+      <contexto>O deserto do Atacama, no Chile, recebe em média menos de 15 mm de chuva por ano.</contexto>
+    </pergunta>
+    <pergunta resposta="50">
+      <texto>Quantos graus Celsius, aproximadamente, pode atingir a temperatura máxima no deserto do Saara?</texto>
+      <contexto>Temperaturas no Saara podem ultrapassar 50°C durante o dia em algumas regiões.</contexto>
+    </pergunta>
+    <pergunta resposta="9">
+      <texto>Quantos milhões de km² tem o deserto do Saara, aproximadamente?</texto>
+      <contexto>O Saara tem cerca de 9 milhões de km², praticamente do tamanho dos Estados Unidos.</contexto>
+    </pergunta>
+    <pergunta resposta="-40">
+      <texto>Quantos graus Celsius negativos pode atingir a temperatura do deserto de Gobi, na China e Mongólia, no inverno?</texto>
+      <contexto>O deserto de Gobi, na Ásia (China e Mongólia), pode registrar temperaturas de até -40°C no inverno, sendo considerado um deserto frio.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="GELEIRAS" patos="3">
+    <pergunta resposta="70">
+      <texto>Que porcentagem da água doce do planeta, aproximadamente, está armazenada em geleiras e calotas polares?</texto>
+      <contexto>Cerca de 70% da água doce do mundo está armazenada em geleiras e calotas polares.</contexto>
+    </pergunta>
+    <pergunta resposta="2000">
+      <texto>Quantos metros de espessura, em média, tem a camada de gelo da Antártida?</texto>
+      <contexto>A camada de gelo da Antártida tem em média cerca de 2.000 metros de espessura, podendo chegar a 4.500m em alguns pontos.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Que porcentagem da superfície terrestre, aproximadamente, é cobertas por geleiras atualmente?</texto>
+      <contexto>Geleiras cobrem cerca de 10% da superfície terrestre atualmente.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos metros por ano, em média, uma geleira pode se mover (fluir)?</texto>
+      <contexto>Geleiras podem se mover, em média, cerca de 30 metros por ano, embora algumas sejam muito mais rápidas.</contexto>
+    </pergunta>
+    <pergunta resposta="400">
+      <texto>Quantos quilômetros de comprimento tem a Geleira Lambert, a maior geleira do mundo, localizada na Antártida?</texto>
+      <contexto>A Geleira Lambert, na Antártida, tem cerca de 400 km de comprimento, sendo a maior geleira do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="90">
+      <texto>Que porcentagem do volume de gelo da Terra, aproximadamente, está concentrado na Antártida?</texto>
+      <contexto>A Antártida concentra cerca de 90% de todo o gelo do planeta.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CAVALOS" patos="2">
+    <pergunta resposta="25">
+      <texto>Quantos anos, em média, vive um cavalo doméstico?</texto>
+      <contexto>Cavalos domésticos vivem em média de 25 a 30 anos, dependendo de cuidados e raça.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos meses dura a gestação de uma égua, aproximadamente?</texto>
+      <contexto>A gestação de uma égua dura em média 11 meses (cerca de 340 dias).</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Qual a velocidade máxima, em km/h, que um cavalo de corrida pode atingir?</texto>
+      <contexto>Cavalos de corrida, como puro-sangue, podem atingir velocidades de até 70 km/h.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Quantos músculos, aproximadamente, tem a orelha de um cavalo?</texto>
+      <contexto>A orelha do cavalo tem cerca de 16 músculos, permitindo girá-la quase 180 graus.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantas horas por dia, em média, um cavalo passa dormindo?</texto>
+      <contexto>Cavalos dormem em média apenas cerca de 3 horas por dia, a maior parte em pé.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos dentes, em média, tem um cavalo adulto macho?</texto>
+      <contexto>Um cavalo adulto macho tem em média 40 dentes, incluindo os caninos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CACHORROS" patos="2">
+    <pergunta resposta="360">
+      <texto>Quantas raças de cães, aproximadamente, são reconhecidas oficialmente pela FCI?</texto>
+      <contexto>A FCI (Federação Cinológica Internacional) reconhece atualmente cerca de 360 raças de cães oficialmente.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos meses, em média, dura a gestação de uma cadela?</texto>
+      <contexto>A gestação canina dura em média cerca de 63 dias, pouco mais de 2 meses.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantas vezes mais sensível que o humano é o olfato de um cão, em milhares de vezes, aproximadamente?</texto>
+      <contexto>O olfato canino pode ser até 10 mil vezes (ou mais) sensível que o humano, dependendo da raça.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos anos, em média, vive um cachorro de porte médio?</texto>
+      <contexto>Cães de porte médio vivem em média cerca de 12 a 15 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="42">
+      <texto>Quantos dentes, em geral, tem um cachorro adulto?</texto>
+      <contexto>Um cão adulto tem em geral 42 dentes, mais que os 32 dentes humanos.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Há quantos milhares de anos, aproximadamente, os cães foram domesticados pelo homem?</texto>
+      <contexto>Estima-se que os cães foram domesticados há cerca de 15 mil anos, sendo o primeiro animal domesticado pelo homem.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="GATOS" patos="2">
+    <pergunta resposta="15">
+      <texto>Quantas horas por dia, em média, um gato passa dormindo?</texto>
+      <contexto>Gatos domésticos dormem em média entre 12 e 16 horas por dia, cerca de 15 horas.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos dentes tem um gato adulto?</texto>
+      <contexto>Um gato adulto tem 30 dentes, enquanto os filhotes têm 26 dentes de leite.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos anos, em média, vive um gato doméstico?</texto>
+      <contexto>Gatos domésticos vivem em média de 13 a 17 anos, cerca de 15 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="48">
+      <texto>A que velocidade máxima, em km/h, um gato doméstico pode correr?</texto>
+      <contexto>Gatos domésticos podem correr a até 48 km/h em curtas distâncias.</contexto>
+    </pergunta>
+    <pergunta resposta="32">
+      <texto>Quantos músculos, aproximadamente, tem cada orelha de um gato?</texto>
+      <contexto>Cada orelha de gato tem cerca de 32 músculos, permitindo girar até 180 graus.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantas horas por dia, em média, um filhote de gato recém-nascido passa dormindo?</texto>
+      <contexto>Filhotes de gato recém-nascidos podem dormir até 20 horas por dia.</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="PINGUINS" patos="2">
+    <pergunta resposta="18">
+      <texto>Quantas espécies de pinguins existem no mundo, aproximadamente?</texto>
+      <contexto>Existem cerca de 18 espécies de pinguins conhecidas no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantos metros de profundidade um pinguim-imperador pode mergulhar?</texto>
+      <contexto>O pinguim-imperador pode mergulhar a mais de 500 metros de profundidade, recorde entre as aves.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos quilos pode pesar um pinguim-imperador adulto?</texto>
+      <contexto>O pinguim-imperador, a maior espécie, pode pesar até 40 kg.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos minutos, em média, um pinguim-imperador pode ficar submerso em um mergulho?</texto>
+      <contexto>Pinguins-imperadores podem ficar submersos por até 20 minutos em um único mergulho.</contexto>
+    </pergunta>
+    <pergunta resposta="36">
+      <texto>A que velocidade, em km/h, um pinguim pode nadar?</texto>
+      <contexto>Pinguins podem nadar a velocidades de até 36 km/h, especialmente em fuga de predadores.</contexto>
+    </pergunta>
+    <pergunta resposta="-60">
+      <texto>Qual a temperatura mínima, em graus Celsius negativos, que um pinguim-imperador na Antártida pode suportar?</texto>
+      <contexto>Pinguins-imperadores vivem na Antártida e suportam temperaturas de até -60°C, graças à sua espessa camada de gordura e ao comportamento de agrupamento.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FORMIGAS" patos="2">
+    <pergunta resposta="12">
+      <texto>Quantas mil espécies de formigas, aproximadamente, já foram catalogadas no mundo?</texto>
+      <contexto>Já foram catalogadas mais de 12 mil espécies de formigas no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="50">
+      <texto>Quantas vezes o próprio peso corporal uma formiga pode carregar?</texto>
+      <contexto>Algumas formigas conseguem carregar até 50 vezes o próprio peso corporal.</contexto>
+    </pergunta>
+    <pergunta resposta="140">
+      <texto>Há quantos milhões de anos as formigas existem na Terra, aproximadamente?</texto>
+      <contexto>Fósseis indicam que as formigas existem há cerca de 140 milhões de anos.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos mil quilômetros chegou a ocupar a maior supercolônia de formigas-argentinas já registrada?</texto>
+      <contexto>A maior supercolônia de formigas-argentinas já registrada se estendia por cerca de 6 mil km, da Itália à costa atlântica da Espanha.</contexto>
+    </pergunta>
+    <pergunta resposta="800">
+      <texto>Quantos ovos por dia, em média, uma rainha de formiga pode pôr em colônias grandes?</texto>
+      <contexto>Rainhas de algumas espécies de formigas podem pôr até 800 ovos por dia.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos meses, em média, pode viver uma formiga operária?</texto>
+      <contexto>Formigas operárias vivem em média poucos meses, cerca de 3 meses, enquanto rainhas podem viver anos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ABELHAS" patos="2">
+    <pergunta resposta="25">
+      <texto>Quantos quilos de mel, em média, uma colônia de abelhas produz por ano?</texto>
+      <contexto>Uma colônia saudável de abelhas pode produzir em média 25 kg de mel por ano.</contexto>
+    </pergunta>
+    <pergunta resposta="2000">
+      <texto>Quantas flores uma abelha visita, em média, para produzir uma colherinha de mel?</texto>
+      <contexto>Estima-se que sejam necessárias visitas a cerca de 2.000 flores para produzir uma colherinha de mel.</contexto>
+    </pergunta>
+    <pergunta resposta="25">
+      <texto>Quantos quilômetros por hora, em média, uma abelha pode voar?</texto>
+      <contexto>Abelhas voam em média a cerca de 25 km/h.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantas mil abelhas, em média, vivem em uma colmeia no auge do verão?</texto>
+      <contexto>No auge do verão, uma colmeia pode ter até 60 mil abelhas.</contexto>
+    </pergunta>
+    <pergunta resposta="230">
+      <texto>Quantos batimentos de asas por segundo uma abelha realiza, aproximadamente?</texto>
+      <contexto>As asas da abelha batem cerca de 230 vezes por segundo, criando o característico zumbido.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos dias, em média, vive uma abelha operária no verão?</texto>
+      <contexto>Em média, uma abelha operária vive cerca de 40 dias durante o verão, devido ao desgaste do trabalho intenso.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="BORBOLETAS" patos="2">
+    <pergunta resposta="4">
+      <texto>Quantos milhares de quilômetros a borboleta-monarca pode migrar em sua jornada anual?</texto>
+      <contexto>A borboleta-monarca pode migrar mais de 4 mil km entre América do Norte e México.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos dias, em média, dura a fase de pupa (crisálida) de uma borboleta?</texto>
+      <contexto>A fase de crisálida dura em média de 10 a 15 dias, dependendo da espécie.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantas mil espécies de borboletas, aproximadamente, existem catalogadas no mundo?</texto>
+      <contexto>Existem cerca de 20 mil espécies de borboletas catalogadas no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantas semanas, em média, vive uma borboleta adulta?</texto>
+      <contexto>A maioria das borboletas adultas vive apenas algumas semanas, cerca de 4 semanas em média.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Quantos milhares de omatídeos (lentes) compõem cada olho composto de uma borboleta, aproximadamente?</texto>
+      <contexto>Cada olho composto de borboleta pode ter cerca de 17 mil omatídeos (lentes individuais).</contexto>
+    </pergunta>
+    <pergunta resposta="0.5">
+      <texto>Quantos gramas pesa uma borboleta-monarca adulta, que migra mais de 4 mil km até o México?</texto>
+      <contexto>A borboleta-monarca pesa apenas cerca de 0,5 gramas, mas é capaz de migrar mais de 4 mil km do Canadá e EUA até o México.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ÁRVORES" patos="2">
+    <pergunta resposta="3000">
+      <texto>Quantos anos, aproximadamente, pode viver uma sequoia gigante?</texto>
+      <contexto>Sequoias gigantes podem viver mais de 3.000 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="60">
+      <texto>Quantos metros de altura pode atingir um eucalipto adulto?</texto>
+      <contexto>Eucaliptos podem atingir até 60 metros de altura ou mais, dependendo da espécie e condições.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos litros de água, em média, uma árvore grande pode absorver por dia?</texto>
+      <contexto>Uma árvore adulta de grande porte pode absorver cerca de 200 litros de água por dia.</contexto>
+    </pergunta>
+    <pergunta resposta="25">
+      <texto>Quantos anos, em média, leva para um pinheiro atingir a maturidade reprodutiva?</texto>
+      <contexto>Pinheiros levam em média cerca de 25 anos para atingir maturidade reprodutiva.</contexto>
+    </pergunta>
+    <pergunta resposta="4800">
+      <texto>Quantos anos tem a árvore Methuselah, um pinheiro-bristlecone nos EUA, considerada uma das mais antigas do mundo?</texto>
+      <contexto>A árvore Methuselah, um pinheiro-bristlecone nas montanhas da Califórnia, EUA, tem mais de 4.800 anos, sendo uma das mais antigas do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="22">
+      <texto>Quantos quilos de CO2, em média por ano, uma árvore adulta pode absorver?</texto>
+      <contexto>Uma árvore adulta pode absorver em média cerca de 22 kg de CO2 por ano.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="COGUMELOS" patos="3">
+    <pergunta resposta="14">
+      <texto>Quantas mil espécies de cogumelos, aproximadamente, já foram catalogadas no mundo?</texto>
+      <contexto>Já foram catalogadas mais de 14 mil espécies de cogumelos no mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="965">
+      <texto>Quantos hectares ocupa o maior organismo vivo conhecido, um fungo no estado de Oregon, EUA?</texto>
+      <contexto>O fungo Armillaria ostoyae, em Oregon, ocupa cerca de 965 hectares, sendo o maior organismo vivo conhecido.</contexto>
+    </pergunta>
+    <pergunta resposta="24">
+      <texto>Quantas horas, em média, leva para um cogumelo comestível crescer totalmente após o broto aparecer?</texto>
+      <contexto>Muitos cogumelos comestíveis podem se desenvolver totalmente em cerca de 24 horas após o broto aparecer.</contexto>
+    </pergunta>
+    <pergunta resposta="1000">
+      <texto>Há quantos milhões de anos, aproximadamente, os fungos surgiram na Terra?</texto>
+      <contexto>Estima-se que os fungos existam há cerca de 1.000 milhões de anos (1 bilhão de anos) na Terra.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos por cento das espécies conhecidas de cogumelos, aproximadamente, são consideradas comestíveis e seguras?</texto>
+      <contexto>Estima-se que apenas cerca de 5% das espécies de cogumelos conhecidas sejam consideradas comestíveis e seguras.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos gramas, em média, pesa um cogumelo Champignon comum vendido no mercado?</texto>
+      <contexto>Um cogumelo Champignon médio pesa cerca de 15 gramas.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CACTOS" patos="2">
+    <pergunta resposta="35">
+      <texto>Quantos anos, em média, leva para um cacto saguaro atingir a maturidade reprodutiva?</texto>
+      <contexto>O cacto saguaro leva em média 35 anos para começar a florescer e se reproduzir.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos metros de altura pode atingir um cacto saguaro adulto?</texto>
+      <contexto>O cacto saguaro pode atingir até 12 metros de altura em sua vida adulta, que pode durar 150 anos ou mais.</contexto>
+    </pergunta>
+    <pergunta resposta="1750">
+      <texto>Quantas espécies de cactos, aproximadamente, existem catalogadas no mundo?</texto>
+      <contexto>Existem cerca de 1.750 espécies de cactos catalogadas, nativas principalmente das Américas.</contexto>
+    </pergunta>
+    <pergunta resposta="200">
+      <texto>Quantos litros de água um cacto grande pode armazenar internamente?</texto>
+      <contexto>Cactos grandes, como o saguaro, podem armazenar até 200 litros de água em seu tecido interno.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos meses, em média, um cacto pode sobreviver sem receber água?</texto>
+      <contexto>Devido à capacidade de armazenamento, muitos cactos sobrevivem 6 meses ou mais sem regar.</contexto>
+    </pergunta>
+    <pergunta resposta="150">
+      <texto>Quantos anos, em média, pode viver um cacto saguaro, o mais famoso das Américas, em ambiente natural?</texto>
+      <contexto>O cacto saguaro, originário das Américas, pode viver 150 anos ou mais em seu habitat natural, tornando-se símbolo do deserto americano.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="VÍRUS E BACTÉRIAS" patos="3">
+    <pergunta resposta="100">
+      <texto>Quantas vezes menor que uma bactéria é, em média, um vírus?</texto>
+      <contexto>Vírus são em média cerca de 100 vezes menores que bactérias.</contexto>
+    </pergunta>
+    <pergunta resposta="38">
+      <texto>Quantos trilhões de bactérias, aproximadamente, vivem no corpo humano?</texto>
+      <contexto>Estima-se que existam cerca de 38 trilhões de bactérias no corpo humano, número próximo ao de células humanas.</contexto>
+    </pergunta>
+    <pergunta resposta="2020">
+      <texto>Em que ano a OMS declarou a pandemia de Covid-19?</texto>
+      <contexto>A Organização Mundial da Saúde declarou pandemia global em março de 2020.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos minutos, em média, uma bactéria E. coli leva para se dividir em condições ideais?</texto>
+      <contexto>Em condições ideais, a bactéria E. coli pode se dividir a cada 20 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantos nanômetros, em média, mede um vírus comum, como o da gripe?</texto>
+      <contexto>Vírus comuns, como o da gripe, medem em média cerca de 100 nanômetros de diâmetro.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Em que século a existência de bactérias foi observada pela primeira vez ao microscópio?</texto>
+      <contexto>Antonie van Leeuwenhoek observou bactérias por microscópio pela primeira vez no século 17 (1676).</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="VACINAS" patos="3">
+    <pergunta resposta="1796">
+      <texto>Em que ano Edward Jenner desenvolveu a primeira vacina da história, contra a variola?</texto>
+      <contexto>Edward Jenner desenvolveu a primeira vacina da história, contra a variola, em 1796.</contexto>
+    </pergunta>
+    <pergunta resposta="1980">
+      <texto>Em que ano a OMS declarou a erradicação mundial da variola?</texto>
+      <contexto>A variola foi oficialmente declarada erradicada pela OMS em 1980, graças à vacinação.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantas doses, em geral, eram necessárias no esquema básico inicial das vacinas tradicionais contra Covid-19?</texto>
+      <contexto>A maioria das vacinas tradicionais contra Covid-19 exigia 2 doses no esquema básico inicial.</contexto>
+    </pergunta>
+    <pergunta resposta="1955">
+      <texto>Em que ano Jonas Salk anunciou a vacina contra a poliomielite?</texto>
+      <contexto>Jonas Salk anunciou a vacina contra a poliomielite em 1955, marco da saúde pública mundial.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos meses, aproximadamente, levou para desenvolver as primeiras vacinas contra Covid-19, recorde histórico?</texto>
+      <contexto>As primeiras vacinas contra Covid-19 foram desenvolvidas em cerca de 11 meses, um recorde histórico de velocidade.</contexto>
+    </pergunta>
+    <pergunta resposta="1904">
+      <texto>Em que ano ocorreu a Revolta da Vacina no Rio de Janeiro, contra a vacinação obrigatória da varíola?</texto>
+      <contexto>A Revolta da Vacina ocorreu no Rio de Janeiro, Brasil, em 1904, contra a vacinação obrigatória da varíola imposta pelo sanitarista Oswaldo Cruz.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="OSSOS DO CORPO" patos="3">
+    <pergunta resposta="206">
+      <texto>Quantos ossos tem o corpo humano adulto?</texto>
+      <contexto>O esqueleto humano adulto tem 206 ossos.</contexto>
+    </pergunta>
+    <pergunta resposta="270">
+      <texto>Quantos ossos, aproximadamente, tem o corpo de um recém-nascido, mais que o adulto?</texto>
+      <contexto>Bebês nascem com cerca de 270 ossos, que se fundem ao longo da vida até chegar a 206.</contexto>
+    </pergunta>
+    <pergunta resposta="48">
+      <texto>Quantos centímetros de comprimento, em média, tem o fêmur, o maior osso do corpo humano?</texto>
+      <contexto>O fêmur, osso da coxa e maior osso do corpo humano, tem em média cerca de 48 cm de comprimento em um adulto.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos milímetros, aproximadamente, mede o estribo, o menor osso do corpo humano, localizado no ouvido médio?</texto>
+      <contexto>O estribo, no ouvido médio, é o menor osso do corpo humano, com apenas cerca de 3 mm de comprimento.</contexto>
+    </pergunta>
+    <pergunta resposta="27">
+      <texto>Quantos ossos, aproximadamente, tem cada mão humana?</texto>
+      <contexto>Cada mão humana tem 27 ossos, incluindo dedos, palma e pulso.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos por cento do peso corporal total, aproximadamente, os ossos representam em um adulto?</texto>
+      <contexto>Os ossos representam em média cerca de 15% do peso corporal total de um adulto.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CÉREBRO HUMANO" patos="3">
+    <pergunta resposta="1400">
+      <texto>Quantos gramas, em média, pesa o cérebro humano adulto?</texto>
+      <contexto>O cérebro humano adulto pesa em média cerca de 1.400 gramas (1,4 kg).</contexto>
+    </pergunta>
+    <pergunta resposta="86">
+      <texto>Quantos bilhões de neurônios, aproximadamente, tem o cérebro humano?</texto>
+      <contexto>Estima-se que o cérebro humano tenha cerca de 86 bilhões de neurônios.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Que porcentagem da energia total do corpo, aproximadamente, o cérebro consome em repouso?</texto>
+      <contexto>O cérebro consome cerca de 20% da energia total do corpo, mesmo representando apenas 2% do peso corporal.</contexto>
+    </pergunta>
+    <pergunta resposta="75">
+      <texto>Quantos por cento de água, aproximadamente, compõe o cérebro humano?</texto>
+      <contexto>O cérebro humano é composto por cerca de 75% de água.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos hemisférios principais tem o cérebro humano?</texto>
+      <contexto>O cérebro humano é dividido em 2 hemisférios, o esquerdo e o direito, conectados pelo corpo caloso.</contexto>
+    </pergunta>
+    <pergunta resposta="600">
+      <texto>Quantos quilômetros de vasos sanguíneos, aproximadamente, existem no cérebro humano?</texto>
+      <contexto>Estima-se que existam cerca de 600 km de vasos sanguíneos no cérebro humano.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="OLHOS" patos="2">
+    <pergunta resposta="10">
+      <texto>Quantos milhões de cores, aproximadamente, o olho humano pode distinguir?</texto>
+      <contexto>O olho humano pode distinguir cerca de 10 milhões de cores diferentes.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos músculos controlam o movimento de cada olho humano?</texto>
+      <contexto>Cada olho humano é controlado por 6 músculos externos que permitem seus movimentos.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantas vezes por minuto, em média, uma pessoa pisca os olhos?</texto>
+      <contexto>Em média, uma pessoa pisca cerca de 15 vezes por minuto.</contexto>
+    </pergunta>
+    <pergunta resposta="180">
+      <texto>Quantos graus de campo de visão horizontal, aproximadamente, tem o olho humano com a periferia?</texto>
+      <contexto>O campo de visão humano, incluindo a periferia, é de aproximadamente 180 graus horizontalmente.</contexto>
+    </pergunta>
+    <pergunta resposta="576">
+      <texto>A quantos megapixels, segundo estimativas, equivaleria a resolução do olho humano?</texto>
+      <contexto>Estimativas comparam a resolução do olho humano a cerca de 576 megapixels.</contexto>
+    </pergunta>
+    <pergunta resposta="300">
+      <texto>Quantos milissegundos, em média, dura uma piscada de olho?</texto>
+      <contexto>Uma piscada dura em média cerca de 100 a 400 milissegundos, cerca de 300ms em média.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="DENTES" patos="2">
+    <pergunta resposta="32">
+      <texto>Quantos dentes permanentes, em geral, tem um adulto humano?</texto>
+      <contexto>Um adulto humano tem em geral 32 dentes permanentes, incluindo os sisos.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos dentes de leite, em geral, tem uma criança?</texto>
+      <contexto>Crianças têm 20 dentes de leite antes da troca pelos permanentes.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Com quantos meses de idade, em média, nasce o primeiro dente de um bebê?</texto>
+      <contexto>Em média, o primeiro dente de leite nasce por volta dos 6 meses de idade.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos tipos diferentes de dentes existem na arcada humana?</texto>
+      <contexto>Existem 4 tipos de dentes: incisivos, caninos, pré-molares e molares.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos minutos é recomendado escovar os dentes a cada vez?</texto>
+      <contexto>Dentistas recomendam escovar os dentes por pelo menos 2 minutos a cada vez.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos sisos (terceiros molares), no máximo, uma pessoa pode ter?</texto>
+      <contexto>Uma pessoa pode ter até 4 sisos, um em cada canto da arcada dentária.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="SONO" patos="2">
+    <pergunta resposta="8">
+      <texto>Quantas horas de sono, em média, um adulto precisa por noite?</texto>
+      <contexto>Especialistas recomendam em média 7 a 9 horas de sono por noite para adultos, cerca de 8 horas.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos ciclos de sono, em média, uma pessoa completa por noite?</texto>
+      <contexto>Uma pessoa completa em média 4 a 6 ciclos de sono por noite, cerca de 5 ciclos.</contexto>
+    </pergunta>
+    <pergunta resposta="90">
+      <texto>Quantos minutos, em média, dura um ciclo completo de sono?</texto>
+      <contexto>Cada ciclo de sono dura em média cerca de 90 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="33">
+      <texto>Que porcentagem da vida, em média, uma pessoa passa dormindo?</texto>
+      <contexto>Em média, uma pessoa passa cerca de um terço (33%) da vida dormindo.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Quantas horas de sono, em média, um recém-nascido precisa por dia?</texto>
+      <contexto>Recém-nascidos dormem em média 14 a 17 horas por dia, cerca de 16 horas.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos minutos, em média, leva para uma pessoa saudável adormecer após se deitar?</texto>
+      <contexto>Em média, uma pessoa saudável leva cerca de 15 minutos para adormecer.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ATLETISMO" patos="3">
+    <pergunta resposta="9.58">
+      <texto>Qual o recorde mundial masculino, em segundos, dos 100 metros rasos?</texto>
+      <contexto>O recorde mundial dos 100m rasos masculino é de 9,58 segundos, marca de Usain Bolt desde 2009.</contexto>
+    </pergunta>
+    <pergunta resposta="42">
+      <texto>Quantos quilômetros, arredondados, tem uma corrida de maratona oficial?</texto>
+      <contexto>A maratona oficial tem exatamente 42.195 metros (42 km e 195 metros), distância que remete à lenda do mensageiro grego de Maratona.</contexto>
+    </pergunta>
+    <pergunta resposta="1986">
+      <texto>Em que ano nasceu Usain Bolt, o jamaicano que se tornou o corredor mais rápido da história?</texto>
+      <contexto>Usain Bolt nasceu em 1986, na Jamaica, e se tornou o homem mais rápido do mundo, com o recorde dos 100m rasos em 9,58 segundos.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantas medalhas de ouro olímpicas Usain Bolt conquistou em toda a carreira?</texto>
+      <contexto>Usain Bolt conquistou 8 medalhas de ouro olímpicas ao longo da carreira.</contexto>
+    </pergunta>
+    <pergunta resposta="400">
+      <texto>Quantos metros tem uma pista de atletismo padrão em uma volta completa?</texto>
+      <contexto>Uma pista de atletismo padrão tem 400 metros de extensão por volta.</contexto>
+    </pergunta>
+    <pergunta resposta="6.21">
+      <texto>Qual a altura aproximada, em metros, do recorde mundial masculino de salto com vara?</texto>
+      <contexto>O recorde mundial masculino de salto com vara é de 6,21 metros, marca de Armand Duplantis (Mondo).</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="CICLISMO" patos="2">
+    <pergunta resposta="3500">
+      <texto>Quantos quilômetros, em média, tem o percurso total do Tour de France?</texto>
+      <contexto>O Tour de France tem em média um percurso total de cerca de 3.500 km, dividido em etapas.</contexto>
+    </pergunta>
+    <pergunta resposta="21">
+      <texto>Quantas etapas, em geral, tem o Tour de France?</texto>
+      <contexto>O Tour de France é disputado em 21 etapas ao longo de cerca de 3 semanas.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Qual a velocidade máxima, em km/h, que um ciclista pode atingir em descidas de montanha?</texto>
+      <contexto>Ciclistas profissionais já registraram velocidades acima de 100 km/h em descidas de montanha.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos títulos do Tour de France o ciclista Eddy Merckx conquistou?</texto>
+      <contexto>Eddy Merckx venceu o Tour de France 5 vezes, recorde empatado com outros ciclistas.</contexto>
+    </pergunta>
+    <pergunta resposta="1903">
+      <texto>Em que ano foi disputado o primeiro Tour de France?</texto>
+      <contexto>O primeiro Tour de France foi disputado em 1903, criado para promover um jornal esportivo francês.</contexto>
+    </pergunta>
+    <pergunta resposta="22">
+      <texto>Quantas combinações de marchas, em média, tem uma bicicleta de estrada profissional moderna?</texto>
+      <contexto>Bicicletas de estrada modernas podem ter até 22 ou mais combinações de marchas (cassetes e coroas).</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="GOLFE" patos="3">
+    <pergunta resposta="18">
+      <texto>Quantos buracos tem uma rodada completa de golfe?</texto>
+      <contexto>Uma rodada completa de golfe é composta por 18 buracos.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Em que século surgiu o golfe moderno na Escócia, inicialmente proibido pelo rei por distrair soldados?</texto>
+      <contexto>O golfe moderno surgiu na Escócia no século 15, quando o rei James II proibiu o jogo em 1457 por distrair os soldados do tiro com arco.</contexto>
+    </pergunta>
+    <pergunta resposta="15">
+      <texto>Quantos majors (torneios principais) o golfista Tiger Woods já conquistou?</texto>
+      <contexto>Tiger Woods conquistou 15 torneios majors em sua carreira.</contexto>
+    </pergunta>
+    <pergunta resposta="46">
+      <texto>Quantos gramas, aproximadamente, pesa uma bola de golfe oficial?</texto>
+      <contexto>Uma bola de golfe oficial pesa no máximo cerca de 45,93 gramas.</contexto>
+    </pergunta>
+    <pergunta resposta="280">
+      <texto>Quantos metros, em média, pode alcançar uma tacada de drive de um golfista profissional?</texto>
+      <contexto>Golfistas profissionais conseguem distâncias médias de drive de cerca de 280 metros.</contexto>
+    </pergunta>
+    <pergunta resposta="14">
+      <texto>Quantos tacos, no máximo, um golfista pode levar na bolsa durante uma partida oficial?</texto>
+      <contexto>As regras do golfe permitem no máximo 14 tacos na bolsa durante uma rodada oficial.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="RUGBY" patos="3">
+    <pergunta resposta="15">
+      <texto>Quantos jogadores cada time coloca em campo no rugby union (XV)?</texto>
+      <contexto>No rugby union tradicional, cada equipe joga com 15 jogadores em campo.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos pontos vale um try (ensaio) no rugby union?</texto>
+      <contexto>Um try (ensaio) vale 5 pontos no rugby union.</contexto>
+    </pergunta>
+    <pergunta resposta="1823">
+      <texto>Em que ano, segundo a lenda, surgiu o rugby quando William Webb Ellis pegou a bola com a mão em jogo na Inglaterra?</texto>
+      <contexto>Segundo a lenda, o rugby nasceu em 1823 quando William Webb Ellis pegou a bola com a mão durante um jogo na cidade de Rugby, na Inglaterra.</contexto>
+    </pergunta>
+    <pergunta resposta="80">
+      <texto>Quantos minutos, em geral, dura uma partida oficial de rugby union (tempo de jogo)?</texto>
+      <contexto>Uma partida de rugby union tem 80 minutos, divididos em dois tempos de 40 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantas vezes a Nova Zelândia (All Blacks) já venceu a Copa do Mundo de rugby, até 2023?</texto>
+      <contexto>A Nova Zelândia conquistou a Copa do Mundo de rugby 3 vezes, em 1987, 2011 e 2015.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>Quantos jogadores tem cada equipe no rugby league, variante diferente do union?</texto>
+      <contexto>O rugby league é disputado com 13 jogadores por equipe, diferente dos 15 do rugby union.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="BOXE" patos="3">
+    <pergunta resposta="12">
+      <texto>Quantos rounds, em geral, tem uma luta de boxe profissional de título mundial?</texto>
+      <contexto>Lutas de título mundial de boxe profissional costumam ter no máximo 12 rounds.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos minutos dura cada round de uma luta de boxe profissional?</texto>
+      <contexto>Cada round de boxe profissional dura 3 minutos, com 1 minuto de intervalo entre eles.</contexto>
+    </pergunta>
+    <pergunta resposta="56">
+      <texto>Quantas lutas profissionais o boxeador Muhammad Ali venceu em sua carreira, aproximadamente?</texto>
+      <contexto>Muhammad Ali venceu 56 lutas profissionais em sua carreira, com apenas 5 derrotas.</contexto>
+    </pergunta>
+    <pergunta resposta="90.7">
+      <texto>A partir de quantos quilos um lutador é classificado na categoria peso-pesado do boxe?</texto>
+      <contexto>A categoria peso-pesado do boxe começa a partir de 90,7 kg (200 libras), sem limite máximo.</contexto>
+    </pergunta>
+    <pergunta resposta="1974">
+      <texto>Em que ano ocorreu a icônica luta 'Rumble in the Jungle' entre Muhammad Ali e George Foreman, no Zaire?</texto>
+      <contexto>A luta 'Rumble in the Jungle' ocorreu em 1974, em Kinshasa, no Zaire (atual Rep. Democrática do Congo), com vitória de Muhammad Ali.</contexto>
+    </pergunta>
+    <pergunta resposta="0.3">
+      <texto>Quantos quilos, em média, pesam as luvas usadas em lutas profissionais de boxe?</texto>
+      <contexto>Luvas de boxe profissional pesam geralmente 8 ou 10 onças, equivalente a cerca de 0,3 kg.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="JUDÔ" patos="2">
+    <pergunta resposta="1882">
+      <texto>Em que ano Jigoro Kano criou o judô no Japão, derivado do jiu-jítsu tradicional?</texto>
+      <contexto>O judô foi criado por Jigoro Kano em 1882, no Japão, como um sistema de autodefesa e disciplina derivado do jiu-jítsu tradicional.</contexto>
+    </pergunta>
+    <pergunta resposta="1964">
+      <texto>Em que ano o judô se tornou modalidade olímpica?</texto>
+      <contexto>O judô debutou nos Jogos Olímpicos de Tóquio, em 1964.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantas cores principais de faixa, em geral, compõem o sistema tradicional de graduação do judô até a faixa preta?</texto>
+      <contexto>O sistema tradicional de graduação do judô até a faixa preta tem cerca de 6 cores principais.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos minutos, em geral, dura uma luta de judô em competições internacionais?</texto>
+      <contexto>Lutas de judô em competições internacionais costumam durar 4 minutos no tempo regulamentar.</contexto>
+    </pergunta>
+    <pergunta resposta="24">
+      <texto>Quantas medalhas olímpicas o judô brasileiro já conquistou ao todo, aproximadamente, até 2021?</texto>
+      <contexto>O judô é uma das modalidades que mais trouxe medalhas olímpicas para o Brasil, com cerca de 24 até 2021.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Quantas categorias de peso, em geral, existem no judô olímpico masculino?</texto>
+      <contexto>O judô olímpico masculino tem 7 categorias de peso oficiais.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="XADREZ" patos="2">
+    <pergunta resposta="64">
+      <texto>Quantas casas tem um tabuleiro de xadrez?</texto>
+      <contexto>O tabuleiro de xadrez tem 64 casas, divididas em 32 claras e 32 escuras.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Quantas peças cada jogador tem no início de uma partida de xadrez?</texto>
+      <contexto>Cada jogador começa com 16 peças: 8 peões, 2 cavalos, 2 bispos, 2 torres, 1 dama e 1 rei.</contexto>
+    </pergunta>
+    <pergunta resposta="300">
+      <texto>Quantos milhões de combinações possíveis, aproximadamente, existem apenas nos primeiros 4 lances de uma partida de xadrez?</texto>
+      <contexto>Estima-se que existam mais de 300 milhões de combinações possíveis apenas nos primeiros 4 lances.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Em que século antes de Cristo estima-se que surgiu o 'chaturanga', jogo indiano precursor do xadrez moderno?</texto>
+      <contexto>O chaturanga, precursor do xadrez, surgiu na Índia por volta do século 6, sendo um dos jogos de estratégia mais antigos do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="9">
+      <texto>Quantos pontos vale uma dama (rainha) no sistema tradicional de valoração das peças de xadrez?</texto>
+      <contexto>A dama vale tradicionalmente 9 pontos no sistema de valoração das peças de xadrez.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>Com quantos anos de idade o enxadrista Magnus Carlsen se tornou Grande Mestre?</texto>
+      <contexto>Magnus Carlsen se tornou Grande Mestre de xadrez com apenas 13 anos de idade.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MOEDAS E DINHEIRO" patos="2">
+    <pergunta resposta="1994">
+      <texto>Em que ano o Real, moeda brasileira atual, foi lançado?</texto>
+      <contexto>O Plano Real foi implementado em 1994, criando a moeda atual do Brasil.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Quantos países, aproximadamente, usam o Euro como moeda oficial atualmente?</texto>
+      <contexto>Atualmente cerca de 20 países da União Europeia usam o Euro como moeda oficial.</contexto>
+    </pergunta>
+    <pergunta resposta="2002">
+      <texto>Em que ano a moeda Euro entrou em circulação física?</texto>
+      <contexto>O Euro entrou em circulação física em 2002, embora já existisse digitalmente desde 1999.</contexto>
+    </pergunta>
+    <pergunta resposta="9">
+      <texto>Quantas moedas diferentes, aproximadamente, o Brasil já teve ao longo de sua história?</texto>
+      <contexto>O Brasil já teve cerca de 9 moedas diferentes ao longo de sua história, incluindo Réis, Cruzeiro e Real.</contexto>
+    </pergunta>
+    <pergunta resposta="1871">
+      <texto>Em que ano o Iene foi adotado como moeda oficial do Japão, modernizando o sistema monetário do país?</texto>
+      <contexto>O Iene é a moeda oficial do Japão desde 1871, quando foi criado para modernizar o sistema monetário do país durante a Era Meiji.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Em que século antes de Cristo surgiram as primeiras moedas metálicas conhecidas, na região da Lídia?</texto>
+      <contexto>As primeiras moedas metálicas conhecidas surgiram na Lídia por volta do século 7 a.C.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PINTURAS FAMOSAS" patos="3">
+    <pergunta resposta="16">
+      <texto>Em que século foi pintada a Mona Lisa, por Leonardo da Vinci?</texto>
+      <contexto>A Mona Lisa foi pintada no início do século 16, por volta de 1503-1506.</contexto>
+    </pergunta>
+    <pergunta resposta="1911">
+      <texto>Em que ano a Mona Lisa foi roubada do museu onde está exposta, sendo recuperada dois anos depois?</texto>
+      <contexto>A Mona Lisa foi roubada do Museu do Louvre, em Paris, em 1911, pelo italiano Vincenzo Peruggia, e recuperada dois anos depois.</contexto>
+    </pergunta>
+    <pergunta resposta="1889">
+      <texto>Em que ano Vincent van Gogh pintou "A Noite Estrelada"?</texto>
+      <contexto>Van Gogh pintou "A Noite Estrelada" em 1889, durante sua internação em um hospital psiquiátrico.</contexto>
+    </pergunta>
+    <pergunta resposta="1800">
+      <texto>Quantos quadros, aproximadamente, Pablo Picasso pintou ao longo da vida?</texto>
+      <contexto>Estima-se que Picasso tenha pintado cerca de 1.800 quadros ao longo de sua vida, além de outras obras.</contexto>
+    </pergunta>
+    <pergunta resposta="1881">
+      <texto>Em que ano nasceu o pintor Pablo Picasso, cofundador do cubismo e um dos maiores artistas do século 20?</texto>
+      <contexto>Pablo Picasso nasceu em Málaga, na Espanha, em 1881, e se tornou um dos maiores artistas da história, cofundador do cubismo.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantos metros quadrados, aproximadamente, tem o teto da Capela Sistina pintado por Michelangelo?</texto>
+      <contexto>O teto da Capela Sistina, pintado por Michelangelo, tem cerca de 500 m² de área.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="INSTRUMENTOS MUSICAIS" patos="2">
+    <pergunta resposta="88">
+      <texto>Quantas teclas tem um piano de cauda padrão?</texto>
+      <contexto>Um piano padrão tem 88 teclas, sendo 52 brancas e 36 pretas.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantas cordas tem um violão clássico padrão?</texto>
+      <contexto>Um violão clássico padrão tem 6 cordas.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantas cordas tem um violino padrão?</texto>
+      <contexto>Um violino padrão tem 4 cordas, afinadas em sol, ré, lá e mi.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantos músicos, em média, compõem uma orquestra sinfônica completa?</texto>
+      <contexto>Uma orquestra sinfônica completa pode ter cerca de 100 músicos e instrumentos.</contexto>
+    </pergunta>
+    <pergunta resposta="18">
+      <texto>Em que século o piano foi inventado, por Bartolomeo Cristofori?</texto>
+      <contexto>O piano foi inventado por Bartolomeo Cristofori, na Itália, por volta de 1700, no início do século 18.</contexto>
+    </pergunta>
+    <pergunta resposta="41">
+      <texto>Quantas teclas, em geral, tem o teclado de melodia de um acordeon de botões padrão?</texto>
+      <contexto>Acordeons de botões padrão costumam ter cerca de 41 teclas no teclado de melodia.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="BALLET" patos="3">
+    <pergunta resposta="15">
+      <texto>Em que século nasceu o ballet clássico nas cortes italianas, durante o Renascimento europeu?</texto>
+      <contexto>O ballet clássico nasceu nas cortes italianas durante o Renascimento, no século 15, antes de se desenvolver e se popularizar na França.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantas posições básicas dos pés existem no ballet clássico?</texto>
+      <contexto>O ballet clássico tem 5 posições básicas dos pés, fundamentais para todos os movimentos.</contexto>
+    </pergunta>
+    <pergunta resposta="1876">
+      <texto>Em que ano foi composto o balé "O Lago dos Cisnes", de Tchaikovsky?</texto>
+      <contexto>Tchaikovsky compôs "O Lago dos Cisnes" em 1876, uma das obras mais famosas do repertório clássico.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos anos, em média, uma bailarina profissional treina antes de entrar em uma companhia de ballet?</texto>
+      <contexto>Bailarinas profissionais costumam treinar em média 8 anos ou mais antes de ingressar em companhias profissionais.</contexto>
+    </pergunta>
+    <pergunta resposta="1825">
+      <texto>Em que ano o famoso Teatro Bolshoi, em Moscou, foi inaugurado como um dos maiores teatros de ballet do mundo?</texto>
+      <contexto>O Teatro Bolshoi foi inaugurado em Moscou, Rússia, em 1825, tornando-se um dos palcos mais famosos do mundo para o ballet clássico.</contexto>
+    </pergunta>
+    <pergunta resposta="120">
+      <texto>Quantos minutos, em média, dura uma apresentação completa de um balé clássico de longa duração, com intervalos?</texto>
+      <contexto>Balés clássicos de longa duração, como O Lago dos Cisnes, podem durar cerca de 120 minutos (2 horas) com intervalos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CIRCO" patos="2">
+    <pergunta resposta="1984">
+      <texto>Em que ano foi fundado o Cirque du Soleil?</texto>
+      <contexto>O Cirque du Soleil foi fundado no Canadá em 1984.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantos artistas e equipe técnica, em média, compõem um espetáculo grande do Cirque du Soleil?</texto>
+      <contexto>Espetáculos grandes do Cirque du Soleil podem ter cerca de 100 artistas e equipe técnica.</contexto>
+    </pergunta>
+    <pergunta resposta="18">
+      <texto>Em que século surgiu o circo moderno, com a primeira arena circular permanente em Londres?</texto>
+      <contexto>O circo moderno surgiu no século 18, com Philip Astley criando a primeira arena circular em Londres, em 1768.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>Quantos metros de diâmetro, em geral, tem a pista circular tradicional de um circo?</texto>
+      <contexto>A pista circular tradicional do circo tem cerca de 13 metros de diâmetro, padronizada para apresentações equestres.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos anos, em média, um trapezista profissional treina antes de se apresentar profissionalmente?</texto>
+      <contexto>Trapezistas profissionais costumam treinar 10 anos ou mais antes de atuarem profissionalmente em grandes espetáculos.</contexto>
+    </pergunta>
+    <pergunta resposta="1768">
+      <texto>Em que ano Philip Astley criou o primeiro circo moderno com picadeiro circular, na Inglaterra?</texto>
+      <contexto>Philip Astley criou o primeiro circo moderno com picadeiro circular em 1768, na Inglaterra, combinando acrobacias equestres com outras atrações.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MAGIA E ILUSIONISMO" patos="2">
+    <pergunta resposta="1874">
+      <texto>Em que ano o ilusionista Harry Houdini nasceu?</texto>
+      <contexto>Harry Houdini nasceu em 1874, na Hungria, tornando-se um dos maiores ilusionistas da história.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantas horas, em média, um mágico profissional pratica um único truque antes de apresentá-lo em público?</texto>
+      <contexto>Mágicos profissionais costumam praticar cerca de 100 horas ou mais um único truque antes de apresentá-lo em público.</contexto>
+    </pergunta>
+    <pergunta resposta="1956">
+      <texto>Em que ano nasceu o ilusionista David Copperfield, considerado um dos maiores mágicos do mundo?</texto>
+      <contexto>David Copperfield nasceu nos Estados Unidos, em Nova Jersey, em 1956, tornando-se um dos ilusionistas mais famosos e bem-sucedidos da história.</contexto>
+    </pergunta>
+    <pergunta resposta="90">
+      <texto>Quantos minutos, em média, dura um espetáculo completo de ilusionismo em teatro?</texto>
+      <contexto>Espetáculos de ilusionismo em teatro costumam durar em média cerca de 90 minutos.</contexto>
+    </pergunta>
+    <pergunta resposta="1900">
+      <texto>Em que década Houdini realizou seus famosos escapes de celas de prisão em poucos minutos?</texto>
+      <contexto>Houdini ficou famoso por escapes espetaculares na década de 1900 (anos 1900 a 1910).</contexto>
+    </pergunta>
+    <pergunta resposta="52">
+      <texto>Quantas cartas, sem contar os jokers, tem um baralho padrão usado em truques de mágica?</texto>
+      <contexto>Um baralho padrão usado em mágica tem 52 cartas, sem contar os jokers.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ROBÓTICA" patos="3">
+    <pergunta resposta="1920">
+      <texto>Em que ano o termo "robô" foi usado pela primeira vez, na peça do escritor Karel Čapek?</texto>
+      <contexto>O termo "robô" foi criado pelo escritor tcheco Karel Čapek em sua peça de 1920, R.U.R.</contexto>
+    </pergunta>
+    <pergunta resposta="1961">
+      <texto>Em que ano o primeiro robô industrial, o Unimate, começou a operar em uma fábrica?</texto>
+      <contexto>O Unimate começou a operar em uma fábrica da General Motors em 1961, sendo o primeiro robô industrial.</contexto>
+    </pergunta>
+    <pergunta resposta="6">
+      <texto>Quantos eixos de movimento, em geral, tem um braço robótico industrial padrão?</texto>
+      <contexto>Braços robóticos industriais padrão costumam ter 6 eixos de movimento, simulando a flexibilidade do braço humano.</contexto>
+    </pergunta>
+    <pergunta resposta="2015">
+      <texto>Em que ano o robô humanoide Sophia foi ativado pela Hanson Robotics?</texto>
+      <contexto>O robô humanoide Sophia foi ativado em 2015 e ganhou fama por suas interações realistas.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos milhões de robôs industriais, aproximadamente, estavam em operação no mundo em 2022?</texto>
+      <contexto>Estima-se que mais de 3 milhões de robôs industriais estivessem em operação no mundo em 2022.</contexto>
+    </pergunta>
+    <pergunta resposta="2013">
+      <texto>Em que ano a China superou o Japão e se tornou o maior mercado de robôs industriais do mundo?</texto>
+      <contexto>Em 2013, a China superou o Japão e se tornou o maior mercado de robôs industriais do mundo, posição que mantém até hoje com ampla margem.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="INTELIGÊNCIA ARTIFICIAL" patos="3">
+    <pergunta resposta="1956">
+      <texto>Em que ano o termo "inteligência artificial" foi criado, na conferência de Dartmouth?</texto>
+      <contexto>O termo foi criado na conferência de Dartmouth em 1956, marco fundador da área de IA.</contexto>
+    </pergunta>
+    <pergunta resposta="1997">
+      <texto>Em que ano o programa de IA Deep Blue venceu o campeão mundial de xadrez Garry Kasparov?</texto>
+      <contexto>O Deep Blue, da IBM, venceu Kasparov em 1997, um marco histórico da inteligência artificial.</contexto>
+    </pergunta>
+    <pergunta resposta="2022">
+      <texto>Em que ano o ChatGPT foi lançado ao público pela OpenAI?</texto>
+      <contexto>O ChatGPT foi lançado ao público em novembro de 2022, popularizando a IA generativa.</contexto>
+    </pergunta>
+    <pergunta resposta="1950">
+      <texto>Em que ano Alan Turing propôs o famoso "Teste de Turing" para avaliar inteligência de máquinas?</texto>
+      <contexto>Alan Turing propôs o teste em seu artigo de 1950 sobre computação e inteligência.</contexto>
+    </pergunta>
+    <pergunta resposta="175">
+      <texto>Quantos bilhões de parâmetros, aproximadamente, tinha o modelo GPT-3, lançado em 2020?</texto>
+      <contexto>O GPT-3, da OpenAI, tinha cerca de 175 bilhões de parâmetros, um marco em escala na época.</contexto>
+    </pergunta>
+    <pergunta resposta="2016">
+      <texto>Em que ano o programa AlphaGo, da DeepMind, venceu o campeão mundial de Go, Lee Sedol?</texto>
+      <contexto>O AlphaGo venceu Lee Sedol em 2016, um feito considerado muito mais complexo que vencer no xadrez.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ENERGIA SOLAR" patos="3">
+    <pergunta resposta="1954">
+      <texto>Em que ano foi criada a primeira célula fotovoltaica de silício prática, nos Laboratórios Bell?</texto>
+      <contexto>A primeira célula fotovoltaica de silício prática foi criada nos Laboratórios Bell em 1954.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos minutos a luz do Sol leva para chegar à Terra, energia que alimenta os painéis solares?</texto>
+      <contexto>A luz solar leva cerca de 8 minutos para chegar à Terra, energia captada pelos painéis solares.</contexto>
+    </pergunta>
+    <pergunta resposta="20">
+      <texto>Que porcentagem de eficiência, em média, têm os painéis solares comerciais comuns atualmente?</texto>
+      <contexto>Painéis solares comerciais comuns têm em média cerca de 20% de eficiência na conversão de luz em eletricidade.</contexto>
+    </pergunta>
+    <pergunta resposta="25">
+      <texto>Quantos anos, em média, é a vida útil garantida de um painel solar comercial?</texto>
+      <contexto>Painéis solares comerciais costumam ter garantia de vida útil de cerca de 25 anos.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Que porcentagem da capacidade mundial de energia solar a China concentra atualmente, liderando o ranking global?</texto>
+      <contexto>A China lidera o ranking de energia solar, concentrando cerca de 40% da capacidade mundial instalada, mais que qualquer outro país.</contexto>
+    </pergunta>
+    <pergunta resposta="90">
+      <texto>Quantos minutos de luz solar incidindo na Terra, segundo estimativa popular, poderiam suprir o consumo de energia mundial por um ano?</texto>
+      <contexto>Estima-se que cerca de 90 minutos de luz solar incidindo na Terra poderiam, em teoria, suprir o consumo energético mundial de um ano.</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="RECICLAGEM" patos="2">
+    <pergunta resposta="1000">
+      <texto>Quantos anos, em média, uma garrafa de vidro pode levar para se decompor na natureza?</texto>
+      <contexto>Vidro pode levar cerca de 1.000 anos ou mais para se decompor na natureza.</contexto>
+    </pergunta>
+    <pergunta resposta="450">
+      <texto>Quantos anos, em média, uma garrafa plástica (PET) leva para se decompor?</texto>
+      <contexto>Garrafas plásticas PET podem levar cerca de 450 anos para se decompor.</contexto>
+    </pergunta>
+    <pergunta resposta="95">
+      <texto>Que porcentagem de energia, aproximadamente, a reciclagem de alumínio economiza em comparação à produção a partir do minério?</texto>
+      <contexto>Reciclar alumínio economiza cerca de 95% da energia necessária para produzir alumínio novo a partir do minério.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Quantas vezes, em média, o papel pode ser reciclado antes que suas fibras se degradem demais para reuso?</texto>
+      <contexto>O papel pode ser reciclado em média cerca de 7 vezes antes que suas fibras se tornem muito curtas.</contexto>
+    </pergunta>
+    <pergunta resposta="26">
+      <texto>Quantos mil litros de água, em média, são economizados ao reciclar uma tonelada de papel?</texto>
+      <contexto>Reciclar uma tonelada de papel economiza cerca de 26 mil litros de água, além de preservar árvores e reduzir a poluição.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Que porcentagem do lixo produzido no Brasil, aproximadamente, é efetivamente reciclada atualmente?</texto>
+      <contexto>Apenas cerca de 4% do lixo produzido no Brasil é efetivamente reciclado, segundo estimativas.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CLIMA E METEOROLOGIA" patos="3">
+    <pergunta resposta="56.7">
+      <texto>Qual a temperatura mais alta, em graus Celsius, já registrada oficialmente na Terra (Vale da Morte, EUA)?</texto>
+      <contexto>A temperatura mais alta registrada oficialmente na Terra foi de 56,7°C, no Vale da Morte, EUA, em 1913.</contexto>
+    </pergunta>
+    <pergunta resposta="-89.2">
+      <texto>Qual a temperatura mais baixa, em graus Celsius, já registrada oficialmente na Terra (Antártida)?</texto>
+      <contexto>A temperatura mais baixa registrada oficialmente foi de -89,2°C, na Estação Vostok, Antártida, em 1983.</contexto>
+    </pergunta>
+    <pergunta resposta="252">
+      <texto>Quantos km/h, no mínimo, deve ter um vento para ser classificado como furacão de categoria 5?</texto>
+      <contexto>Furacões de categoria 5 têm ventos sustentados de no mínimo 252 km/h.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos gêneros principais de nuvens existem na classificação meteorológica básica?</texto>
+      <contexto>A classificação básica meteorológica reconhece 10 gêneros principais de nuvens.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Até quantos quilômetros de altitude, em média, se estende a troposfera, camada onde ocorrem os fenômenos climáticos?</texto>
+      <contexto>A troposfera se estende até cerca de 12 km de altitude, onde ocorre a maior parte dos fenômenos climáticos.</contexto>
+    </pergunta>
+    <pergunta resposta="1.2">
+      <texto>Quantos graus Celsius, aproximadamente, a temperatura média global já aumentou desde a era pré-industrial?</texto>
+      <contexto>A temperatura média global já aumentou cerca de 1,2°C desde a era pré-industrial, segundo o IPCC.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="TERREMOTOS" patos="3">
+    <pergunta resposta="9.5">
+      <texto>Qual a magnitude do maior terremoto já registrado na história, ocorrido no Chile em 1960?</texto>
+      <contexto>O terremoto do Chile em 1960 teve magnitude 9,5, o maior já registrado na história.</contexto>
+    </pergunta>
+    <pergunta resposta="1935">
+      <texto>Em que ano o cientista Charles Richter criou a escala de magnitude sísmica que leva seu nome?</texto>
+      <contexto>A Escala Richter foi criada em 1935 pelo sismólogo Charles Richter, tornando-se a forma mais popular de medir a magnitude dos terremotos.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantos mil terremotos, em média, ocorrem no mundo por ano, incluindo os de pequena magnitude?</texto>
+      <contexto>Estima-se que ocorram cerca de 500 mil terremotos por ano no mundo, a maioria imperceptível para os humanos.</contexto>
+    </pergunta>
+    <pergunta resposta="2004">
+      <texto>Em que ano ocorreu o devastador terremoto seguido de tsunami no Oceano Índico, um dos mais letais da história?</texto>
+      <contexto>O terremoto e tsunami no Oceano Índico em 2004 mataram mais de 230 mil pessoas.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Quantas placas tectônicas principais, aproximadamente, compõem a superfície da Terra?</texto>
+      <contexto>A superfície terrestre é dividida em cerca de 7 grandes placas tectônicas principais.</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Até quantos quilômetros de profundidade, em média, ocorre a maioria dos terremotos rasos?</texto>
+      <contexto>A maioria dos terremotos rasos ocorre a até cerca de 70 km de profundidade.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="OCEANOS E MARÉS" patos="3">
+    <pergunta resposta="30">
+      <texto>Que porcentagem da superfície da Terra o Oceano Pacífico, o maior e mais profundo, cobre aproximadamente?</texto>
+      <contexto>O Oceano Pacífico é o maior do planeta, cobrindo cerca de 30% da superfície da Terra — mais que todos os continentes juntos.</contexto>
+    </pergunta>
+    <pergunta resposta="11">
+      <texto>Quantos quilômetros de profundidade, aproximadamente, tem a Fossa das Marianas, o ponto mais profundo dos oceanos?</texto>
+      <contexto>A Fossa das Marianas tem cerca de 11 km de profundidade (11.000 metros), o ponto mais profundo conhecido dos oceanos.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantas marés altas, em geral, ocorrem por dia em um determinado ponto costeiro?</texto>
+      <contexto>A maioria dos litorais tem 2 marés altas e 2 marés baixas por dia, devido à atração gravitacional da Lua.</contexto>
+    </pergunta>
+    <pergunta resposta="71">
+      <texto>Que porcentagem da superfície da Terra, aproximadamente, é cobertas por oceanos?</texto>
+      <contexto>Os oceanos cobrem cerca de 71% da superfície da Terra.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos oceanos principais são reconhecidos atualmente pela maioria das classificações geográficas?</texto>
+      <contexto>Atualmente são reconhecidos 5 oceanos principais: Pacífico, Atlântico, Índico, Ártico e Antártico (Austral).</contexto>
+    </pergunta>
+    <pergunta resposta="35">
+      <texto>Qual a salinidade média, em gramas de sal por litro, da água do mar?</texto>
+      <contexto>A água do mar tem em média cerca de 35 gramas de sal por litro.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ANTÁRTIDA" patos="3">
+    <pergunta resposta="14">
+      <texto>Quantos milhões de km², aproximadamente, tem a área total do continente antártico?</texto>
+      <contexto>A Antártida tem uma área de cerca de 14 milhões de km², maior que a Europa.</contexto>
+    </pergunta>
+    <pergunta resposta="70">
+      <texto>Que porcentagem da água doce do planeta, aproximadamente, está congelada na Antártida?</texto>
+      <contexto>Cerca de 70% da água doce do planeta está congelada nas geleiras da Antártida.</contexto>
+    </pergunta>
+    <pergunta resposta="2000">
+      <texto>Quantos metros de espessura, em média, tem a camada de gelo na Antártida?</texto>
+      <contexto>A camada de gelo da Antártida tem em média cerca de 2.000 metros de espessura.</contexto>
+    </pergunta>
+    <pergunta resposta="1911">
+      <texto>Em que ano os exploradores liderados por Roald Amundsen se tornaram os primeiros a chegar ao Polo Sul?</texto>
+      <contexto>Roald Amundsen e sua equipe norueguesa chegaram ao Polo Sul em dezembro de 1911.</contexto>
+    </pergunta>
+    <pergunta resposta="7">
+      <texto>Quantas espécies de pinguins, aproximadamente, vivem na Antártida e ilhas subantárticas próximas?</texto>
+      <contexto>Cerca de 7 espécies de pinguins vivem na Antártida e ilhas subantárticas.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos países mantêm bases de pesquisa científica permanentes na Antártida, aproximadamente?</texto>
+      <contexto>Cerca de 30 países mantêm bases de pesquisa científica na Antártida, regulamentadas pelo Tratado da Antártida.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FARAÓS E MÚMIAS" patos="3">
+    <pergunta resposta="70">
+      <texto>Quantos dias, aproximadamente, durava o processo completo de mumificação egípcia?</texto>
+      <contexto>O processo completo de mumificação egípcia durava cerca de 70 dias.</contexto>
+    </pergunta>
+    <pergunta resposta="1922">
+      <texto>Em que ano o arqueólogo Howard Carter descobriu a tumba intacta do faraó Tutancâmon?</texto>
+      <contexto>Howard Carter descobriu a tumba de Tutancâmon em 1922, um dos maiores achados da arqueologia.</contexto>
+    </pergunta>
+    <pergunta resposta="19">
+      <texto>Com quantos anos de idade, aproximadamente, o faraó Tutancâmon morreu?</texto>
+      <contexto>Tutancâmon morreu com aproximadamente 19 anos de idade, em circunstâncias ainda debatidas.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos órgãos internos principais, em geral, eram removidos do corpo durante a mumificação egípcia, preservando o coração?</texto>
+      <contexto>Os egípcios removiam 4 órgãos principais (pulmões, fígado, estômago e intestinos), preservando o coração no corpo.</contexto>
+    </pergunta>
+    <pergunta resposta="21">
+      <texto>Quantos anos, aproximadamente, durou o reinado da rainha Cleópatra VII sobre o Egito?</texto>
+      <contexto>Cleópatra VII reinou sobre o Egito por cerca de 21 anos, até sua morte em 30 a.C.</contexto>
+    </pergunta>
+    <pergunta resposta="375">
+      <texto>Quantos metros de tecido de linho, aproximadamente, eram usados para envolver uma múmia egípcia em bandagens?</texto>
+      <contexto>Uma múmia egípcia podia ser envolvida com cerca de 375 metros de tecido de linho em bandagens.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="ROMA ANTIGA" patos="3">
+    <pergunta resposta="-753">
+      <texto>Em que ano, segundo a tradição, Roma foi fundada por Rômulo?</texto>
+      <contexto>Segundo a tradição, Roma foi fundada em 753 a.C. por Rômulo.</contexto>
+    </pergunta>
+    <pergunta resposta="50">
+      <texto>Quantos mil espectadores, aproximadamente, cabiam no Coliseu de Roma?</texto>
+      <contexto>O Coliseu de Roma tinha capacidade para cerca de 50 mil espectadores, onde se realizavam combates de gladiadores e outros espetáculos.</contexto>
+    </pergunta>
+    <pergunta resposta="80">
+      <texto>Em que ano da era cristã o Coliseu de Roma foi inaugurado?</texto>
+      <contexto>O Coliseu foi inaugurado no ano 80 d.C., sob o imperador Tito.</contexto>
+    </pergunta>
+    <pergunta resposta="400">
+      <texto>Quantos mil quilômetros, aproximadamente, tinha a extensão total da rede de estradas do Império Romano?</texto>
+      <contexto>O Império Romano construiu uma rede de estradas com cerca de 400 mil km de extensão total, conectando seu vasto território.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos imperadores governaram Roma durante o chamado "Ano dos Quatro Imperadores", em 69 d.C.?</texto>
+      <contexto>O ano 69 d.C. ficou conhecido como o "Ano dos Quatro Imperadores", devido à rápida sucessão de governantes.</contexto>
+    </pergunta>
+    <pergunta resposta="476">
+      <texto>Em que ano d.C. o Império Romano do Ocidente caiu definitivamente?</texto>
+      <contexto>O Império Romano do Ocidente caiu em 476 d.C., marcando tradicionalmente o início da Idade Média.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="GRÉCIA ANTIGA" patos="3">
+    <pergunta resposta="-776">
+      <texto>Em que ano, segundo registros históricos, ocorreram os primeiros Jogos Olímpicos da Antiguidade?</texto>
+      <contexto>Os primeiros Jogos Olímpicos da Antiguidade ocorreram em 776 a.C., em Olímpia, na Grécia.</contexto>
+    </pergunta>
+    <pergunta resposta="27">
+      <texto>Quantos anos durou a chamada Guerra do Peloponeso entre Atenas e Esparta?</texto>
+      <contexto>A Guerra do Peloponeso durou 27 anos, de 431 a 404 a.C.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantas colunas tem a fachada frontal do Partenon, em Atenas?</texto>
+      <contexto>A fachada frontal do Partenon tem 8 colunas dóricas.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Em que século a.C. viveu o filósofo grego Sócrates?</texto>
+      <contexto>Sócrates viveu no século 5 a.C., considerado um dos fundadores da filosofia ocidental.</contexto>
+    </pergunta>
+    <pergunta resposta="24">
+      <texto>Quantos livros (cantos) compõem a obra "Ilíada", de Homero?</texto>
+      <contexto>A Ilíada é composta por 24 livros (cantos).</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos metros de altura, aproximadamente, tinha a estátua de Zeus em Olímpia, uma das Sete Maravilhas do Mundo Antigo?</texto>
+      <contexto>A estátua de Zeus em Olímpia tinha cerca de 12 metros de altura.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="IMPÉRIOS MEDIEVAIS" patos="4">
+    <pergunta resposta="1000">
+      <texto>Quantos anos, aproximadamente, durou o Império Bizantino (Romano do Oriente), até sua queda em 1453?</texto>
+      <contexto>O Império Bizantino durou cerca de 1.000 anos, até a queda de Constantinopla em 1453.</contexto>
+    </pergunta>
+    <pergunta resposta="1206">
+      <texto>Em que ano o líder mongol Genghis Khan foi proclamado líder supremo, iniciando seu vasto império?</texto>
+      <contexto>Genghis Khan foi proclamado líder supremo dos mongóis em 1206, iniciando seu vasto império.</contexto>
+    </pergunta>
+    <pergunta resposta="24">
+      <texto>Quantos milhões de km², aproximadamente, chegou a ter o Império Mongol em sua extensão máxima?</texto>
+      <contexto>O Império Mongol chegou a cobrir cerca de 24 milhões de km² em sua extensão máxima, o maior império contíguo da história.</contexto>
+    </pergunta>
+    <pergunta resposta="800">
+      <texto>Em que ano da era cristã Carlos Magno foi coroado Imperador do Sacro Império Romano?</texto>
+      <contexto>Carlos Magno foi coroado imperador pelo Papa Leão III no ano 800.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantos anos, aproximadamente, durou o califado Abássida, um dos grandes impérios islâmicos medievais?</texto>
+      <contexto>O Califado Abássida durou cerca de 500 anos, de 750 a 1258.</contexto>
+    </pergunta>
+    <pergunta resposta="1453">
+      <texto>Em que ano Constantinopla caiu, marcando o fim do Império Bizantino?</texto>
+      <contexto>Constantinopla caiu em 1453, tomada pelos otomanos, encerrando o Império Bizantino.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PIRATAS" patos="2">
+    <pergunta resposta="17">
+      <texto>Em que século teve início a chamada "Era de Ouro da Pirataria"?</texto>
+      <contexto>A "Era de Ouro da Pirataria" ocorreu majoritariamente entre o final do século 17 e início do 18.</contexto>
+    </pergunta>
+    <pergunta resposta="18">
+      <texto>Em que século (d.C.) se popularizou o uso da bandeira com caveira e ossos cruzados, conhecida como Jolly Roger, pelos piratas?</texto>
+      <contexto>A bandeira pirata com caveira e ossos cruzados, a Jolly Roger, se popularizou no século 18, durante a chamada Era de Ouro da Pirataria.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos navios, aproximadamente, o pirata Barba Negra chegou a comandar em sua frota no auge?</texto>
+      <contexto>Barba Negra chegou a comandar uma frota de cerca de 4 navios em seu auge.</contexto>
+    </pergunta>
+    <pergunta resposta="1718">
+      <texto>Em que ano o pirata Barba Negra morreu em combate, na Carolina do Norte?</texto>
+      <contexto>Barba Negra morreu em combate em 1718, na Carolina do Norte, contra forças britânicas.</contexto>
+    </pergunta>
+    <pergunta resposta="1692">
+      <texto>Em que ano a cidade pirata de Port Royal, na Jamaica, foi destruída por um terremoto e maremoto?</texto>
+      <contexto>Port Royal, na Jamaica, principal base de piratas no Caribe no século 17, foi destruída em 1692 por um terremoto e maremoto, encerrando sua era de pirataria.</contexto>
+    </pergunta>
+    <pergunta resposta="2">
+      <texto>Quantos anos, em média, durava a "carreira" ativa de um pirata, segundo estimativas históricas?</texto>
+      <contexto>Estima-se que a carreira ativa média de um pirata durava apenas cerca de 2 anos, devido à violência e doenças.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="EXPLORADORES E NAVEGAÇÕES" patos="3">
+    <pergunta resposta="1492">
+      <texto>Em que ano Cristóvão Colombo chegou às Américas?</texto>
+      <contexto>Cristóvão Colombo chegou às Américas em 1492, em uma expedição patrocinada pela Espanha.</contexto>
+    </pergunta>
+    <pergunta resposta="1500">
+      <texto>Em que ano a esquadra de Pedro Álvares Cabral chegou ao Brasil?</texto>
+      <contexto>Pedro Álvares Cabral chegou ao Brasil em 22 de abril de 1500.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos anos durou a expedição de Fernão de Magalhães, a primeira a circunavegar o globo?</texto>
+      <contexto>A expedição de Magalhães, concluída por Sebastián Elcano, durou cerca de 3 anos (1519-1522).</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos navios, originalmente, partiram na expedição de Fernão de Magalhães em 1519?</texto>
+      <contexto>A expedição de Magalhães partiu com 5 navios, dos quais apenas 1 completou a viagem de volta.</contexto>
+    </pergunta>
+    <pergunta resposta="1488">
+      <texto>Em que ano o navegador português Bartolomeu Dias contornou o Cabo da Boa Esperança, na África?</texto>
+      <contexto>Bartolomeu Dias contornou o Cabo da Boa Esperança em 1488, abrindo caminho para a rota marítima à Índia.</contexto>
+    </pergunta>
+    <pergunta resposta="1498">
+      <texto>Em que ano Vasco da Gama chegou à Índia pela rota marítima ao redor da África?</texto>
+      <contexto>Vasco da Gama chegou à Índia em 1498, completando a rota marítima entre Europa e Ásia.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="INVENÇÕES FAMOSAS" patos="2">
+    <pergunta resposta="1440">
+      <texto>Em que ano, aproximadamente, Johannes Gutenberg desenvolveu a prensa de tipos móveis na Europa?</texto>
+      <contexto>Gutenberg desenvolveu a prensa de tipos móveis por volta de 1440, revolucionando a impressão.</contexto>
+    </pergunta>
+    <pergunta resposta="1876">
+      <texto>Em que ano Alexander Graham Bell patenteou o telefone?</texto>
+      <contexto>Alexander Graham Bell patenteou o telefone em 1876.</contexto>
+    </pergunta>
+    <pergunta resposta="1879">
+      <texto>Em que ano Thomas Edison patenteou a lâmpada incandescente prática?</texto>
+      <contexto>Thomas Edison patenteou uma lâmpada incandescente prática e duradoura em 1879.</contexto>
+    </pergunta>
+    <pergunta resposta="1903">
+      <texto>Em que ano os irmãos Wright realizaram o primeiro voo motorizado controlado da história?</texto>
+      <contexto>Os irmãos Wright realizaram o primeiro voo motorizado controlado em 1903, na Carolina do Norte.</contexto>
+    </pergunta>
+    <pergunta resposta="1989">
+      <texto>Em que ano a World Wide Web foi criada por Tim Berners-Lee?</texto>
+      <contexto>Tim Berners-Lee criou a World Wide Web em 1989, no laboratório CERN.</contexto>
+    </pergunta>
+    <pergunta resposta="1960">
+      <texto>Em que década o forno de micro-ondas doméstico começou a ser comercializado?</texto>
+      <contexto>O forno de micro-ondas doméstico começou a ser comercializado na década de 1960.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FOTOGRAFIA" patos="2">
+    <pergunta resposta="1826">
+      <texto>Em que ano, aproximadamente, foi feita a primeira fotografia permanente da história, por Nicéphore Niépce?</texto>
+      <contexto>A primeira fotografia permanente conhecida foi feita por Nicéphore Niépce em 1826 (ou 1827, segundo algumas fontes).</contexto>
+    </pergunta>
+    <pergunta resposta="1888">
+      <texto>Em que ano a Kodak lançou a primeira câmera fotográfica popular e acessível?</texto>
+      <contexto>A Kodak lançou sua primeira câmera popular em 1888, com o slogan "você aperta o botão, nós fazemos o resto".</contexto>
+    </pergunta>
+    <pergunta resposta="1990">
+      <texto>Em que ano, aproximadamente, a primeira câmera digital comercial foi lançada ao mercado?</texto>
+      <contexto>As primeiras câmeras digitais comerciais começaram a ser lançadas por volta de 1990.</contexto>
+    </pergunta>
+    <pergunta resposta="0.01">
+      <texto>Quantos megapixels, aproximadamente, tinha o primeiro protótipo de câmera digital da Kodak, criado em 1975?</texto>
+      <contexto>O primeiro protótipo de câmera digital da Kodak, em 1975, tinha resolução de apenas 0,01 megapixel (100x100 pixels).</contexto>
+    </pergunta>
+    <pergunta resposta="1400">
+      <texto>Quantos bilhões de fotos, aproximadamente, são tiradas no mundo todos os anos atualmente?</texto>
+      <contexto>Estima-se que mais de 1.400 bilhões de fotos sejam tiradas no mundo todos os anos atualmente, em sua maioria com smartphones.</contexto>
+    </pergunta>
+    <pergunta resposta="2010">
+      <texto>Em que ano o Instagram foi lançado, popularizando a fotografia compartilhada em redes sociais?</texto>
+      <contexto>O Instagram foi lançado em 2010, revolucionando a forma de compartilhar fotos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CINEMA DE ANIMAÇÃO" patos="2">
+    <pergunta resposta="1937">
+      <texto>Em que ano foi lançado "Branca de Neve e os Sete Anões", o primeiro longa-metragem de animação da Disney?</texto>
+      <contexto>"Branca de Neve e os Sete Anões" foi lançado em 1937, o primeiro longa-metragem de animação da Disney.</contexto>
+    </pergunta>
+    <pergunta resposta="1995">
+      <texto>Em que ano foi lançado "Toy Story", o primeiro longa de animação totalmente em computação gráfica?</texto>
+      <contexto>"Toy Story", da Pixar, foi lançado em 1995, sendo o primeiro longa totalmente em CGI.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos anos, em média, leva para produzir um longa-metragem de animação completo da Pixar?</texto>
+      <contexto>Filmes de animação da Pixar costumam levar em média cerca de 4 anos para serem produzidos.</contexto>
+    </pergunta>
+    <pergunta resposta="2011">
+      <texto>Em que ano "Toy Story 3" venceu o Oscar de Melhor Filme de Animação?</texto>
+      <contexto>Toy Story 3 venceu o Oscar de Melhor Filme de Animação em 2011.</contexto>
+    </pergunta>
+    <pergunta resposta="1985">
+      <texto>Em que ano o Studio Ghibli foi fundado no Japão pelo animador Hayao Miyazaki?</texto>
+      <contexto>O Studio Ghibli foi fundado no Japão em 1985, por Hayao Miyazaki e Isao Takahata, tornando-se um dos mais renomados estúdios de animação do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="24">
+      <texto>Quantos quadros por segundo, em geral, são usados em animações tradicionais para parecerem fluidas?</texto>
+      <contexto>Animações tradicionais costumam usar 24 quadros por segundo para parecerem fluidas ao olho humano.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="SUPER-HERÓIS" patos="2">
+    <pergunta resposta="1938">
+      <texto>Em que ano o personagem Superman fez sua primeira aparição em quadrinhos?</texto>
+      <contexto>Superman apareceu por primeira vez em "Action Comics #1", em 1938.</contexto>
+    </pergunta>
+    <pergunta resposta="1939">
+      <texto>Em que ano o personagem Batman fez sua primeira aparição em quadrinhos?</texto>
+      <contexto>Batman apareceu por primeira vez em "Detective Comics #27", em 1939.</contexto>
+    </pergunta>
+    <pergunta resposta="1939">
+      <texto>Em que ano foi fundada a editora hoje conhecida como Marvel Comics?</texto>
+      <contexto>A Marvel Comics (originalmente Timely Comics) foi fundada em 1939.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos filmes, aproximadamente, compunham o chamado "Universo Cinematográfico Marvel" (MCU) até 2023?</texto>
+      <contexto>O Universo Cinematográfico Marvel já tinha cerca de 30 filmes lançados até 2023.</contexto>
+    </pergunta>
+    <pergunta resposta="2012">
+      <texto>Em que ano foi lançado o primeiro filme "Os Vingadores" (Avengers) dos estúdios Marvel?</texto>
+      <contexto>O primeiro filme "Os Vingadores" foi lançado em 2012.</contexto>
+    </pergunta>
+    <pergunta resposta="2.8">
+      <texto>Quantos bilhões de dólares, aproximadamente, o filme "Vingadores: Ultimato" arrecadou mundialmente nas bilheterias?</texto>
+      <contexto>"Vingadores: Ultimato" arrecadou cerca de 2,8 bilhões de dólares mundialmente, um dos filmes de maior bilheteria da história.</contexto>
+    </pergunta>
+  </carta>
+  <carta tema="LITERATURA BRASILEIRA" patos="3">
+    <pergunta resposta="1899">
+      <texto>Em que ano foi publicado "Dom Casmurro", de Machado de Assis?</texto>
+      <contexto>"Dom Casmurro" foi publicado em 1899, uma das obras mais importantes da literatura brasileira.</contexto>
+    </pergunta>
+    <pergunta resposta="1839">
+      <texto>Em que ano nasceu o escritor Machado de Assis?</texto>
+      <contexto>Machado de Assis nasceu em 1839, no Rio de Janeiro, e é considerado um dos maiores escritores do Brasil.</contexto>
+    </pergunta>
+    <pergunta resposta="1956">
+      <texto>Em que ano foi publicado o romance "Grande Sertão: Veredas", de Guimarães Rosa?</texto>
+      <contexto>"Grande Sertão: Veredas" foi publicado em 1956, obra-prima da literatura brasileira.</contexto>
+    </pergunta>
+    <pergunta resposta="1920">
+      <texto>Em que ano nasceu a escritora Clarice Lispector?</texto>
+      <contexto>Clarice Lispector nasceu em 1920, na Ucrânia, e se naturalizou brasileira.</contexto>
+    </pergunta>
+    <pergunta resposta="1902">
+      <texto>Em que ano foi publicada a obra "Os Sertões", de Euclides da Cunha?</texto>
+      <contexto>"Os Sertões" foi publicada em 1902, retratando a Guerra de Canudos.</contexto>
+    </pergunta>
+    <pergunta resposta="1912">
+      <texto>Em que ano nasceu o escritor Jorge Amado?</texto>
+      <contexto>Jorge Amado nasceu em 1912, na Bahia, e é um dos autores brasileiros mais traduzidos no mundo.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="CARNAVAL" patos="2">
+    <pergunta resposta="5">
+      <texto>Quantos dias, aproximadamente, dura o período de festividades de Carnaval no Brasil, da sexta-feira à quarta de cinzas?</texto>
+      <contexto>O Carnaval brasileiro costuma ter cerca de 5 dias de festividades, da sexta-feira à quarta-feira de cinzas.</contexto>
+    </pergunta>
+    <pergunta resposta="1984">
+      <texto>Em que ano foi inaugurado o Sambódromo do Rio de Janeiro, palco dos maiores desfiles de Carnaval do mundo?</texto>
+      <contexto>O Sambódromo do Rio de Janeiro foi inaugurado em 1984, projetado por Oscar Niemeyer, e é o palco dos maiores desfiles de Carnaval do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="65">
+      <texto>Quantos minutos, em média, cada escola de samba tem para desfilar no Grupo Especial do Rio de Janeiro?</texto>
+      <contexto>Escolas de samba do Grupo Especial têm em média cerca de 65 a 75 minutos para desfilar.</contexto>
+    </pergunta>
+    <pergunta resposta="3000">
+      <texto>Quantos integrantes, em média, pode ter uma escola de samba grande durante o desfile?</texto>
+      <contexto>Escolas de samba grandes podem reunir cerca de 3.000 integrantes ou mais no desfile.</contexto>
+    </pergunta>
+    <pergunta resposta="1928">
+      <texto>Em que ano foi fundada a Deixa Falar, considerada a primeira escola de samba do Brasil?</texto>
+      <contexto>A Deixa Falar, considerada a primeira escola de samba, foi fundada no Rio de Janeiro em 1928.</contexto>
+    </pergunta>
+    <pergunta resposta="1">
+      <texto>Quantos milhões de turistas estrangeiros, aproximadamente, o Carnaval atrai para o Brasil todos os anos?</texto>
+      <contexto>O Carnaval atrai cerca de 1 milhão de turistas estrangeiros para o Brasil todos os anos, segundo estimativas do setor.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="FESTA JUNINA" patos="2">
+    <pergunta resposta="24">
+      <texto>Em qual dia do mês de junho se celebra o dia de São João, no coração das festas juninas brasileiras?</texto>
+      <contexto>O dia 24 de junho é a data oficial de São João Batista, considerado o coração das festas juninas, com fogueiras, forró e quadrilha.</contexto>
+    </pergunta>
+    <pergunta resposta="8">
+      <texto>Quantos pares, em geral, participam de uma apresentação tradicional de quadrilha nas festas juninas?</texto>
+      <contexto>A quadrilha junina é dançada tradicionalmente com 8 ou mais pares ao som de forró, sendo a dança mais popular das festas juninas no Brasil.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos dias, em média, duram as festividades do São João de Campina Grande, considerado um dos maiores do mundo?</texto>
+      <contexto>O São João de Campina Grande, na Paraíba, dura cerca de 30 dias (o mês de junho inteiro), reunindo milhões de visitantes e sendo considerado um dos maiores do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantos minutos, em média, leva o preparo da canjica de milho, doce típico das festas juninas, após o milho ser deixado de molho?</texto>
+      <contexto>A canjica de milho, doce típico junino, leva cerca de 40 minutos de cozimento após o milho ficar de molho, tornando-se cremosa e saborosa.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos santos principais são celebrados nas festas juninas?</texto>
+      <contexto>As festas juninas celebram 3 santos principais: Santo Antônio, São João e São Pedro.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Há quantos séculos, aproximadamente, os festejos juninos chegaram ao Brasil com a colonização portuguesa?</texto>
+      <contexto>As festas juninas têm raízes em tradições europeias e chegaram ao Brasil há cerca de 5 séculos, com a colonização portuguesa, misturando-se às culturas indígena e africana.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="COPA DO MUNDO" patos="3">
+    <pergunta resposta="5">
+      <texto>Quantas vezes o Brasil já foi campeão da Copa do Mundo de futebol, até 2023?</texto>
+      <contexto>O Brasil é o maior vencedor da Copa do Mundo, com 5 títulos: 1958, 1962, 1970, 1994 e 2002.</contexto>
+    </pergunta>
+    <pergunta resposta="1930">
+      <texto>Em que ano ocorreu a primeira Copa do Mundo de futebol da história, no Uruguai?</texto>
+      <contexto>A primeira Copa do Mundo foi realizada no Uruguai em 1930, vencida pelo próprio país anfitrião.</contexto>
+    </pergunta>
+    <pergunta resposta="32">
+      <texto>Quantas seleções, em geral, participam da fase final da Copa do Mundo desde 1998?</texto>
+      <contexto>Desde 1998, a Copa do Mundo passou a ter 32 seleções na fase final.</contexto>
+    </pergunta>
+    <pergunta resposta="2014">
+      <texto>Em que ano o Brasil sediou a Copa do Mundo de futebol pela segunda vez, com a Alemanha vencendo o torneio?</texto>
+      <contexto>O Brasil sediou a Copa do Mundo pela segunda vez em 2014 (a primeira foi em 1950). A Alemanha venceu o torneio, goleando o Brasil por 7 a 1 na semifinal.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos gols, aproximadamente, o jogador Pelé marcou em Copas do Mundo ao longo da carreira?</texto>
+      <contexto>Pelé marcou 12 gols em Copas do Mundo, sendo tricampeão pelo Brasil.</contexto>
+    </pergunta>
+    <pergunta resposta="2026">
+      <texto>A partir de qual edição a Copa do Mundo passará a ter 48 seleções participantes?</texto>
+      <contexto>A Copa do Mundo de 2026, nos EUA, México e Canadá, será a primeira com 48 seleções.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="JOGOS DE TABULEIRO" patos="2">
+    <pergunta resposta="1935">
+      <texto>Em que ano o jogo Monopoly foi lançado comercialmente nos Estados Unidos?</texto>
+      <contexto>O Monopoly foi lançado comercialmente pela Parker Brothers em 1935.</contexto>
+    </pergunta>
+    <pergunta resposta="40">
+      <texto>Quantas casas tem o tabuleiro tradicional do jogo Monopoly?</texto>
+      <contexto>O tabuleiro tradicional do Monopoly tem 40 casas.</contexto>
+    </pergunta>
+    <pergunta resposta="1930">
+      <texto>Em que década o jogo de tabuleiro Scrabble foi criado nos Estados Unidos?</texto>
+      <contexto>O Scrabble foi criado nos Estados Unidos na década de 1930, por Alfred Mosher Butts.</contexto>
+    </pergunta>
+    <pergunta resposta="100">
+      <texto>Quantas peças de letras, aproximadamente, compõem o jogo Scrabble em sua versão em inglês?</texto>
+      <contexto>O Scrabble em inglês tem 100 peças de letras.</contexto>
+    </pergunta>
+    <pergunta resposta="1957">
+      <texto>Em que ano o jogo Risk, de estratégia e conquista territorial, foi lançado na França?</texto>
+      <contexto>O jogo Risk foi lançado na França em 1957, criado por Albert Lamorisse.</contexto>
+    </pergunta>
+    <pergunta resposta="4">
+      <texto>Quantos jogadores, no máximo, podem participar tradicionalmente de uma partida de Catan (Os Colonizadores de Catan), na versão base?</texto>
+      <contexto>O jogo Catan, em sua versão base, é projetado para até 4 jogadores.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="PARQUES DE DIVERSÃO" patos="2">
+    <pergunta resposta="1955">
+      <texto>Em que ano o parque Disneyland original foi inaugurado, na Califórnia?</texto>
+      <contexto>A Disneyland original foi inaugurada na Califórnia em 1955.</contexto>
+    </pergunta>
+    <pergunta resposta="1971">
+      <texto>Em que ano o parque Walt Disney World foi inaugurado, na Flórida?</texto>
+      <contexto>O Walt Disney World foi inaugurado na Flórida em 1971.</contexto>
+    </pergunta>
+    <pergunta resposta="58">
+      <texto>Quantos milhões de visitantes, aproximadamente, a Disney World recebe por ano?</texto>
+      <contexto>A Disney World na Flórida recebe cerca de 58 milhões de visitantes por ano, um dos parques mais visitados do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="1975">
+      <texto>Em que ano foi inaugurado o Europa-Park, um dos maiores parques temáticos da Europa, na Alemanha?</texto>
+      <contexto>O Europa-Park, na Alemanha, foi inaugurado em 1975 pela família Mack e se tornou um dos maiores e mais visitados parques temáticos da Europa.</contexto>
+    </pergunta>
+    <pergunta resposta="10">
+      <texto>Quantos mil hectares, aproximadamente, tem a área total do complexo Walt Disney World, na Flórida?</texto>
+      <contexto>O complexo Walt Disney World ocupa cerca de 10 mil hectares na Flórida, equivalente a duas vezes o tamanho de Manhattan.</contexto>
+    </pergunta>
+    <pergunta resposta="1991">
+      <texto>Em que ano foi inaugurado o parque Beto Carrero World, em Santa Catarina, o maior da América Latina?</texto>
+      <contexto>O parque Beto Carrero World foi inaugurado em 1991, em Penha, Santa Catarina, tornando-se o maior parque temático da América Latina.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="MONTANHAS-RUSSAS" patos="3">
+    <pergunta resposta="240">
+      <texto>Quantos km/h, aproximadamente, atinge a montanha-russa Formula Rossa, considerada uma das mais rápidas do mundo?</texto>
+      <contexto>A Formula Rossa, em Abu Dhabi, atinge cerca de 240 km/h, sendo uma das montanhas-russas mais rápidas do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="3.5">
+      <texto>Em quantos segundos, aproximadamente, a Kingda Ka, uma das montanhas-russas mais altas do mundo, acelera do zero à sua velocidade máxima?</texto>
+      <contexto>A Kingda Ka, em Nova Jersey (EUA), acelera de 0 a 206 km/h em apenas cerca de 3,5 segundos usando propulsão hidráulica.</contexto>
+    </pergunta>
+    <pergunta resposta="139">
+      <texto>Quantos metros de altura, aproximadamente, tem a montanha-russa Kingda Ka?</texto>
+      <contexto>A Kingda Ka tem cerca de 139 metros de altura, uma das mais altas do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="17">
+      <texto>Em que século surgiram as primeiras estruturas semelhantes a montanhas-russas, feitas de gelo, na Rússia?</texto>
+      <contexto>As primeiras estruturas similares a montanhas-russas, feitas de gelo, surgiram na Rússia por volta do século 17.</contexto>
+    </pergunta>
+    <pergunta resposta="1902">
+      <texto>Em que ano foi inaugurada a Leap-The-Dips, nos EUA, a montanha-russa de madeira mais antiga ainda em operação no mundo?</texto>
+      <contexto>A Leap-The-Dips, na Pensilvânia, EUA, foi inaugurada em 1902 e é a montanha-russa de madeira mais antiga em operação.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos segundos, em média, dura o trecho de queda livre inicial em grandes montanhas-russas de mega torres?</texto>
+      <contexto>Quedas livres iniciais em mega montanhas-russas costumam durar cerca de 3 segundos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="TUBARÕES" patos="3">
+    <pergunta resposta="4.5">
+      <texto>Quantos metros de comprimento, em média, pode atingir um tubarão-branco adulto?</texto>
+      <contexto>O tubarão-branco adulto pode atingir em média cerca de 4,5 metros de comprimento.</contexto>
+    </pergunta>
+    <pergunta resposta="12">
+      <texto>Quantos metros de comprimento pode atingir o tubarão-baleia, a maior espécie de tubarão e o maior peixe do mundo?</texto>
+      <contexto>O tubarão-baleia, o maior peixe do mundo, pode atingir mais de 12 metros de comprimento, apesar de ser completamente inofensivo para os humanos.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos mil dentes, aproximadamente, um tubarão pode desenvolver ao longo de toda a vida, devido à constante reposição?</texto>
+      <contexto>Um tubarão pode desenvolver cerca de 30 mil dentes ao longo da vida, pois suas fileiras de dentes são constantemente renovadas.</contexto>
+    </pergunta>
+    <pergunta resposta="270">
+      <texto>Quantos anos, em média, pode viver um tubarão-da-groenlândia, uma das espécies mais longevas do planeta?</texto>
+      <contexto>O tubarão-da-groenlândia pode viver em média mais de 270 anos, uma das espécies mais longevas conhecidas.</contexto>
+    </pergunta>
+    <pergunta resposta="5">
+      <texto>Quantos ataques fatais de tubarão a humanos, em média, ocorrem no mundo por ano?</texto>
+      <contexto>Em média, ocorrem cerca de 5 ataques fatais de tubarão a humanos por ano no mundo, segundo estatísticas globais.</contexto>
+    </pergunta>
+    <pergunta resposta="400">
+      <texto>Há quantos milhões de anos, aproximadamente, os tubarões existem no planeta?</texto>
+      <contexto>Os tubarões existem há cerca de 400 milhões de anos, muito antes dos dinossauros.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="POLVOS E LULAS" patos="3">
+    <pergunta resposta="8">
+      <texto>Quantos braços tem um polvo?</texto>
+      <contexto>O polvo tem 8 braços, cobertos de ventosas sensíveis.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Quantos corações tem um polvo?</texto>
+      <contexto>O polvo tem 3 corações: um principal e dois que bombeiam sangue para as brânquias.</contexto>
+    </pergunta>
+    <pergunta resposta="13">
+      <texto>Quantos metros de comprimento, aproximadamente, pode atingir a lula-gigante, contando os tentáculos?</texto>
+      <contexto>A lula-gigante pode atingir cerca de 13 metros de comprimento, contando os tentáculos.</contexto>
+    </pergunta>
+    <pergunta resposta="18">
+      <texto>Quantos meses, em média, vive um polvo-comum, espécie de vida relativamente curta?</texto>
+      <contexto>O polvo-comum vive em média cerca de 18 meses, uma vida relativamente curta para um animal tão inteligente.</contexto>
+    </pergunta>
+    <pergunta resposta="500">
+      <texto>Quantos milhões de neurônios, aproximadamente, tem o sistema nervoso de um polvo?</texto>
+      <contexto>O polvo tem cerca de 500 milhões de neurônios em seu sistema nervoso, distribuídos pelo corpo e braços.</contexto>
+    </pergunta>
+    <pergunta resposta="0.3">
+      <texto>Em quantos segundos, aproximadamente, um polvo pode mudar a cor de sua pele para se camuflar?</texto>
+      <contexto>Polvos podem mudar de cor em cerca de 0,3 segundos, graças a células chamadas cromatóforos.</contexto>
+    </pergunta>
+  </carta>
+
+  <carta tema="RAIOS E TROVÕES" patos="3">
+    <pergunta resposta="30">
+      <texto>Quantos mil graus Celsius, aproximadamente, pode atingir a temperatura de um raio, mais quente que a superfície do Sol?</texto>
+      <contexto>Um raio pode atingir temperaturas de até 30 mil °C, mais quente que a superfície do Sol (cerca de 5.500°C).</contexto>
+    </pergunta>
+    <pergunta resposta="44">
+      <texto>Quantos raios, em média, atingem a Terra por segundo, em todo o planeta?</texto>
+      <contexto>Estima-se que cerca de 44 raios atinjam a Terra por segundo, em todo o planeta.</contexto>
+    </pergunta>
+    <pergunta resposta="16">
+      <texto>Quantos quilômetros, em média, um trovão pode ser ouvido a partir do raio que o originou?</texto>
+      <contexto>O som de um trovão pode ser ouvido a até cerca de 16 km de distância do raio, em condições favoráveis.</contexto>
+    </pergunta>
+    <pergunta resposta="3">
+      <texto>Após ver um raio a 1 km de distância, aproximadamente quantos segundos depois se ouve o trovão?</texto>
+      <contexto>O som viaja a cerca de 340 m/s, então um raio a 1 km leva cerca de 3 segundos para ser ouvido como trovão — por isso contamos os segundos para estimar a distância.</contexto>
+    </pergunta>
+    <pergunta resposta="1600">
+      <texto>Quantas horas por ano, aproximadamente, a região do Lago Maracaibo tem atividade de raios, tornando-a campeã mundial?</texto>
+      <contexto>A região do Lago Maracaibo, na Venezuela, tem atividade de raios por cerca de 1.600 horas por ano, tornando-a o lugar com maior densidade de relâmpagos do mundo.</contexto>
+    </pergunta>
+    <pergunta resposta="30">
+      <texto>Quantos microssegundos, aproximadamente, dura a descarga elétrica principal de um raio?</texto>
+      <contexto>A descarga elétrica principal de um raio dura cerca de 30 microssegundos, embora pareça instantânea ao olho humano.</contexto>
+    </pergunta>
+  </carta>
+</cartas>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nem a Pato! — Criador de Cartas</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --yellow: #FFD700;
+  --yellow-dk: #E8C100;
+  --black: #1A1A1A;
+  --gray1: #E8E8E8;
+  --gray2: #CCCCCC;
+  --white: #FFFFFF;
+  --red: #C62828;
+  --bg: #EBEBEB;
+}
+
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--black); min-height: 100vh; }
+
+/* ===== HEADER ===== */
+.app-header {
+  background: var(--yellow);
+  padding: 12px 24px;
+  display: flex; align-items: center; gap: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,.22);
+  position: sticky; top: 0; z-index: 200;
+}
+.duck-logo { width: 42px; height: 42px; flex-shrink: 0; }
+.header-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.1rem; letter-spacing: 3px; color: var(--black); line-height: 1; }
+.header-sub  { font-size: .72rem; font-weight: 700; color: rgba(0,0,0,.45); text-transform: uppercase; letter-spacing: 1px; }
+
+/* ===== TABS ===== */
+.tabs-bar { background: var(--black); display: flex; padding: 0 24px; position: sticky; top: 66px; z-index: 190; }
+.tab-btn {
+  background: none; border: none; border-bottom: 3px solid transparent;
+  color: #666; cursor: pointer;
+  font-family: 'Inter', sans-serif; font-size: .78rem; font-weight: 700;
+  letter-spacing: 1.5px; padding: 11px 18px; text-transform: uppercase;
+  transition: all .2s;
+}
+.tab-btn:hover { color: #bbb; }
+.tab-btn.active { color: var(--yellow); border-bottom-color: var(--yellow); }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ===== SHARED PANEL ===== */
+.panel {
+  background: white; border-radius: 12px; padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.panel h2 {
+  font-size: .75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #555;
+  padding-bottom: 10px; border-bottom: 2px solid var(--yellow); margin-bottom: 14px;
+}
+
+/* ===== EDITOR TAB ===== */
+.editor-wrap {
+  display: grid; grid-template-columns: 370px 1fr; gap: 18px;
+  padding: 18px; max-width: 1380px; margin: 0 auto; align-items: start;
+}
+
+.form-panel { position: sticky; top: 128px; max-height: calc(100vh - 148px); overflow-y: auto; }
+
+.field-group { margin-bottom: 11px; }
+.field-label { display: block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #666; margin-bottom: 4px; }
+
+input[type="text"], textarea {
+  width: 100%; padding: 7px 10px;
+  border: 1.5px solid #E0E0E0; border-radius: 6px;
+  font-family: 'Inter', sans-serif; font-size: .82rem;
+  color: var(--black); transition: border-color .2s;
+}
+input[type="text"]:focus, textarea:focus { outline: none; border-color: var(--yellow-dk); }
+textarea { resize: vertical; }
+
+.ducks-field { display: flex; gap: 6px; flex-wrap: wrap; }
+.duck-radio { display: none; }
+.duck-lbl {
+  display: flex; align-items: center; gap: 3px;
+  padding: 4px 10px; border: 2px solid #ddd; border-radius: 20px;
+  cursor: pointer; font-size: .8rem; font-weight: 600;
+  transition: all .2s; user-select: none;
+}
+.duck-radio:checked + .duck-lbl { background: var(--yellow); border-color: var(--yellow-dk); }
+
+/* QA blocks */
+.qa-block {
+  background: #F7F7F7; border-radius: 8px; padding: 9px 10px;
+  margin-bottom: 7px; border-left: 3px solid var(--yellow);
+}
+.qa-title { font-size: .68rem; font-weight: 800; color: #AAA; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.qa-top { display: grid; grid-template-columns: 1fr 82px; gap: 5px; }
+.qa-ctx { margin-top: 4px; }
+.qa-ctx input { font-size: .76rem; color: #555; }
+
+.form-actions { display: flex; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px solid #EEE; }
+
+/* Buttons */
+.btn {
+  padding: 8px 16px; border: none; border-radius: 7px;
+  cursor: pointer; font-family: 'Inter', sans-serif;
+  font-size: .82rem; font-weight: 600; transition: all .15s;
+}
+.btn-yellow { background: var(--yellow); color: var(--black); }
+.btn-yellow:hover { background: var(--yellow-dk); }
+.btn-dark { background: var(--black); color: white; }
+.btn-dark:hover { background: #333; }
+.btn-red { background: var(--red); color: white; }
+.btn-red:hover { background: #9a0007; }
+.btn-outline { background: transparent; border: 2px solid #DDD; color: #555; }
+.btn-outline:hover { border-color: #999; color: #111; }
+.btn-sm { padding: 5px 10px; font-size: .74rem; }
+
+/* Preview area */
+.preview-panel { margin-bottom: 18px; }
+.flip-row { display: flex; gap: 20px; justify-content: center; margin-top: 10px; }
+.flip-item { text-align: center; }
+.flip-item .flip-lbl { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 6px; }
+.flip-card-wrap { width: 168px; }
+
+/* Quick gallery */
+.qgallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+
+/* ===== GALLERY TAB ===== */
+.gallery-wrap { padding: 18px; max-width: 1380px; margin: 0 auto; }
+.gallery-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px;
+}
+.gallery-topbar h2 { font-size: 1rem; font-weight: 700; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px; }
+
+/* Gallery card item */
+.gitem {
+  background: white; border-radius: 12px; padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .2s, box-shadow .2s;
+}
+.gitem:hover { transform: translateY(-3px); box-shadow: 0 7px 22px rgba(0,0,0,.13); }
+.gitem-cards { display: flex; gap: 7px; margin-bottom: 9px; }
+.gitem-side { flex: 1; min-width: 0; }
+.gitem-actions { display: flex; gap: 5px; }
+
+/* ===== PRINT TAB ===== */
+.print-wrap { padding: 18px; max-width: 1200px; margin: 0 auto; }
+.print-topbar {
+  background: white; border-radius: 12px; padding: 14px 18px;
+  margin-bottom: 18px; display: flex; align-items: center; gap: 20px;
+  flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.print-topbar-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #555; margin-bottom: 5px; }
+.toggle-group { display: flex; overflow: hidden; border: 2px solid #DDD; border-radius: 8px; }
+.toggle-group button {
+  padding: 6px 13px; border: none; background: white;
+  cursor: pointer; font-size: .78rem; font-weight: 600; color: #555; transition: all .2s;
+}
+.toggle-group button.active { background: var(--black); color: var(--yellow); }
+
+.print-pages-area { display: flex; flex-direction: column; gap: 22px; }
+
+/* A4 page */
+.print-page {
+  background: white;
+  width: 210mm; min-height: 297mm;
+  padding: 12mm;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,.14);
+  display: grid; gap: 7mm;
+  position: relative; overflow: hidden;
+}
+.print-page.cols-2 { grid-template-columns: 1fr 1fr; align-content: start; }
+.print-page.cols-3 { grid-template-columns: 1fr 1fr 1fr; align-content: start; }
+
+.page-label {
+  position: absolute; top: 5mm; right: 8mm;
+  font-size: 7px; color: #CCC; font-style: italic; letter-spacing: .5px;
+}
+.print-card { aspect-ratio: 63/88; }
+
+/* ===== THE CARD ===== */
+.card {
+  aspect-ratio: 63 / 88;
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  box-shadow: 0 3px 12px rgba(0,0,0,.2);
+  container-type: inline-size;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- FRONT --- */
+.card-front .c-header {
+  background: var(--yellow);
+  padding: 5cqi 4cqi 3cqi;
+  text-align: center; flex-shrink: 0;
+  border-bottom: 1cqi solid #E0A800;
+}
+.card-front .c-theme {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: calc(13cqi * var(--fs, 1)); letter-spacing: 1cqi;
+  color: var(--black); line-height: 1;
+  text-transform: uppercase; word-break: break-word;
+}
+.card-front .c-ducks {
+  display: flex; justify-content: center; gap: 1.5cqi; margin-top: 2cqi;
+}
+.card-front .c-ducks svg { width: 8cqi; height: auto; }
+
+.card-front .c-body { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+.card-front .c-qrow {
+  flex: 1; display: flex; align-items: center;
+  padding: 0 3.5cqi; gap: 2.5cqi;
+  border-bottom: .5px solid rgba(0,0,0,.07);
+  min-height: 0; overflow: hidden;
+}
+.card-front .c-qrow:last-child { border-bottom: none; }
+.card-front .c-qrow:nth-child(odd)  { background: var(--gray1); }
+.card-front .c-qrow:nth-child(even) { background: var(--white); }
+
+.card-front .c-qnum {
+  font-size: calc(6.5cqi * var(--fs, 1)); font-weight: 900;
+  color: var(--black); flex-shrink: 0; line-height: 1;
+}
+.card-front .c-qtext {
+  font-size: calc(5.4cqi * var(--fs, 1)); color: var(--black); line-height: 1.16;
+}
+
+/* --- BACK --- */
+.card-back .c-header {
+  background: var(--black);
+  padding: 5cqi 4cqi 3cqi;
+  text-align: center; flex-shrink: 0;
+}
+.card-back .c-theme {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: calc(13cqi * var(--fs, 1)); letter-spacing: 1cqi;
+  color: var(--yellow); line-height: 1;
+  text-transform: uppercase;
+}
+.card-back .c-body { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+.card-back .c-arow {
+  flex: 1; display: flex; align-items: center;
+  padding: 0 3cqi; gap: 2.2cqi;
+  border-bottom: .5px solid rgba(0,0,0,.07);
+  min-height: 0; overflow: hidden;
+}
+.card-back .c-arow:last-child { border-bottom: none; }
+.card-back .c-arow:nth-child(odd)  { background: var(--gray1); }
+.card-back .c-arow:nth-child(even) { background: var(--white); }
+
+.card-back .c-aval {
+  font-size: calc(7.5cqi * var(--fs, 1)); font-weight: 900;
+  color: var(--black); flex-shrink: 0; line-height: 1;
+  min-width: 20cqi; text-align: right; padding-right: 2cqi;
+  border-right: .8px solid var(--gray2);
+}
+.card-back .c-actx {
+  font-size: calc(5cqi * var(--fs, 1)); color: #333; line-height: 1.2;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty { text-align: center; padding: 40px 20px; color: #AAA; font-size: .9rem; font-weight: 500; }
+
+/* ===== TOAST ===== */
+.toast {
+  position: fixed; bottom: 24px; right: 24px;
+  background: var(--black); color: white;
+  padding: 11px 18px; border-radius: 8px;
+  font-size: .83rem; font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  transform: translateY(80px); opacity: 0;
+  transition: all .3s; z-index: 999; pointer-events: none;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+
+/* ===== PRINT MEDIA ===== */
+@media print {
+  /* Força o browser a imprimir cores de fundo (essencial para os headers e linhas) */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .app-header, .tabs-bar,
+  #tab-editor, #tab-gallery,
+  .print-topbar, .page-label { display: none !important; }
+
+  html, body { width: 210mm; margin: 0; padding: 0; overflow: hidden; }
+
+  #tab-print { display: block !important; }
+  .print-wrap { padding: 0; margin: 0; max-width: none; width: 210mm; }
+  .print-pages-area { gap: 0; margin: 0; padding: 0; }
+  .print-page {
+    box-shadow: none; margin: 0; width: 210mm;
+    padding: 10mm; gap: 4mm;
+    page-break-after: always; break-after: page;
+  }
+  /* Marcas de corte: linha tracejada fina no wrapper da carta */
+  .print-card {
+    position: relative;
+  }
+  .print-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 0.4mm dashed rgba(0,0,0,0.18);
+    pointer-events: none;
+  }
+  /* Remover sombra das cartas impressas */
+  .card { box-shadow: none; }
+  body { background: white; }
+
+  @page { size: A4 portrait; margin: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="app-header">
+  <svg class="duck-logo" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="21" cy="30" rx="14" ry="9.5" fill="#D8D8D8" stroke="#1A1A1A" stroke-width="1.6"/>
+    <circle cx="21" cy="17" r="8.5" fill="#EEEEEE" stroke="#1A1A1A" stroke-width="1.6"/>
+    <path d="M28,17 L35,15 L35,19 Z" fill="#FF8C00" stroke="#1A1A1A" stroke-width="1"/>
+    <circle cx="25" cy="15" r="1.8" fill="#1A1A1A"/>
+    <circle cx="25.7" cy="14.3" r="0.6" fill="white"/>
+    <path d="M22,11 Q25.5,9.5 29,12" stroke="#1A1A1A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <path d="M10,28 Q21,24 32,28" stroke="#AAAAAA" stroke-width="1.4" fill="none"/>
+  </svg>
+  <div>
+    <div class="header-title">NEM A PATO!</div>
+    <div class="header-sub">Criador de Cartas</div>
+  </div>
+</header>
+
+<!-- ========== TABS ========== -->
+<nav class="tabs-bar">
+  <button class="tab-btn active" onclick="switchTab('editor')">✏️ Editor</button>
+  <button class="tab-btn" onclick="switchTab('gallery')">🃏 Cartas (<span id="count-badge">5</span>)</button>
+  <button class="tab-btn" onclick="switchTab('print')">🖨️ Imprimir</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<!-- ======================================================
+     EDITOR TAB
+     ====================================================== -->
+<div class="tab-content active" id="tab-editor">
+  <div class="editor-wrap">
+
+    <!-- FORM PANEL -->
+    <div class="panel form-panel">
+      <h2 id="form-title">Nova Carta</h2>
+      <input type="hidden" id="edit-id">
+
+      <div class="field-group">
+        <label class="field-label">Tema da Carta</label>
+        <input type="text" id="f-theme" placeholder="Ex: OCEANO, CINEMA, ESPORTES..." maxlength="30" oninput="livePreview()">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Pontos de Pato 🦆 (dificuldade)</label>
+        <div class="ducks-field" id="ducks-field">
+          <!-- injected by JS -->
+        </div>
+      </div>
+
+      <div class="field-label" style="margin-bottom:8px">Perguntas &amp; Respostas</div>
+      <div id="qa-blocks"><!-- injected --></div>
+
+      <div class="form-actions">
+        <button class="btn btn-yellow" onclick="saveCard()">💾 Salvar Carta</button>
+        <button class="btn btn-outline" onclick="resetForm()">↩ Limpar</button>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <!-- Live preview -->
+      <div class="panel preview-panel">
+        <h2>Prévia</h2>
+        <div class="flip-row">
+          <div class="flip-item">
+            <div class="flip-lbl">Frente</div>
+            <div class="flip-card-wrap" id="prev-front"></div>
+          </div>
+          <div class="flip-item">
+            <div class="flip-lbl">Verso</div>
+            <div class="flip-card-wrap" id="prev-back"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick gallery -->
+      <div class="panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h2 style="margin:0;border:none;padding:0">Cartas Criadas (<span id="qcount">0</span>)</h2>
+          <button class="btn btn-sm btn-outline" onclick="switchTab('gallery')">Ver todas →</button>
+        </div>
+        <div class="qgallery-grid" id="qgallery"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ======================================================
+     GALLERY TAB
+     ====================================================== -->
+<div class="tab-content" id="tab-gallery">
+  <div class="gallery-wrap">
+    <div class="gallery-topbar">
+      <h2>Todas as Cartas (<span id="gcount">0</span>)</h2>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-sm btn-yellow" onclick="switchTab('editor')">+ Nova Carta</button>
+        <button class="btn btn-sm btn-dark" onclick="switchTab('print')">🖨 Imprimir</button>
+      </div>
+    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</div>
+
+<!-- ======================================================
+     PRINT TAB
+     ====================================================== -->
+<div class="tab-content" id="tab-print">
+  <div class="print-wrap">
+    <div class="print-topbar">
+      <div>
+        <div class="print-topbar-label">Layout</div>
+        <div class="toggle-group">
+          <button id="btn-l4" onclick="setLayout(4)">4 por página</button>
+          <button id="btn-l9" class="active" onclick="setLayout(9)">9 por página</button>
+        </div>
+      </div>
+      <div>
+        <div class="print-topbar-label">Mostrar</div>
+        <div class="toggle-group">
+          <button id="btn-sboth" class="active" onclick="setShow('both')">Frente + Verso</button>
+          <button id="btn-sfront" onclick="setShow('front')">Só Frente</button>
+          <button id="btn-sback" onclick="setShow('back')">Só Verso</button>
+        </div>
+      </div>
+      <div>
+        <div class="print-topbar-label">Duplex Manual</div>
+        <div class="toggle-group">
+          <button id="btn-doff" class="active" onclick="setDuplex(false)">Desligado</button>
+          <button id="btn-don"  onclick="setDuplex(true)">Espelhar Verso</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;margin-left:auto;align-items:center;flex-wrap:wrap">
+        <button class="btn btn-outline btn-sm" onclick="exportXML()">⬇ Exportar XML</button>
+        <label class="btn btn-outline btn-sm" style="cursor:pointer">
+          ⬆ Importar XML
+          <input type="file" accept=".xml" style="display:none" onchange="importXML(this.files[0]);this.value=''">
+        </label>
+        <button class="btn btn-yellow" onclick="window.print()">🖨 Imprimir / PDF</button>
+      </div>
+    </div>
+    <div class="print-pages-area" id="print-pages"></div>
+  </div>
+</div>
+
+<!-- ======================================================
+     JAVASCRIPT
+     ====================================================== -->
+<script>
+// ===== DUCK SVG ICON =====
+const DUCK = `<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="10" cy="15" rx="7" ry="4.8" fill="#D8D8D8" stroke="#222" stroke-width=".9"/>
+  <circle cx="10" cy="9" r="5" fill="#EEEEEE" stroke="#222" stroke-width=".9"/>
+  <path d="M14.5,9 L18,8 L18,10 Z" fill="#FF8C00" stroke="#222" stroke-width=".7"/>
+  <circle cx="12.5" cy="7.8" r="1.1" fill="#222"/>
+  <circle cx="12.9" cy="7.4" r=".37" fill="white"/>
+  <path d="M11,5.5 Q13,4.5 15.5,6" stroke="#222" stroke-width=".8" fill="none" stroke-linecap="round"/>
+</svg>`;
+
+// ===== STATE =====
+let cards = [];
+let printLayout  = 9;
+let printShow    = 'both';
+let manualDuplex = false;
+
+// ===== EXAMPLE DATA =====
+const EXAMPLES = [
+  {
+    id:'ex1', theme:'OCEANO', ducks:2,
+    questions:[
+      {text:'Altura da maior onda já surfada (m)', answer:'24', context:'Sebastian Steudtner bateu o recorde em 2020, em Nazaré, Portugal.'},
+      {text:'Profundidade máxima do mergulho de um pinguim-imperador (m)', answer:'565', context:'Eles mergulham muito mais fundo do que tubarões brancos, orcas e golfinhos.'},
+      {text:'Porcentagem da Terra coberta de água (%)', answer:'71', context:'Quase metade disso está no Oceano Pacífico.'},
+      {text:'Profundidade do naufrágio do Titanic (m)', answer:'3784', context:'Uma proposta para trazê-lo à superfície envolvia encher o navio com bolas de ping-pong.'},
+      {text:'Número de dentes de um tubarão-branco', answer:'300', context:'A maioria não está ativa; os outros ficam de reserva em fileiras atrás dos primeiros.'},
+      {text:'Número de espécies de tubarão descritas até 2023', answer:'500', context:'O maior é o tubarão-baleia, que pode atingir 18 metros — cabe na palma da sua mão.'}
+    ]
+  },
+  {
+    id:'ex2', theme:'CORPO HUMANO', ducks:3,
+    questions:[
+      {text:'Comprimento médio do intestino delgado (m)', answer:'6', context:'Se esticado, teria o comprimento de um carro estacionado.'},
+      {text:'Número de ossos em uma mão', answer:'27', context:'Mais da metade dos ossos do corpo humano estão nas mãos e nos pés.'},
+      {text:'Média de pelos em cada narina', answer:'120', context:'Eles filtram partículas com mais de 10 micrômetros antes de entrar nos pulmões.'},
+      {text:'Média de vezes que uma pessoa peida por dia', answer:'14', context:'Todos fazem isso — inclusive durante cirurgias.'},
+      {text:'Peso da pessoa mais pesada de todos os tempos (kg)', answer:'635', context:'Jon Brower Minnoch chegou a esse peso nos EUA em 1978.'},
+      {text:'Altura da pessoa mais alta que já existiu (cm)', answer:'272', context:'Robert Wadlow, do Illinois, parou de crescer apenas quando morreu, aos 22 anos.'}
+    ]
+  },
+  {
+    id:'ex3', theme:'ESPORTES RADICAIS', ducks:2,
+    questions:[
+      {text:'Altitude do salto mais alto de skydive (km)', answer:'39', context:'Felix Baumgartner saltou da estratosfera em 2012 e atingiu velocidade supersônica.'},
+      {text:'Velocidade recorde de um patinador no gelo (km/h)', answer:'93', context:'O neerlandês Kjeld Nuis alcançou essa velocidade em 2023 numa pista em linha reta.'},
+      {text:'Recorde humano de apneia (minutos)', answer:'24', context:'Aleix Segura Vendrell bateu o recorde em 2016: 24 min e 3 s embaixo d\'água.'},
+      {text:'Altura da maior rampa de skate do mundo (m)', answer:'6', context:'A Mega Ramp de Bob Burnquist foi construída no quintal da sua casa na Califórnia.'},
+      {text:'Velocidade máxima já registrada de um atleta de bobsled (km/h)', answer:'153', context:'Bobsled é o trenó olímpico de gelo. A pista mais rápida fica em Altenberg, Alemanha.'},
+      {text:'Peso máximo de um asa-delta padrão (kg)', answer:'35', context:'O piloto frequentemente pesa mais do que o equipamento inteiro.'}
+    ]
+  },
+  {
+    id:'ex4', theme:'ARQUITETURA', ducks:3,
+    questions:[
+      {text:'Número de andares do Burj Khalifa', answer:'163', context:'Com 828 metros, continua sendo o prédio mais alto do mundo desde 2010.'},
+      {text:'Número de quartos no Palácio de Versalhes', answer:'700', context:'Isso inclui 2.153 janelas, 1.252 lareiras e 67 escadarias.'},
+      {text:'Altura do maior castelo de cartas já construído (cm)', answer:'786', context:'Bryan Berg usou apenas cartas de baralho, sem cola, fita ou encaixe.'},
+      {text:'Número de degraus até o topo da Catedral de Notre-Dame', answer:'387', context:'A torre foi restaurada após o incêndio de 2019 e reaberta ao público em 2024.'},
+      {text:'Número de colunas externas do Partenon', answer:'46', context:'O Partenon foi concluído em 432 a.C. e é símbolo da democracia ateniense.'},
+      {text:'Tamanho médio de um apartamento para alugar em Manhattan (m²)', answer:'68', context:'O preço por m² em Manhattan está entre os mais caros do mundo.'}
+    ]
+  },
+  {
+    id:'ex5', theme:'CARROS', ducks:2,
+    questions:[
+      {text:'Comprimento da limusine mais longa do mundo (metros)', answer:'30', context:'A "American Dream" tem 26 rodas, uma piscina e um trampolim no teto.'},
+      {text:'Recorde de velocidade de um carro de Fórmula 1 (km/h)', answer:'372', context:'Registrado por Valtteri Bottas em 2016, durante o GP do México.'},
+      {text:'Número de estados americanos atravessados pela Rota 66', answer:'8', context:'A rota vai de Chicago, Illinois, até Santa Monica, Califórnia.'},
+      {text:'Recorde de pessoas dentro de um carro Smart', answer:'20', context:'O recorde foi batido por estudantes universitários em 2012 na Austrália.'},
+      {text:'Porcentagem de carros no mundo pintados de branco (%)', answer:'38', context:'Branco é a cor mais popular há mais de uma década, seguida de preto e prata.'},
+      {text:'Velocidade máxima do carro de produção mais rápido (km/h)', answer:'490', context:'O SSC Tuatara atingiu essa velocidade em 2020 numa autoestrada fechada no Nevada.'}
+    ]
+  }
+];
+
+// ===== INIT =====
+function init() {
+  // Load saved cards from localStorage or use examples
+  const saved = localStorage.getItem('nem_a_pato_cards');
+  cards = saved ? JSON.parse(saved) : [...EXAMPLES];
+
+  buildDucks();
+  buildQABlocks();
+  livePreview();
+  renderAll();
+}
+
+function persist() {
+  localStorage.setItem('nem_a_pato_cards', JSON.stringify(cards));
+}
+
+// ===== FORM BUILDER =====
+function buildDucks() {
+  const el = document.getElementById('ducks-field');
+  el.innerHTML = [1,2,3,4,5].map(n => `
+    <input type="radio" name="ducks" id="d${n}" class="duck-radio" value="${n}" ${n===2?'checked':''} onchange="livePreview()">
+    <label for="d${n}" class="duck-lbl">${'🦆'.repeat(n)}</label>
+  `).join('');
+}
+
+function buildQABlocks() {
+  const el = document.getElementById('qa-blocks');
+  el.innerHTML = [1,2,3,4,5,6].map(i => `
+    <div class="qa-block">
+      <div class="qa-title">Pergunta ${i}</div>
+      <div class="qa-top">
+        <input type="text" id="qt${i}" placeholder="Texto da pergunta..." oninput="livePreview()">
+        <input type="text" id="qa${i}" placeholder="Resposta" oninput="livePreview()">
+      </div>
+      <div class="qa-ctx">
+        <input type="text" id="qc${i}" placeholder="Contexto / curiosidade sobre a resposta..." oninput="livePreview()">
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===== FORM OPS =====
+function getForm() {
+  const theme = document.getElementById('f-theme').value.trim().toUpperCase();
+  const ducks = +document.querySelector('input[name="ducks"]:checked')?.value || 1;
+  const questions = [1,2,3,4,5,6].map(i => ({
+    text:    document.getElementById(`qt${i}`).value.trim(),
+    answer:  document.getElementById(`qa${i}`).value.trim(),
+    context: document.getElementById(`qc${i}`).value.trim()
+  }));
+  return { theme, ducks, questions };
+}
+
+function setForm(card) {
+  document.getElementById('f-theme').value = card.theme;
+  document.getElementById('edit-id').value  = card.id;
+  const dr = document.querySelector(`input[name="ducks"][value="${card.ducks}"]`);
+  if (dr) dr.checked = true;
+  card.questions.forEach((q, i) => {
+    document.getElementById(`qt${i+1}`).value = q.text    || '';
+    document.getElementById(`qa${i+1}`).value = q.answer  || '';
+    document.getElementById(`qc${i+1}`).value = q.context || '';
+  });
+  document.getElementById('form-title').textContent = 'Editar: ' + card.theme;
+  livePreview();
+}
+
+function resetForm() {
+  document.getElementById('f-theme').value = '';
+  document.getElementById('edit-id').value  = '';
+  document.querySelector('input[name="ducks"][value="2"]').checked = true;
+  [1,2,3,4,5,6].forEach(i => {
+    document.getElementById(`qt${i}`).value = '';
+    document.getElementById(`qa${i}`).value = '';
+    document.getElementById(`qc${i}`).value = '';
+  });
+  document.getElementById('form-title').textContent = 'Nova Carta';
+  livePreview();
+}
+
+function saveCard() {
+  const data = getForm();
+  if (!data.theme) { toast('⚠️ Informe o tema da carta!'); return; }
+  const existId = document.getElementById('edit-id').value;
+  const id = existId || ('card-' + Date.now());
+  const idx = cards.findIndex(c => c.id === id);
+  if (idx >= 0) { cards[idx] = { id, ...data }; toast('✅ Carta atualizada!'); }
+  else          { cards.push({ id, ...data });   toast('✅ Carta criada!'); }
+  persist();
+  resetForm();
+  renderAll();
+}
+
+function editCard(id) {
+  const c = cards.find(c => c.id === id);
+  if (!c) return;
+  setForm(c);
+  document.getElementById('edit-id').value = id;
+  switchTab('editor');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function deleteCard(id) {
+  if (!confirm('Excluir esta carta?')) return;
+  cards = cards.filter(c => c.id !== id);
+  persist();
+  renderAll();
+  toast('🗑️ Carta excluída.');
+}
+
+// ===== RENDER ALL =====
+function renderAll() {
+  livePreview();
+  renderQuickGallery();
+  renderGallery();
+  renderPrint();
+  const n = cards.length;
+  document.getElementById('qcount').textContent   = n;
+  document.getElementById('gcount').textContent   = n;
+  document.getElementById('count-badge').textContent = n;
+}
+
+// ===== AUTO-FIT TEXT (evita corte de texto quando a pergunta é longa) =====
+function fitCardFont(cardEl) {
+  if (!cardEl) return;
+  cardEl.style.setProperty('--fs', 1);
+  const isFront = cardEl.classList.contains('card-front');
+  const rowSel  = isFront ? '.c-qrow'  : '.c-arow';
+  const textSel = isFront ? '.c-qtext' : '.c-actx';
+  const rows = cardEl.querySelectorAll(rowSel);
+  if (!rows.length) return;
+  if (!cardEl.getBoundingClientRect().height) return; // carta não visível (ex: aba escondida) — pula
+  let fs = 1;
+  for (let i = 0; i < 18; i++) {
+    let maxOverflow = 0;
+    rows.forEach(row => {
+      const txt = row.querySelector(textSel);
+      if (!txt) return;
+      const rowH = row.getBoundingClientRect().height;
+      const txtH = txt.scrollHeight;
+      if (txtH - rowH > maxOverflow) maxOverflow = txtH - rowH;
+    });
+    if (maxOverflow <= 1 || fs <= 0.5) break;
+    fs -= 0.04;
+    cardEl.style.setProperty('--fs', fs.toFixed(2));
+  }
+}
+function fitAllCards(root) {
+  (root || document).querySelectorAll('.card').forEach(fitCardFont);
+}
+
+// ===== LIVE PREVIEW =====
+function livePreview() {
+  const data = getForm();
+  document.getElementById('prev-front').innerHTML = frontHTML(data);
+  document.getElementById('prev-back').innerHTML  = backHTML(data);
+  fitAllCards(document.getElementById('prev-front'));
+  fitAllCards(document.getElementById('prev-back'));
+}
+
+// ===== QUICK GALLERY (editor tab) =====
+function renderQuickGallery() {
+  const el = document.getElementById('qgallery');
+  if (!cards.length) { el.innerHTML = '<div class="empty">Nenhuma carta ainda.</div>'; return; }
+  el.innerHTML = cards.slice(0,6).map(c => gitemHTML(c)).join('');
+  fitAllCards(el);
+}
+
+// ===== GALLERY TAB =====
+function renderGallery() {
+  const el = document.getElementById('gallery-grid');
+  if (!cards.length) { el.innerHTML = '<div class="empty" style="grid-column:1/-1">Crie cartas no Editor!</div>'; return; }
+  el.innerHTML = cards.map(c => gitemHTML(c)).join('');
+  fitAllCards(el);
+}
+
+function gitemHTML(c) {
+  return `<div class="gitem">
+    <div class="gitem-cards">
+      <div class="gitem-side">${frontHTML(c)}</div>
+      <div class="gitem-side">${backHTML(c)}</div>
+    </div>
+    <div class="gitem-actions">
+      <button class="btn btn-sm btn-yellow" onclick="editCard('${c.id}')">✏️ Editar</button>
+      <button class="btn btn-sm btn-red" onclick="deleteCard('${c.id}')">🗑</button>
+    </div>
+  </div>`;
+}
+
+// ===== PRINT TAB =====
+function renderPrint() {
+  const el = document.getElementById('print-pages');
+  if (!cards.length) {
+    el.innerHTML = '<div class="empty" style="background:white;padding:40px;border-radius:12px">Crie cartas no Editor para imprimir.</div>';
+    return;
+  }
+
+  // 4 → 2 colunas (2×2), 9 → 3 colunas (3×3)
+  const cols = printLayout === 4 ? 2 : 3;
+  const pages = [];
+
+  // Frentes e Versos ficam na MESMA posição de grade.
+  // Imprima todas as páginas de frente, vire a pilha e imprima os versos.
+  const addPages = (side) => {
+    for (let i = 0; i < cards.length; i += printLayout) {
+      const batch = cards.slice(i, i + printLayout);
+      const renderFn = side === 'front' ? frontHTML : backHTML;
+      // Preenche posições vazias para manter a grade completa
+      let padded = [...batch];
+      while (padded.length < printLayout) padded.push(null);
+      // Duplex manual: espelha a ordem dentro de cada linha do verso
+      // para que ao virar o papel fisicamente frente e verso coincidam.
+      if (side === 'back' && manualDuplex) {
+        const mirrored = [];
+        for (let r = 0; r < padded.length; r += cols) {
+          mirrored.push(...padded.slice(r, r + cols).reverse());
+        }
+        padded = mirrored;
+      }
+      const items = padded.map(c =>
+        `<div class="print-card">${c ? renderFn(c) : ''}</div>`
+      );
+      const lbl = side === 'front' ? 'FRENTES' : 'VERSOS';
+      const pg  = Math.floor(i / printLayout) + 1;
+      pages.push(`
+        <div class="print-page cols-${cols}">
+          <div class="page-label">${lbl} — página ${pg}</div>
+          ${items.join('')}
+        </div>
+      `);
+    }
+  };
+
+  if (printShow === 'front' || printShow === 'both') addPages('front');
+  if (printShow === 'back'  || printShow === 'both') addPages('back');
+
+  el.innerHTML = pages.join('');
+  fitAllCards(el);
+}
+
+// ===== CARD HTML =====
+function frontHTML(card) {
+  const ducks = (card.ducks || 1);
+  const duckIcons = Array(ducks).fill(DUCK).join('');
+  const qs = padQ(card.questions || []);
+  const rows = qs.map((q, i) => `
+    <div class="c-qrow">
+      <span class="c-qnum">${i+1}.</span>
+      <span class="c-qtext">${esc(q.text)}</span>
+    </div>`).join('');
+  return `<div class="card card-front">
+    <div class="c-header">
+      <div class="c-theme">${esc(card.theme || 'TEMA')}</div>
+      <div class="c-ducks">${duckIcons}</div>
+    </div>
+    <div class="c-body">${rows}</div>
+  </div>`;
+}
+
+function backHTML(card) {
+  const qs = padQ(card.questions || []);
+  const rows = qs.map(q => `
+    <div class="c-arow">
+      <span class="c-aval">${esc(q.answer || '?')}</span>
+      <span class="c-actx">${esc(q.context)}</span>
+    </div>`).join('');
+  return `<div class="card card-back">
+    <div class="c-header">
+      <div class="c-theme">${esc(card.theme || 'TEMA')}</div>
+    </div>
+    <div class="c-body">${rows}</div>
+  </div>`;
+}
+
+function padQ(qs) {
+  const arr = qs.slice(0, 6);
+  while (arr.length < 6) arr.push({ text:'', answer:'', context:'' });
+  return arr;
+}
+
+function esc(s) {
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ===== UI HELPERS =====
+function switchTab(name) {
+  document.querySelectorAll('.tab-content').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(e => e.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick')?.includes(name)) b.classList.add('active');
+  });
+  if (name === 'print') renderPrint();
+  if (name === 'gallery') renderGallery();
+}
+
+function setLayout(n) {
+  printLayout = n;
+  document.getElementById('btn-l4').classList.toggle('active', n === 4);
+  document.getElementById('btn-l9').classList.toggle('active', n === 9);
+  renderPrint();
+}
+
+function setDuplex(val) {
+  manualDuplex = val;
+  document.getElementById('btn-doff').classList.toggle('active', !val);
+  document.getElementById('btn-don').classList.toggle('active',  val);
+  renderPrint();
+}
+
+// ===== XML EXPORT =====
+function exportXML() {
+  const ex = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<cartas>\n';
+  for (const c of cards) {
+    xml += `  <carta tema="${ex(c.theme)}" patos="${c.ducks}">\n`;
+    for (const q of c.questions) {
+      xml += `    <pergunta resposta="${ex(q.answer)}">\n`;
+      xml += `      <texto>${ex(q.text)}</texto>\n`;
+      xml += `      <contexto>${ex(q.context)}</contexto>\n`;
+      xml += `    </pergunta>\n`;
+    }
+    xml += `  </carta>\n`;
+  }
+  xml += '</cartas>';
+  const blob = new Blob([xml], { type: 'application/xml;charset=utf-8' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'nem_a_pato_cartas.xml'; a.click();
+  URL.revokeObjectURL(url);
+  toast('⬇ XML exportado!');
+}
+
+// ===== XML IMPORT =====
+function importXML(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const parser = new DOMParser();
+      const doc    = parser.parseFromString(e.target.result, 'application/xml');
+      if (doc.querySelector('parsererror')) throw new Error('XML inválido');
+      const imported = [];
+      doc.querySelectorAll('carta').forEach(carta => {
+        const theme = carta.getAttribute('tema') || '';
+        const ducks = parseInt(carta.getAttribute('patos')) || 2;
+        const questions = [];
+        carta.querySelectorAll('pergunta').forEach(p => {
+          questions.push({
+            text:    p.querySelector('texto')?.textContent?.trim()   || '',
+            answer:  p.getAttribute('resposta')?.trim()              || '',
+            context: p.querySelector('contexto')?.textContent?.trim()|| ''
+          });
+        });
+        imported.push({
+          id: 'imp-' + Date.now() + '-' + Math.random().toString(36).slice(2),
+          theme, ducks, questions
+        });
+      });
+      if (!imported.length) throw new Error('Nenhuma carta no XML');
+      cards = imported;
+      persist();
+      renderAll();
+      toast(`✅ ${imported.length} cartas importadas!`);
+    } catch(err) {
+      toast('❌ Erro: ' + err.message);
+    }
+  };
+  reader.readAsText(file, 'UTF-8');
+}
+
+function setShow(mode) {
+  printShow = mode;
+  ['both','front','back'].forEach(m =>
+    document.getElementById('btn-s' + m).classList.toggle('active', m === mode)
+  );
+  renderPrint();
+}
+
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2600);
+}
+
+// ===== GO =====
+init();
+</script>
+<script src="../../assets/js/backbar.js"></script>
+</body>
+</html>

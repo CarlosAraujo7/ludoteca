@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Cartas — Perfil 7</title>
+  <style>
+    :root {
+      --azul: #1d3557;
+      --azul-medio: #457b9d;
+      --vermelho: #e63946;
+      --creme: #f1faee;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e9ecef;
+      color: #333;
+    }
+
+    /* ── PAINEL DE CONTROLE ── */
+    #painel {
+      background: white;
+      border-bottom: 3px solid var(--azul);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    }
+
+    #painel h1 {
+      font-size: 1.25em;
+      color: var(--azul);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .painel-corpo {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .area-xml { flex: 1; }
+
+    .area-xml label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--azul);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    #xml-input {
+      width: 100%;
+      height: 130px;
+      padding: 10px 12px;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 11.5px;
+      line-height: 1.5;
+      resize: vertical;
+      color: #333;
+      background: #f8f9fa;
+      transition: border-color 0.2s;
+    }
+
+    #xml-input:focus {
+      outline: none;
+      border-color: var(--azul-medio);
+      background: white;
+    }
+
+    .dica-xml {
+      font-size: 10.5px;
+      color: #888;
+      margin-top: 5px;
+      line-height: 1.5;
+    }
+
+    .dica-xml code {
+      background: #f0f0f0;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 10px;
+    }
+
+    .painel-acoes {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 155px;
+    }
+
+    .painel-acoes label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--azul);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      font-size: 13px;
+      background: #f8f9fa;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.15s;
+      width: 100%;
+    }
+
+    button:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.18); }
+    button:active { transform: translateY(0); }
+
+    .btn-gerar   { background: var(--azul-medio); color: white; }
+    .btn-pdf     { background: var(--vermelho); color: white; }
+    .btn-exemplo { background: #495057; color: white; }
+    .btn-prompt  { background: var(--creme); color: var(--azul); border: 1.5px solid var(--azul-medio); }
+
+    /* ── MODAL PROMPT ── */
+    #modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modal-overlay.ativo { display: flex; }
+
+    #modal {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 640px;
+      width: 92%;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    }
+
+    #modal h2 { color: var(--azul); margin-bottom: 10px; font-size: 1.1em; }
+
+    #modal p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    #modal pre {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 11px;
+      font-family: 'Courier New', monospace;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin-bottom: 14px;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .modal-acoes {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .modal-acoes button { width: auto; padding: 9px 20px; }
+    .btn-copiar { background: var(--azul); color: white; }
+    .btn-fechar { background: #e9ecef; color: #333; }
+
+    /* ── ÁREA DE PREVIEW ── */
+    #preview-area {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .estado-vazio {
+      background: white;
+      border-radius: 12px;
+      padding: 60px 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      width: 210mm;
+    }
+
+    .estado-vazio span { font-size: 32px; display: block; margin-bottom: 10px; }
+
+    .label-pagina {
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      margin-bottom: -10px;
+    }
+
+    /* ── PÁGINA A4 ── */
+    .pagina-a4 {
+      background: white;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 8mm;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5mm;
+    }
+
+    /* 2 cartas por página: 1 linha, cartas altas */
+    .pagina-a4.grid-2 {
+      grid-template-rows: 1fr;
+      align-items: stretch;
+    }
+
+    /* 4 cartas por página: 2 linhas, cartas menores */
+    .pagina-a4.grid-4 {
+      grid-template-rows: 1fr 1fr;
+      align-items: stretch;
+    }
+
+    /* ── CARTA ── */
+    .carta {
+      border: 1.5px solid #ccc;
+      border-radius: 7px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      break-inside: avoid;
+    }
+
+    .carta-topo {
+      background: var(--azul);
+      color: white;
+      padding: 5px 9px 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .carta-categoria {
+      font-size: 8.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #a8dadc;
+      flex: 1;
+    }
+
+    .carta-numero {
+      font-size: 9px;
+      color: rgba(255,255,255,0.55);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* Dicas — layout padrão (grid-2): coluna única */
+    .carta-dicas {
+      flex: 1;
+      padding: 5px 8px;
+    }
+
+    .dica-linha {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 2.5px 0;
+      border-bottom: 1px solid #f0f0f0;
+      line-height: 1.3;
+    }
+
+    .dica-linha:last-child { border-bottom: none; }
+
+    .dica-num {
+      background: var(--vermelho);
+      color: white;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8.5px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .dica-texto {
+      font-size: 9.5px;
+      color: #333;
+    }
+
+    /* Dicas — layout compacto (grid-4): 2 colunas internas */
+    .pagina-a4.grid-4 .carta-dicas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 7px;
+      padding: 4px 7px;
+    }
+
+    .pagina-a4.grid-4 .dica-linha {
+      gap: 5px;
+      padding: 2px 0;
+    }
+
+    .pagina-a4.grid-4 .dica-num {
+      min-width: 13px;
+      height: 13px;
+      font-size: 7.5px;
+    }
+
+    .pagina-a4.grid-4 .dica-texto {
+      font-size: 8px;
+    }
+
+    /* Rodapé */
+    .carta-rodape {
+      background: #f0f4f8;
+      border-top: 1.5px solid #ccc;
+      padding: 5px 9px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .rodape-label {
+      font-size: 7px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #aaa;
+      font-weight: 600;
+    }
+
+    .rodape-resposta {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--azul);
+      margin-top: 1px;
+    }
+
+    .pagina-a4.grid-4 .rodape-resposta { font-size: 11px; }
+
+    .carta-vazia {
+      border: 1.5px dashed #e0e0e0;
+      border-radius: 7px;
+      background: transparent;
+    }
+
+    /* ── IMPRESSÃO ── */
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      #painel, #modal-overlay, .label-pagina { display: none !important; }
+
+      body { background: white; }
+
+      #preview-area { padding: 0; gap: 0; align-items: flex-start; }
+
+      .estado-vazio { display: none; }
+
+      .pagina-a4 {
+        width: 210mm;
+        height: 297mm;
+        min-height: unset;
+        padding: 8mm;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .pagina-a4:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .carta { border-color: #bbb; }
+    }
+
+    @page { size: A4; margin: 0; }
+  </style>
+</head>
+<body>
+
+<!-- PAINEL DE CONTROLE -->
+<div id="painel">
+  <h1>🎯 Gerador de Cartas — Perfil 7</h1>
+  <div class="painel-corpo">
+    <div class="area-xml">
+      <label>XML das cartas</label>
+      <textarea id="xml-input" placeholder="Cole aqui o XML com quantas cartas quiser (gerado pela IA)...
+
+<cartas>
+  <carta categoria=&quot;Personagem&quot;>
+    <resposta>Nome da Resposta</resposta>
+    <dica id=&quot;1&quot;>Dica mais difícil...</dica>
+    ...
+    <dica id=&quot;20&quot;>Dica mais fácil...</dica>
+  </carta>
+  <carta categoria=&quot;Lugar&quot;>
+    ...
+  </carta>
+</cartas>"></textarea>
+      <div class="dica-xml">
+        <code>&lt;cartas&gt;</code> com quantas <code>&lt;carta categoria=""&gt;</code> quiser → <code>&lt;resposta&gt;</code> + <code>&lt;dica id="1"&gt;</code> até <code>&lt;dica id="20"&gt;</code>
+      </div>
+      <div id="status-cartas" style="margin-top:6px;font-size:11px;font-weight:600;color:var(--azul-medio);display:none;"></div>
+    </div>
+
+    <div class="painel-acoes">
+      <label>Cartas por página</label>
+      <select id="qtd-por-pagina">
+        <option value="2" selected>2 cartas (maior)</option>
+        <option value="4">4 cartas (menor)</option>
+      </select>
+
+      <button class="btn-gerar" onclick="gerarCartas()">▶ Gerar Preview</button>
+      <button class="btn-pdf" onclick="imprimirPDF()">🖨️ Salvar PDF</button>
+      <button class="btn-exemplo" onclick="carregarExemplo()">📄 Exemplo</button>
+      <button class="btn-prompt" onclick="abrirPrompt()">🤖 Prompt p/ IA</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PROMPT PARA IA -->
+<div id="modal-overlay" onclick="fecharModal(event)">
+  <div id="modal">
+    <h2>🤖 Prompt para gerar cartas com IA</h2>
+    <p>Copie o prompt abaixo e cole em qualquer IA (Claude, ChatGPT, etc.). Substitua <strong>[TEMA]</strong> e <strong>[QTD]</strong>:</p>
+    <pre id="texto-prompt">Gere [QTD] cartas para o jogo Perfil 7 sobre o tema: [TEMA].
+
+Cada carta tem 20 dicas numeradas de 1 (mais difícil) a 20 (mais fácil). Use apenas fatos verídicos. Varie as categorias entre: Personagem, Lugar, Objeto, Obra, Animal, Evento.
+
+REGRAS OBRIGATÓRIAS para as dicas:
+1. Cada dica deve ter no máximo 10 palavras. Seja direto e objetivo.
+2. As dicas 1 a 7 NÃO podem conter o nome, apelido, obra ou qualquer palavra que entregue diretamente a resposta. Devem ser fatos isolados que sozinhos não identificam o alvo.
+3. Nunca use frases como "É conhecido por...", "É famoso por...", "É o/a..." nas primeiras dicas.
+4. A dificuldade deve aumentar GRADUALMENTE — as dicas 8 a 14 ainda devem ser desafiadoras.
+
+Distribuição por nível:
+- id 1 a 4: dado numérico, data, local ou detalhe técnico muito específico (ex: "Nasceu em 1879 na Alemanha.")
+- id 5 a 8: fato histórico ou biográfico menos famoso, sem entregar o nome
+- id 9 a 12: característica marcante, mas ainda sem citar o nome diretamente
+- id 13 a 16: associação conhecida pelo público geral
+- id 17 a 19: dica quase direta
+- id 20: entrega a resposta
+
+Formato obrigatório (retorne SOMENTE o XML, sem explicações):
+
+<cartas>
+  <carta categoria="CATEGORIA">
+    <resposta>NOME DA RESPOSTA</resposta>
+    <dica id="1">Dado numérico ou técnico muito específico.</dica>
+    <dica id="2">Data, local ou detalhe obscuro.</dica>
+    <dica id="3">Fato raro, só especialistas conhecem.</dica>
+    <dica id="4">Detalhe técnico ou histórico preciso.</dica>
+    <dica id="5">Fato biográfico menos divulgado.</dica>
+    <dica id="6">Dado verificável, mas pouco famoso.</dica>
+    <dica id="7">Característica específica, sem entregar o nome.</dica>
+    <dica id="8">Fato relevante para quem conhece o assunto.</dica>
+    <dica id="9">Característica notável para curiosos.</dica>
+    <dica id="10">Marco ou conquista importante.</dica>
+    <dica id="11">Dado que pessoas informadas sabem.</dica>
+    <dica id="12">Associação ou referência cultural.</dica>
+    <dica id="13">Característica conhecida pelo público geral.</dica>
+    <dica id="14">Fato amplamente divulgado.</dica>
+    <dica id="15">Aparece frequentemente na mídia.</dica>
+    <dica id="16">Referência popular muito conhecida.</dica>
+    <dica id="17">Associação quase direta.</dica>
+    <dica id="18">Dica clara para quem já ouviu falar.</dica>
+    <dica id="19">Muito direta, só erra quem nunca viu.</dica>
+    <dica id="20">Entrega a resposta diretamente.</dica>
+  </carta>
+</cartas></pre>
+    <div class="modal-acoes">
+      <button class="btn-copiar" onclick="copiarPrompt()">📋 Copiar Prompt</button>
+      <button class="btn-fechar" onclick="document.getElementById('modal-overlay').classList.remove('ativo')">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ÁREA DE PREVIEW / IMPRESSÃO -->
+<div id="preview-area">
+  <div class="estado-vazio">
+    <span>🃏</span>
+    Cole o XML e clique em <strong>Gerar Preview</strong>
+  </div>
+</div>
+
+<script>
+  function gerarCartas() {
+    const xml = document.getElementById('xml-input').value.trim();
+    if (!xml) { alert('Cole o XML das cartas primeiro!'); return; }
+
+    let doc;
+    try {
+      const parser = new DOMParser();
+      doc = parser.parseFromString(xml, 'text/xml');
+      if (doc.querySelector('parsererror')) throw new Error(doc.querySelector('parsererror').textContent);
+    } catch (e) {
+      alert('XML inválido! Verifique o formato.\n\n' + e.message);
+      return;
+    }
+
+    const cartas = Array.from(doc.querySelectorAll('carta'));
+    if (!cartas.length) { alert('Nenhuma <carta> encontrada no XML.'); return; }
+
+    const qtd = parseInt(document.getElementById('qtd-por-pagina').value);
+    const totalPags = Math.ceil(cartas.length / qtd);
+    const statusEl = document.getElementById('status-cartas');
+    statusEl.style.display = 'block';
+    statusEl.textContent = `✅ ${cartas.length} carta${cartas.length > 1 ? 's' : ''} encontrada${cartas.length > 1 ? 's' : ''} → ${totalPags} página${totalPags > 1 ? 's' : ''}`;
+
+    const area = document.getElementById('preview-area');
+    area.innerHTML = '';
+
+    for (let i = 0; i < cartas.length; i += qtd) {
+      const lote = cartas.slice(i, i + qtd);
+      const numPagina = Math.floor(i / qtd) + 1;
+
+      const labelEl = document.createElement('div');
+      labelEl.className = 'label-pagina';
+      labelEl.textContent = `Página ${numPagina} de ${totalPags}`;
+      area.appendChild(labelEl);
+
+      const pagina = document.createElement('div');
+      pagina.className = `pagina-a4 grid-${qtd}`;
+
+      lote.forEach(c => pagina.appendChild(criarCarta(c)));
+
+      for (let j = lote.length; j < qtd; j++) {
+        const vazia = document.createElement('div');
+        vazia.className = 'carta-vazia';
+        pagina.appendChild(vazia);
+      }
+
+      area.appendChild(pagina);
+    }
+  }
+
+  function criarCarta(el) {
+    const resposta  = el.querySelector('resposta')?.textContent?.trim() || '???';
+    const categoria = el.getAttribute('categoria') || 'Geral';
+    const numero    = el.getAttribute('numero') || '';
+    const dicas     = Array.from(el.querySelectorAll('dica'));
+
+    const div = document.createElement('div');
+    div.className = 'carta';
+
+    const topo = document.createElement('div');
+    topo.className = 'carta-topo';
+    topo.innerHTML = `
+      <span class="carta-categoria">${categoria}</span>
+      ${numero ? `<span class="carta-numero">#${numero}</span>` : ''}
+    `;
+
+    const dicasDiv = document.createElement('div');
+    dicasDiv.className = 'carta-dicas';
+    dicas.forEach((d, i) => {
+      const id = d.getAttribute('id') || (i + 1);
+      const linha = document.createElement('div');
+      linha.className = 'dica-linha';
+      linha.innerHTML = `<span class="dica-num">${id}</span><span class="dica-texto">${d.textContent.trim()}</span>`;
+      dicasDiv.appendChild(linha);
+    });
+
+    const rodape = document.createElement('div');
+    rodape.className = 'carta-rodape';
+    rodape.innerHTML = `<div class="rodape-label">Resposta</div><div class="rodape-resposta">${resposta}</div>`;
+
+    div.appendChild(topo);
+    div.appendChild(dicasDiv);
+    div.appendChild(rodape);
+    return div;
+  }
+
+  function carregarExemplo() {
+    document.getElementById('xml-input').value = `<cartas>
+  <carta categoria="Personagem">
+    <resposta>Albert Einstein</resposta>
+    <dica id="1">Publicou quatro artigos revolucionários em 1905, chamado de Annus Mirabilis</dica>
+    <dica id="2">Sua tese de doutorado calculou o tamanho das moléculas de açúcar</dica>
+    <dica id="3">Propôs o condensado de Bose-Einstein prevendo um quinto estado da matéria</dica>
+    <dica id="4">Recusou a presidência de Israel em 1952</dica>
+    <dica id="5">Nasceu em Ulm, no Reino de Württemberg, em 14 de março de 1879</dica>
+    <dica id="6">Obteve a cidadania suíça em 1901 após renunciar à alemã</dica>
+    <dica id="7">Trabalhou no escritório de patentes de Berna entre 1902 e 1909</dica>
+    <dica id="8">Deixou a Alemanha em 1933 com a ascensão do nazismo</dica>
+    <dica id="9">Ganhou o Prêmio Nobel de Física em 1921 pelo efeito fotoelétrico</dica>
+    <dica id="10">Passou os últimos anos de vida em Princeton, nos EUA</dica>
+    <dica id="11">Tentou desenvolver uma teoria do campo unificado sem sucesso</dica>
+    <dica id="12">Sua correspondência com Niels Bohr definiu debates sobre a mecânica quântica</dica>
+    <dica id="13">Escreveu carta ao presidente Roosevelt alertando sobre a bomba atômica</dica>
+    <dica id="14">Desenvolveu a teoria da relatividade geral e especial</dica>
+    <dica id="15">Seus trabalhos mudaram para sempre a física moderna</dica>
+    <dica id="16">É considerado o maior físico do século XX</dica>
+    <dica id="17">Nasceu na Alemanha e morreu nos Estados Unidos</dica>
+    <dica id="18">É famoso por uma foto tirando a língua no seu 72º aniversário</dica>
+    <dica id="19">Tinha cabelos brancos e despenteados característicos</dica>
+    <dica id="20">Autor da equação E = mc²</dica>
+  </carta>
+  <carta categoria="Lugar">
+    <resposta>Torre Eiffel</resposta>
+    <dica id="1">Sua estrutura de ferro pudelado pesa 7.300 toneladas</dica>
+    <dica id="2">Conta com 1.665 degraus até o topo e dois restaurantes internos</dica>
+    <dica id="3">Foi usada como antena de rádio para salvar Paris de um ataque alemão em 1914</dica>
+    <dica id="4">Foi construída como entrada provisória para a Exposição Universal de 1889</dica>
+    <dica id="5">Projetada pelo engenheiro Alexandre Gustave Eiffel</dica>
+    <dica id="6">Sua construção durou 2 anos, 2 meses e 5 dias</dica>
+    <dica id="7">Inicialmente seria desmontada 20 anos após a inauguração</dica>
+    <dica id="8">Foi a estrutura mais alta do mundo até 1930</dica>
+    <dica id="9">Tem 324 metros de altura incluindo a antena no topo</dica>
+    <dica id="10">Possui três andares visitáveis abertos ao público</dica>
+    <dica id="11">Recebe cerca de 7 milhões de visitantes por ano</dica>
+    <dica id="12">Inspirou réplicas em Las Vegas, Tokyo e outras cidades do mundo</dica>
+    <dica id="13">É iluminada por 20.000 lâmpadas à noite</dica>
+    <dica id="14">Localizada às margens do rio Sena, no Campo de Marte</dica>
+    <dica id="15">Símbolo da Revolução Francesa e da engenharia moderna</dica>
+    <dica id="16">Construída em ferro, é pintada a cada sete anos</dica>
+    <dica id="17">Fica na cidade conhecida como capital da moda</dica>
+    <dica id="18">Aparece em inúmeros filmes, cartões postais e pinturas</dica>
+    <dica id="19">É o monumento mais visitado do mundo</dica>
+    <dica id="20">Torre de ferro localizada em Paris, França</dica>
+  </carta>
+</cartas>`;
+    gerarCartas();
+  }
+
+  function abrirPrompt() {
+    document.getElementById('modal-overlay').classList.add('ativo');
+  }
+
+  function fecharModal(e) {
+    if (e.target === document.getElementById('modal-overlay')) {
+      document.getElementById('modal-overlay').classList.remove('ativo');
+    }
+  }
+
+  function imprimirPDF() {
+    document.fonts.ready.then(() => window.print());
+  }
+
+  function copiarPrompt() {
+    const texto = document.getElementById('texto-prompt').textContent;
+    navigator.clipboard.writeText(texto).then(() => {
+      const btn = document.querySelector('.btn-copiar');
+      const orig = btn.textContent;
+      btn.textContent = '✅ Copiado!';
+      setTimeout(() => btn.textContent = orig, 2000);
+    });
+  }
+</script>
+<script src="../../assets/js/backbar.js"></script>
+</body>
+</html>
