@@ -3,7 +3,7 @@
    `cache: 'no-cache'` faz o navegador revalidar com o servidor em vez de reaproveitar o
    cache HTTP (o GitHub Pages manda max-age=600 e deixaria o app até 10 min desatualizado).
    Ao mudar a lista SHELL, aumente CACHE. */
-const CACHE = 'ludoteca-v3';
+const CACHE = 'ludoteca-v4';
 
 const SHELL = [
   './',

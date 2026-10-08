@@ -17,7 +17,8 @@ assets/
   icons/              ícones do app
   decks/              baralhos prontos (Master, Nem a Pato)
 criadores/            ferramentas de criar/imprimir cartas (uma pasta por jogo)
-jogos/                jogos multiplayer (por enquanto só jogos/teste/, o diagnóstico de conexão)
+jogos/                jogos multiplayer: detetive/ e teste/ (diagnóstico de conexão)
+tests/                testes automatizados (node tests/detetive.test.js)
 docs/PLANO.md         análise, desenho dos jogos e roteiro
 ```
 

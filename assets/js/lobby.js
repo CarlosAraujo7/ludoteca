@@ -203,7 +203,7 @@
       if (session.isHost) {
         var ok = n >= min;
         box.innerHTML = '<button class="btn btn-primary block" data-act="start"' + (ok ? '' : ' disabled') + '>' +
-          (ok ? esc(opts.startLabel || 'Começar') + ' com ' + n + ' jogadores' : 'Aguardando jogadores (' + n + '/' + min + ')') + '</button>';
+          (ok ? esc(opts.startLabel || 'Começar') + ' com ' + n + (n === 1 ? ' jogador' : ' jogadores') : 'Aguardando jogadores (' + n + '/' + min + ')') + '</button>';
       } else {
         box.innerHTML = '<p class="muted center">Aguardando o anfitrião começar…</p>';
       }

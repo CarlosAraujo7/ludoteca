@@ -103,5 +103,10 @@
     else if (lock) { lock.release().catch(function () {}); lock = null; }
   };
 
-  util.vibrate = function (ms) { try { navigator.vibrate && navigator.vibrate(ms || 30); } catch (e) { /* ok */ } };
+  // O Chrome só deixa vibrar depois de a pessoa ter tocado na página; antes disso registra um aviso no console.
+  util.vibrate = function (pattern) {
+    try {
+      if (navigator.vibrate && (!navigator.userActivation || navigator.userActivation.hasBeenActive)) navigator.vibrate(pattern || 30);
+    } catch (e) { /* ok */ }
+  };
 })(window);

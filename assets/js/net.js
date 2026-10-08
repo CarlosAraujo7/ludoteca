@@ -222,7 +222,9 @@
       s.emit('players', list);
       players.forEach(function (p) { if (!p.isHost) raw(p, { k: 'players', list: list }); });
     }
-    function later(fn) { setTimeout(fn, 0); }
+    // Entrega ao próprio anfitrião: assíncrona (evita reentrância) mas por microtarefa, não por
+    // setTimeout — navegadores atrasam timers de abas em segundo plano, microtarefas não.
+    function later(fn) { Promise.resolve().then(fn); }
 
     var me = addPlayer(o.pid || util.uid(), o.name || 'Anfitrião', null, true);
 

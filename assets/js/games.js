@@ -21,7 +21,7 @@ window.LUDOTECA_GAMES = [
     tagline: 'Quem, com o quê, onde?',
     desc: 'Circule pela mansão, faça sugestões e use as refutações dos outros para descobrir o crime antes de todo mundo.',
     chips: ['👥 3–6 jogadores', '📱 cada um no seu celular'],
-    actions: [{ type: 'play', label: '🎮 Jogar', href: 'jogos/detetive/', status: 'soon' }],
+    actions: [{ type: 'play', label: '🎮 Jogar', href: 'jogos/detetive/', status: 'ready' }],
   },
   {
     id: 'adedonha', kind: 'jogo', emoji: '🔤', accent: '#ff9f43',

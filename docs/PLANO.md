@@ -3,7 +3,7 @@
 Coletânea de jogos de mesa para o celular, publicada no GitHub Pages, com menu único.
 Os três criadores de cartas (Master, Perfil 7, Nem a Pato) viram jogos: a IA gera as cartas de cada jogador e uma tela comum conduz a partida.
 
-> Estado: **Passos 1 e 2 concluídos** (menu, criadores integrados, camada de rede P2P, sala compartilhada e página de teste). Os jogos multiplayer ainda aparecem como "em breve".
+> Estado: **Passos 1, 2 e 3 concluídos** (menu, criadores integrados, rede P2P validada em celulares reais, sala compartilhada e o **Detetive** jogável). Dixit, Adedonha, Banco e os jogos de cartas ainda aparecem como "em breve".
 
 ### Decisões já tomadas
 - **F.D.P. fora do projeto:** removido da coletânea por decisão do usuário.
@@ -89,8 +89,8 @@ A chave fica só no navegador do anfitrião. Validação do JSON recebido, repet
 | Passo | Entrega | Estado |
 |---|---|---|
 | 1 | Menu + estrutura + criadores integrados + PWA + guia de publicação | ✅ |
-| 2 | Camada de rede P2P + sala/código/QR + página de teste | ✅ (testado com 2 abas; falta testar com celulares reais) |
-| 3 | **Detetive** reescrito (celular, histórico, caderneta automática, 3–6, reconexão, pular jogador) | |
+| 2 | Camada de rede P2P + sala/código/QR + página de teste | ✅ (validado em celulares reais, Wi-Fi e 4G) |
+| 3 | **Detetive** reescrito (celular, histórico, caderneta automática, 3–6, reconexão, pular jogador) | ✅ (testado com 3 abas + 192 partidas simuladas; falta jogar em celulares reais) |
 | 4 | **Dixit** (baralho do anfitrião em WebP, 3–6, reconexão) | |
 | 5 | Adedonha e Banco Imobiliário em salas P2P | |
 | 6 | Módulo de IA + **Perfil 7** online (primeiro jogo "carta → jogo") | |
@@ -115,3 +115,30 @@ Limites conhecidos:
 - Mensagens devem ter menos de ~48 KB; o baralho do Dixit precisará ser enviado em pedaços (Passo 4).
 - Se o anfitrião recarregar, a sala volta, mas o estado de uma partida em andamento só sobrevive se o jogo o salvar (cada jogo fará isso).
 - Dois jogadores no mesmo navegador precisam de `?perfil=a` / `?perfil=b` na URL para não compartilharem identidade (só para testes).
+
+## 7. Detetive (Passo 3) — o que mudou em relação ao original
+
+Arquivos em `jogos/detetive/`: `engine.js` (regras, sem DOM nem rede), `deduction.js` (assistente da caderneta), `app.js` (interface e rede), `detetive.css`. Testes: `node tests/detetive.test.js`.
+
+**Corrigido / melhorado**
+- Cabe no celular: tabuleiro de largura total, ações grandes embaixo, caderneta/histórico/regras em folhas. No desktop vira duas colunas.
+- 3 a 6 jogadores (o original parava em 4).
+- **Uma sugestão por turno.** O original deixava sugerir sem limite no mesmo turno.
+- Refutação automática: quem não tem nenhuma das 3 cartas passa sozinho; quem tem só uma a mostra sozinho. Só se espera alguém quando há escolha real.
+- Histórico estruturado de sugestões e acusações (o original guardava só os 10 últimos eventos em texto).
+- **Caderneta automática:** deduz com o que o jogador pode saber (suas cartas, o que lhe mostraram, quem passou, quem mostrou, acusações erradas, tamanho das mãos, regra do envelope). É sólida (nunca afirma algo falso) mas não completa.
+- Dado único opcional; regra opcional "não sugerir duas vezes seguidas no mesmo aposento".
+- Passagem secreta no lugar de rolar (e não depois de andar). O texto de ajuda original dizia "Conservatório ↔ Estudo", mas o código ligava Conservatório ↔ Hall; a ajuda nova está correta.
+- O último jogador não eliminado vence; eliminados continuam refutando.
+- Anfitrião pode **pular** quem está offline (turno) ou escolher a carta por ele (refutação). O botão aparece se a pessoa está offline ou demora mais de 1 minuto.
+- Reconexão automática (a pessoa volta à partida com suas cartas e anotações); nomes sempre escapados; peões com cor própria (o original compartilhava ids de gradiente SVG entre peões de mesma inicial).
+
+**Verificação**
+- 192 partidas simuladas (3–6 jogadores, 1 e 2 dados, com e sem a regra opcional): nunca travam, nenhuma visão vaza cartas alheias nem o envelope, e a dedução tem 0 violações. Um teste de mutação confirmou que a suíte pega uma dedução errada.
+- Três abas reais pela nuvem do PeerJS: 26 sugestões, visão recebida idêntica byte a byte à calculada pelo motor, recarregar no meio da partida, jogador offline + pular, acusação errada (eliminação) e certa (fim de jogo).
+- Achado e corrigido: a entrega de mensagens ao próprio anfitrião usava `setTimeout`, que o navegador atrasa em aba escondida (visão do anfitrião ficava defasada). Agora usa microtarefa.
+
+**Limitações conhecidas**
+- Se o anfitrião recarregar a página no meio da partida, a sala volta mas o estado da partida se perde (o motor não é salvo). Previsto para um passo de robustez.
+- O anfitrião tecnicamente consegue ver o envelope (pelo console do navegador). Aceitável entre amigos.
+- `?debug=1` na URL permite começar sozinho e expõe `window.__det` (só para testes).
