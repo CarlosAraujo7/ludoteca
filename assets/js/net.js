@@ -26,7 +26,8 @@
      host.send(id, data) · host.broadcast(data) · host.kick(id) · host.start(dados)
      host.setAcceptNew(bool)
 
-   Mensagens devem ser pequenas (< ~48 KB). Dados grandes (imagens) precisam ser fatiados.   */
+   Mensagens grandes são fatiadas e remontadas automaticamente (o PeerJS aceita ~16 KB por mensagem),
+   mas quanto menores, melhor: cada fatia ocupa o canal.                                              */
 (function (global) {
   'use strict';
 
@@ -41,7 +42,11 @@
   var LOBBY_GRACE = 20000;         // no lobby, quem some por mais que isso sai da sala
   var RECONNECT_WINDOW = 120000;   // quanto tempo o convidado insiste em voltar
   var DIAL_TIMEOUT = 14000;
-  var MAX_MSG = 48 * 1024;
+  // O PeerJS recusa mensagens JSON acima de ~16 KB ("Message too big for JSON channel").
+  // Mensagens maiores são fatiadas aqui e remontadas do outro lado, de forma transparente.
+  var DIRECT_MAX = 15000;          // até este tamanho (em caracteres) vai inteira
+  var FRAG_SIZE = 6000;            // tamanho de cada fatia (o JSON escapa aspas, então sobra folga)
+  var fragSeq = 0;
 
   /* ── utilidades internas ─────────────────────────────────────────────────── */
   function Emitter() { this._h = {}; }
@@ -138,6 +143,26 @@
   };
   Net.forget = function (game) { util.store.del('sessao:' + game); };
 
+  /* Envia um objeto, fatiando se for grande. Devolve false se o canal recusar. */
+  function sendObj(conn, obj) {
+    try {
+      var txt = JSON.stringify(obj);
+      if (txt.length <= DIRECT_MAX) { conn.send(obj); return true; }
+      var id = (++fragSeq).toString(36) + Date.now().toString(36), n = Math.ceil(txt.length / FRAG_SIZE);
+      for (var i = 0; i < n; i++) conn.send({ k: 'frag', f: id, i: i, n: n, s: txt.slice(i * FRAG_SIZE, (i + 1) * FRAG_SIZE) });
+      return true;
+    } catch (e) { return false; }
+  }
+  /* Junta as fatias de volta. push(m) devolve o objeto completo, ou null enquanto faltam fatias. */
+  function Reassembler() { this.p = {}; }
+  Reassembler.prototype.push = function (m) {
+    var e = this.p[m.f] || (this.p[m.f] = { n: m.n, got: 0, a: [] });
+    if (e.a[m.i] === undefined) { e.a[m.i] = m.s; e.got++; }
+    if (e.got < e.n) return null;
+    delete this.p[m.f];
+    try { return JSON.parse(e.a.join('')); } catch (err) { return null; }
+  };
+
   function pub(p) {
     return { id: p.id, name: p.name, color: p.color, isHost: p.isHost, connected: p.connected, rtt: p.rtt || 0, route: p.route || null };
   }
@@ -214,7 +239,7 @@
     function snapshot() { return players.map(pub); }
     function raw(p, obj) {
       if (!p.conn || !p.connected) return false;
-      try { p.conn.send(obj); return true; } catch (e) { return false; }
+      return sendObj(p.conn, obj);
     }
     function broadcastPlayers() {
       var list = snapshot();
@@ -230,9 +255,10 @@
 
     /* ── conexões de entrada ── */
     peer.on('connection', function (conn) {
-      var bound = null;
+      var bound = null, ra = new Reassembler();
       var helloTimer = setTimeout(function () { if (!bound) { try { conn.close(); } catch (e) { /* ok */ } } }, 8000);
       conn.on('data', function (m) {
+        if (m && m.k === 'frag') m = ra.push(m);
         if (!m || typeof m !== 'object') return;
         if (!bound) {
           if (m.k === 'hello') { clearTimeout(helloTimer); bound = onHello(conn, m); }
@@ -360,6 +386,11 @@
       broadcastPlayers();
     };
     host.setAcceptNew = function (b) { acceptNew = !!b; };
+    /* Bytes ainda na fila de envio para um jogador (0 para o anfitrião ou se não houver canal). */
+    host.buffered = function (id) {
+      var p = byId[id], dc = p && p.conn && p.conn.dataChannel;
+      return dc ? dc.bufferedAmount || 0 : 0;
+    };
     host.start = function (data) {
       started = true; startData = data == null ? null : data; acceptNew = false;
       players.forEach(function (p) { clearTimeout(p.dropTimer); if (!p.isHost) raw(p, { k: 'start', d: startData }); });
@@ -459,8 +490,10 @@
         myPeer.on('open', function () {
           if (peer !== myPeer || closed) return;
           var c = conn = myPeer.connect(roomId(game, code), { reliable: true, serialization: 'json' });
+          var ra = new Reassembler();
           c.on('open', function () { c.send({ k: 'hello', v: PROTO, pid: pid, name: name }); });
           c.on('data', function (m) {
+            if (m && m.k === 'frag') m = ra.push(m);
             if (conn !== c || !m || typeof m !== 'object') return;
             if (!settled) {
               if (m.k === 'welcome') { settled = true; clearTimeout(timer); onWelcome(m); }
@@ -537,11 +570,7 @@
       /* ── interface de sessão ── */
       s.send = function (data) {
         if (!conn || !conn.open || s.status !== 'online') return false;
-        try {
-          if (JSON.stringify(data).length > MAX_MSG) console.warn('[net] mensagem grande demais (' + MAX_MSG + ' bytes). Fatie os dados.');
-          conn.send({ k: 'msg', d: data });
-          return true;
-        } catch (e) { return false; }
+        return sendObj(conn, { k: 'msg', d: data });
       };
       s.leave = function () {
         if (closed) return;

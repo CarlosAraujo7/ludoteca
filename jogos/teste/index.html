@@ -45,6 +45,7 @@
             '<div id="t-me" class="small muted">…</div>' +
             '<button class="btn btn-ghost block" data-t="drop">🔌 Simular queda de rede</button>' +
             (s.isHost ? '<button class="btn btn-ghost block" data-t="start">▶ Simular início de partida</button>' : '') +
+            '<button class="btn btn-ghost block" data-t="big">Testar mensagem grande (100 KB, ida e volta)</button>' +
             '<p class="small muted">Derruba a conexão de propósito para você ver a reconexão automática funcionando.</p>' +
           '</div>' +
           '<div class="panel"><h2>Bate-papo de teste</h2>' +
@@ -73,10 +74,18 @@
       log('Na sala ' + s.code + (s.isHost ? ' como anfitrião.' : ' como convidado.'));
 
       /* mensagens: o convidado manda ao anfitrião, que repassa para todos */
-      s.on('message', function (d) { if (d && d.chat) chat(d.from, d.chat); });
+      s.on('message', function (d) {
+        if (d && d.chat) chat(d.from, d.chat);
+        if (d && d.bigEcho) {                       // volta da mensagem grande: confere se chegou inteira
+          var ok = d.bigEcho === window.__lastPad;
+          log((ok ? 'Mensagem grande OK' : 'Mensagem grande CORROMPIDA') + ': ' + d.bigEcho.length + ' caracteres, ida e volta em ' + (Date.now() - d.t) + ' ms');
+          L.util.toast(ok ? 'Mensagem de 100 KB chegou inteira.' : 'Mensagem grande veio corrompida!', ok ? 'ok' : 'err');
+        }
+      });
       if (s.isHost) {
         s.host.on('message', function (p, d) {
           if (d && typeof d.chat === 'string') s.host.broadcast({ chat: d.chat.slice(0, 140), from: p.name });
+          if (d && typeof d.big === 'string') s.host.send(p.id, { bigEcho: d.big, t: d.t });      // devolve o mesmo conteúdo
         });
         ['join', 'rejoin', 'disconnect', 'leave'].forEach(function (ev) {
           s.host.on(ev, function (p) { log(p.name + ' → ' + ev); });
@@ -90,6 +99,13 @@
         if (!text) return;
         if (!s.send({ chat: text })) L.util.toast('Sem conexão agora.', 'err');
         input.value = '';
+      });
+      el.querySelector('[data-t="big"]').addEventListener('click', function () {
+        var pad = '';
+        while (pad.length < 100000) pad += Math.random().toString(36).slice(2);
+        window.__lastPad = pad.slice(0, 100000);
+        log('Enviando mensagem de 100 KB…');
+        if (!s.send({ big: window.__lastPad, t: Date.now() })) L.util.toast('Sem conexão agora.', 'err');
       });
       var startBtn = el.querySelector('[data-t="start"]');
       if (startBtn) startBtn.addEventListener('click', function () { s.host.start({ teste: true, quando: Date.now() }); });

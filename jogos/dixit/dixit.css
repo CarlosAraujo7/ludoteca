@@ -1,0 +1,118 @@
+/* Dixit — tela do jogo. Mobile primeiro. */
+
+.app.wide { max-width: 980px; }
+.dx { display: flex; flex-direction: column; gap: 12px; flex: 1; --amber: #f5a623; --green: #4ade80; }
+
+/* ── Placar ── */
+.dx-top { display: flex; gap: 8px; align-items: center; }
+.dx-score { display: flex; gap: 6px; overflow-x: auto; flex: 1; scrollbar-width: none; padding: 2px 0; }
+.dx-score::-webkit-scrollbar { display: none; }
+.dx-chip {
+  flex: none; display: flex; align-items: center; gap: 6px; padding: 5px 11px 5px 8px;
+  border-radius: 999px; background: var(--surface-2); border: 2px solid transparent; font-size: 0.82rem; font-weight: 700;
+}
+.dx-chip .dot { width: 10px; height: 10px; border-radius: 50%; }
+.dx-chip b { color: var(--amber); font-size: 0.95rem; }
+.dx-chip.st { border-color: var(--accent); }
+.dx-chip.off { opacity: 0.55; }
+.dx-chip small { color: var(--muted); font-weight: 700; }
+.dx-deck { flex: none; padding: 5px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 0.75rem; color: var(--muted); font-weight: 700; }
+
+/* ── Pista ── */
+.dx-clue { padding: 12px 14px; border-radius: var(--r); background: var(--surface-2); text-align: center; }
+.dx-clue .who { color: var(--muted); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.dx-clue .txt { margin-top: 2px; font-size: 1.45rem; line-height: 1.25; font-weight: 800; color: var(--amber); word-break: break-word; }
+.dx-clue.me { border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent); }
+
+.dx-panel { padding: 12px 14px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--border); }
+.dx-panel h2 { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.dx-panel p { color: #c9cde6; }
+.dx-sub { margin: 4px 2px 8px; color: var(--muted); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+
+.dx-prog { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.dx-prog span { padding: 3px 10px; border-radius: 999px; background: var(--surface-2); font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+.dx-prog span.ok { color: var(--green); }
+
+/* ── Cartas ── */
+.dx-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (min-width: 560px) { .dx-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 860px) { .dx-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.dx-grid.small { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+@media (min-width: 560px) { .dx-grid.small { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+
+.cd { position: relative; border-radius: 12px; }
+.cd .art {
+  position: relative; aspect-ratio: 684 / 989; border-radius: 12px; overflow: hidden;
+  background: linear-gradient(135deg, #2a1d52, #1a1233); border: 3px solid transparent; transition: border-color 0.15s, transform 0.15s, filter 0.15s;
+}
+.cd .art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.07) 50%, transparent 70%); background-size: 200% 100%; animation: dx-shimmer 1.4s linear infinite; }
+.cd .art.ok::after { display: none; }
+@keyframes dx-shimmer { from { background-position: 150% 0; } to { background-position: -50% 0; } }
+.cd img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; }
+.cd.pick { cursor: pointer; }
+.cd.sel .art { border-color: var(--amber); transform: scale(1.025); }
+.cd.mine .art { filter: brightness(0.55); }
+.cd.stc .art { border-color: var(--green); }
+.cd.voted .art { border-color: #60a5fa; }
+.cd .zoom {
+  position: absolute; top: 6px; right: 6px; width: 34px; height: 34px; border: 0; border-radius: 50%;
+  background: rgba(10, 8, 24, 0.72); color: #fff; display: grid; place-items: center; cursor: pointer; z-index: 2;
+}
+.cd .zoom svg { width: 18px; height: 18px; }
+.cd .pos {
+  position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%);
+  min-width: 28px; padding: 1px 9px; border-radius: 8px; background: rgba(0, 0, 0, 0.75); color: #fff; font-weight: 800; font-size: 0.9rem; text-align: center;
+}
+.cd .tag {
+  position: absolute; left: 6px; top: 6px; max-width: calc(100% - 52px);
+  padding: 2px 9px; border-radius: 999px; background: rgba(0, 0, 0, 0.78); color: #fff;
+  font-size: 0.7rem; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cd .tag.st { background: var(--green); color: #052a12; }
+.cd .tag.me { background: var(--accent); color: #1a0f3a; }
+.cd .owner { position: absolute; left: 6px; bottom: 6px; right: 6px; display: flex; flex-direction: column; gap: 4px; }
+.cd .owner .o { align-self: flex-start; display: flex; align-items: center; gap: 5px; max-width: 100%; padding: 2px 9px 2px 6px; border-radius: 999px; background: rgba(0, 0, 0, 0.78); font-size: 0.7rem; font-weight: 700; color: #fff; }
+.cd .owner .o i { width: 10px; height: 10px; border-radius: 50%; flex: none; border: 2px solid rgba(255, 255, 255, 0.55); }
+.cd .voters { display: flex; flex-wrap: wrap; gap: 3px; }
+.cd .voters i { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.85); }
+
+/* ── Resultado ── */
+.dx-points { display: flex; flex-direction: column; gap: 8px; }
+.dx-pt { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--r); background: var(--surface-2); }
+.dx-pt .dot { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+.dx-pt .tx { flex: 1; min-width: 0; }
+.dx-pt .tx b { display: block; }
+.dx-pt .tx small { color: var(--muted); line-height: 1.35; display: block; }
+.dx-pt .d { font-size: 1.3rem; font-weight: 900; color: var(--green); }
+.dx-pt .d.z { color: var(--muted); }
+.dx-pt .tot { font-size: 0.75rem; color: var(--muted); text-align: right; }
+
+/* ── Barra de ação fixa ── */
+.dx-bar {
+  position: sticky; bottom: 0; z-index: 20; margin: 0 -4px; padding: 10px 4px calc(10px + var(--safe-b));
+  background: linear-gradient(to top, var(--bg) 78%, transparent); display: flex; flex-direction: column; gap: 8px;
+}
+.dx-bar:empty { display: none; }
+.dx-bar .row .input { min-height: 48px; }
+.dx-bar .btn { min-height: 50px; }
+
+/* ── Fim de jogo ── */
+.dx-over { text-align: center; padding: 18px 14px; border-radius: var(--r-lg); background: var(--surface); border: 2px solid var(--amber); }
+.dx-over h2 { font-size: 1.5rem; margin-bottom: 4px; }
+.dx-rank { display: flex; flex-direction: column; gap: 8px; margin: 14px 0; text-align: left; }
+
+/* ── Ampliação de carta ── */
+.lb { position: fixed; inset: 0; z-index: 200; background: rgba(5, 3, 14, 0.92); display: grid; place-items: center; padding: 14px; }
+.lb[hidden] { display: none; }
+.lb img { max-width: 100%; max-height: calc(100dvh - 90px); border-radius: 14px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); }
+.lb .cap { margin-top: 10px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+.lb .x { position: absolute; top: calc(10px + var(--safe-t)); right: 12px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.14); color: #fff; font-size: 1.2rem; cursor: pointer; }
+
+/* ── Baralho (sala) ── */
+.deck-box { display: flex; flex-direction: column; gap: 8px; }
+.deck-box progress { width: 100%; height: 8px; accent-color: var(--accent); }
+.seg { display: flex; gap: 6px; }
+.seg .btn { flex: 1; min-height: 42px; padding: 6px 8px; }
+.stepper { display: flex; align-items: center; gap: 12px; }
+.stepper b { min-width: 40px; text-align: center; font-size: 1.3rem; color: var(--amber); }
+.stepper .btn { min-height: 42px; width: 48px; padding: 0; }

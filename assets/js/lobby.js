@@ -11,6 +11,7 @@
      settings(session, el),     (anfitrião) monta as opções do jogo antes de começar
      extra(session, el),        conteúdo adicional na sala, para todos
      startData(session),        dados que o anfitrião envia junto com o "começar"
+     startBlock(session),       devolve um texto se o jogo ainda não pode começar (ex.: falta o baralho)
      onStart(session, data),    chamado em TODOS os aparelhos quando a partida começa
    })
 
@@ -33,7 +34,7 @@
 
     if (opts.accent) root.style.setProperty('--accent', opts.accent);
 
-    var api = { get session() { return session; }, destroy: destroy };
+    var api = { get session() { return session; }, destroy: destroy, refresh: function () { renderRoom(); } };
 
     /* ── cabeçalho comum ── */
     function titleBlock() {
@@ -201,9 +202,11 @@
       if (opts.showStart === false) { box.innerHTML = ''; return; }
       var n = connectedCount(list);
       if (session.isHost) {
-        var ok = n >= min;
+        var block = n >= min && opts.startBlock ? opts.startBlock(session) : null;
+        var ok = n >= min && !block;
         box.innerHTML = '<button class="btn btn-primary block" data-act="start"' + (ok ? '' : ' disabled') + '>' +
-          (ok ? esc(opts.startLabel || 'Começar') + ' com ' + n + (n === 1 ? ' jogador' : ' jogadores') : 'Aguardando jogadores (' + n + '/' + min + ')') + '</button>';
+          (n < min ? 'Aguardando jogadores (' + n + '/' + min + ')' : block ? esc(block)
+            : esc(opts.startLabel || 'Começar') + ' com ' + n + (n === 1 ? ' jogador' : ' jogadores')) + '</button>';
       } else {
         box.innerHTML = '<p class="muted center">Aguardando o anfitrião começar…</p>';
       }
