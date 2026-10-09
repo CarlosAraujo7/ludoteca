@@ -13,7 +13,7 @@ window.LUDOTECA_GAMES = [
     tagline: 'Imaginação e pistas',
     desc: 'O narrador dá uma pista sobre uma carta; todos escolhem uma carta que combine e tentam descobrir qual era a dele.',
     chips: ['👥 3–6 jogadores', '📱 cada um no seu celular'],
-    actions: [{ type: 'play', label: '🎮 Jogar', href: 'jogos/dixit/', status: 'soon' }],
+    actions: [{ type: 'play', label: '🎮 Jogar', href: 'jogos/dixit/', status: 'ready' }],
   },
   {
     id: 'detetive', kind: 'jogo', emoji: '🔍', accent: '#ff5c6c',

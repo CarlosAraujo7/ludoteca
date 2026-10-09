@@ -4,9 +4,8 @@
 .dx { display: flex; flex-direction: column; gap: 12px; flex: 1; --amber: #f5a623; --green: #4ade80; }
 
 /* ── Placar ── */
-.dx-top { display: flex; gap: 8px; align-items: center; }
-.dx-score { display: flex; gap: 6px; overflow-x: auto; flex: 1; scrollbar-width: none; padding: 2px 0; }
-.dx-score::-webkit-scrollbar { display: none; }
+.dx-top { display: flex; gap: 8px; align-items: flex-start; }
+.dx-score { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; min-width: 0; padding: 2px 0; }
 .dx-chip {
   flex: none; display: flex; align-items: center; gap: 6px; padding: 5px 11px 5px 8px;
   border-radius: 999px; background: var(--surface-2); border: 2px solid transparent; font-size: 0.82rem; font-weight: 700;

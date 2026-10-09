@@ -372,7 +372,7 @@
       var o = P(e.owner), isStc = e.card === V.stCard;
       var dots = e.voters.map(function (id) { var p = P(id); return '<i style="background:' + esc(p.color) + '" title="' + esc(p.name) + '"></i>'; }).join('');
       var extra = '<div class="owner"><div class="voters">' + dots + '</div><div class="o"><i style="background:' + esc(o.color) + '"></i>' + esc(o.name) + '</div></div>';
-      return card(e.card, { pos: e.pos, cls: isStc ? 'stc' : '', tag: isStc ? 'Carta do narrador' : '', tagCls: 'st', extra: extra });
+      return card(e.card, { pos: e.pos, cls: isStc ? 'stc' : '', tag: isStc ? 'Narrador' : '', tagCls: 'st', extra: extra });
     });
     var pts = V.players.map(function (p) {
       var x = r.points[p.id], pst = p.id === st, correct = r.correct.indexOf(p.id) >= 0, parts = [];
